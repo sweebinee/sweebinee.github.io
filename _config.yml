@@ -1,6 +1,6 @@
 # main text of home
-name: Subin Cho
-bio: A graduate student majoring bioinformatics
+name: John Doe
+bio: A Man who travels the world eating noodles
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -16,7 +16,7 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://sweebinee.github.io
+url: https://sergiokopplin.github.io/indigo
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
@@ -34,31 +34,31 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-#facebook: myfacebook
-#twitter: mytwitter
- instagram: s_beeni_
+facebook: myfacebook
+twitter: mytwitter
+# instagram: myinstagram
 # pinterest: mypinterest
 # linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-github: sweebinee
+github: mygithub
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-#medium: medium
+medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: subin.cho@i.ewha.ac.kr
+email: myemail@gmail.com
 
 authors:
-  subin:
-    name: Subin, Cho.
-    bio: AA
+  johndoe:
+    name: John Doe
+    bio: A Man who travels the world eating noodles
     external-image: false
     picture: assets/images/profile.jpg
-#    twitter: johndoe
+    twitter: johndoe
   jamesfoster:
     name: James Foster
     bio: A Man who develops software with coffee
@@ -123,7 +123,7 @@ plugins:
   - jekyll-paginate-v2
 
 jekyll-mentions:
-  base_url: ""
+  base_url: https://github.com
 
 compress_html:
   ignore:
