@@ -1,3 +1,8 @@
+title: Subin's blog
+#baseurl: [Website Subpath]
+url: sweebinee.github.io
+#google_analytics: [Google Analytics Tracking ID]
+
 # main text of home
 name: Subin, Cho.
 bio: Graduate student mojoring in bioinformatics
