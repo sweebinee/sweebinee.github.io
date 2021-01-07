@@ -1,5 +1,5 @@
 # main text of home
-name: Subin Cho
+name: Subin, Cho.
 bio: A graduate student majoring bioinformatics
 
 # twitter summary info
@@ -117,7 +117,7 @@ plugins:
   - jekyll-paginate-v2
 
 jekyll-mentions:
-  base_url: 
+  base_url: https://github.com
 
 compress_html:
   ignore:
