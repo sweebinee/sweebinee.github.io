@@ -14,7 +14,7 @@ picture: assets/images/profile.jpg
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: https://google.com
+resume-url: ""
 
 url: https://sweebinee.github.io
 # your url: https://USERNAME.github.io
