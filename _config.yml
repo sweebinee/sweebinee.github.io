@@ -136,3 +136,6 @@ exclude:
     "node_modules",
     "vendor",
   ]
+
+#### making category 
+blog_subcategory_list: [ daily, scRNA-seq ]
