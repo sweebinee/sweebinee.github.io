@@ -35,18 +35,18 @@ disqus:
 # if you don't have any of social below, comment the line
 #facebook: myfacebook
 #twitter: mytwitter
-# instagram: myinstagram
+ instagram: myinstagram
 # pinterest: mypinterest
 # linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: sweebinee
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: medium
+#medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
 email: subin.cho@i.ewha.ac.kr
@@ -123,7 +123,7 @@ plugins:
 
 jekyll-mentions:
   base_url:
-    
+
 compress_html:
   ignore:
     envs:
