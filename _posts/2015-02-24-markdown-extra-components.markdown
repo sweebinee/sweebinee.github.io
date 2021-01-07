@@ -1,15 +1,15 @@
 ---
-title: "This is my first gitpage post!!!"
+title: "Markdown Extra Components"
 layout: post
-date: 2021-01-07 00:00
+date: 2016-02-24 22:48
 image: /assets/images/markdown.jpg
 headerImage: false
 tag:
 - markdown
 - components
-- lala
+- extra
 category: blog
-author: subin
+author: jamesfoster
 description: Markdown summary with different options
 ---
 

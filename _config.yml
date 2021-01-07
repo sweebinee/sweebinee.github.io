@@ -1,11 +1,6 @@
-title: Subin's blog
-#baseurl: [Website Subpath]
-url: sweebinee.github.io
-#google_analytics: [Google Analytics Tracking ID]
-
 # main text of home
-name: Subin, Cho.
-bio: Graduate student mojoring in bioinformatics
+name: John Doe
+bio: A Man who travels the world eating noodles
 
 # twitter summary info
 description: A blog about technology and stuff related
@@ -21,13 +16,13 @@ resume: true
 resume-external: true
 resume-url: https://google.com/?q=my+resume
 
-url: https://sweebinee.github.io
+url: https://sergiokopplin.github.io/indigo
 # your url: https://USERNAME.github.io
 
 permalink: /:title/
 
 # To enable google analytics, supply your token below
-analytics-google: 'UA-MYANALYTICS'
+# analytics-google: 'UA-MYANALYTICS'
 
 # To enable piwik tracking, supply your url & site ID below
 # analytics-piwik-url: 'piwik.my-host.com'
@@ -39,9 +34,9 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-#facebook: myfacebook
-#twitter: mytwitter
-instagram: s_beeni_
+facebook: myfacebook
+twitter: mytwitter
+# instagram: myinstagram
 # pinterest: mypinterest
 # linkedin: mylinkedin
 # youtube: myyoutube
@@ -52,19 +47,25 @@ github: mygithub
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-#medium: medium
+medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: subin.cho@i.ewha.ac.kr
+email: myemail@gmail.com
 
 authors:
-  subin:
-    name: Subin, Cho.
-    bio: Graduate student mojoring in bioinformatics
+  johndoe:
+    name: John Doe
+    bio: A Man who travels the world eating noodles
     external-image: false
     picture: assets/images/profile.jpg
-    instagram: s_beeni_
-  
+    twitter: johndoe
+  jamesfoster:
+    name: James Foster
+    bio: A Man who develops software with coffee
+    external-image: false
+    picture: assets/images/james.jpg
+    twitter: jamesfoster
+
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
 # normal = 560px / large = 810px
