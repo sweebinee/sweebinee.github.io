@@ -14,7 +14,7 @@ picture: assets/images/profile.jpg
 # and specify source (external or local).
 resume: true
 resume-external: true
-resume-url: https://google.com/?q=my+resume
+resume-url: https://drive.google.com/file/d/1urh0Lo5Ef4DPbtfZImjjdON_dNnUhER-/view?usp=sharing
 
 url: https://sweebinee.github.io
 # your url: https://USERNAME.github.io
@@ -34,31 +34,31 @@ disqus:
   categories: [blog, project] # only show disqus for posts that have these categories
 
 # if you don't have any of social below, comment the line
-facebook: myfacebook
-twitter: mytwitter
+#facebook: myfacebook
+#twitter: mytwitter
 # instagram: myinstagram
 # pinterest: mypinterest
 # linkedin: mylinkedin
 # youtube: myyoutube
 # spotify: myspotify
-github: mygithub
+github: sweebinee
 # gitlab: mygitlab
 # lastfm: mylastfm
 # stackoverflow: 7044681/mystackoverflow
 # quora: userquora
 # reddit: username
-medium: medium
+#medium: medium
 # vimeo: myvimeo
 # lanyrd: mylanyrd
-email: myemail@gmail.com
+email: subin.cho@i.ewha.ac.kr
 
 authors:
-  johndoe:
-    name: John Doe
-    bio: A Man who travels the world eating noodles
+  subin:
+    name: Subin, Cho.
+    bio: AA
     external-image: false
     picture: assets/images/profile.jpg
-    twitter: johndoe
+#    twitter: johndoe
   jamesfoster:
     name: James Foster
     bio: A Man who develops software with coffee
