@@ -21,12 +21,14 @@ pagination:
 		{% include pagination.html%}
 	{% else %}
 		{% for post in site.posts %}
-			<h2> {{post.categories}} </h2>
-				{% if post.category == 'blog/example' %}
+			{% for eachCategory in post.categories %}
+			<h2> {{eachCategory[0]}} </h2>
+				{% if post.category == eachCategory[0] %}
 					{% if post.hidden != true %}
 						{% include blog-post.html %}
 					{% endif %}
 				{% endif %}
+			{% endfor %}
 		{% endfor %}
 	{% endif %}
 </section>
