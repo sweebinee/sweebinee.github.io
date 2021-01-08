@@ -22,7 +22,7 @@ pagination:
 		{% for post in site.posts %}
 			{% for eachCategory in post.categories[0] %}
 				<h2> {{eachCategory}} </h2>
-				{% if eachCategory.matches(/^blog/) %}
+				{% if eachCategory.test(/^blog/) %}
 					<h2> {{eachCategory}} </h2>
 					{% if post.category == eachCategory %}
 						{% if post.hidden != true %}
