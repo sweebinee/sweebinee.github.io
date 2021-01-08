@@ -9,7 +9,6 @@ tag:
 - components
 - extra
 category: blog
-permalink: /blog/example
 author: jamesfoster
 description: Markdown summary with different options
 ---
