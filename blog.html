@@ -21,16 +21,17 @@ pagination:
 	{% else %}
 		{% for post in site.posts %}
 			{% for eachCategory in post.categories[0] %}
-				<h2> {{eachCategory}} </h2>
-				{% if eachCategory.includes('blog') %}
-					<h2> {{eachCategory}} </h2>
-					{% if post.category == eachCategory %}
-						{% if post.hidden != true %}
-							{% include blog-post.html %}
-						{% endif %}
+				{% if eachCategory == "blog/example" %}
+					<h2> EXAMPLE </h2>
+				{% elsif eachCategory == "blog/daily" %}
+					<h2> DAILY </h2>
+				{% elsif eachCategory == "blog/boostCourse" %}
+					<h2> BOOSTCOURSE </h2>
+				{% endif %}
+				{% if post.category == eachCategory %}
+					{% if post.hidden != true %}
+						{% include blog-post.html %}
 					{% endif %}
-				{% else %}
-					<h2> NOPE1 </h2>
 				{% endif %}
 			{% endfor %}
 		{% endfor %}
