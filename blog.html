@@ -20,17 +20,14 @@ pagination:
 		{% include pagination.html%}
 	{% else %}
 		{% for post in site.posts %}
-			{% for eachCategory in post.categories %}
-				<h2> {{post.categories}} </h2>
+			{% for eachCategory in post.categories[0] %}
+				<h2> EXAMPLE </h2>
 				<h2> {{eachCategory}} </h2>
-				{% for categoryName in eachCategory[0] %}
-					<h2> {{categoryName}} </h2>
-					{% if post.category == 'blog' %}
-						{% if post.hidden != true %}
-							{% include blog-post.html %}
-						{% endif %}
+				{% if post.category == 'blog/example' %}
+					{% if post.hidden != true %}
+						{% include blog-post.html %}
 					{% endif %}
-				{% endfor %}
+				{% endif %}
 			{% endfor %}
 		{% endfor %}
 	{% endif %}
