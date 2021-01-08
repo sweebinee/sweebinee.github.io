@@ -11,21 +11,29 @@ pagination:
 		<p class="text-center">Nothing published yet!</p>
 	{% elsif site.pagination.enabled %}
 		{% for post in paginator.posts %}
-			{% if post.category == 'blog' %}
+			{% if post.category == 'blog/example' %}
 				{% if post.hidden != true %}
 					{% include blog-post.html %}
 				{% endif %}
 			{% endif %}
 		{% endfor %}
-
 		{% include pagination.html%}
 	{% else %}
 		{% for post in site.posts %}
-			{% if post.category == 'blog' %}
-				{% if post.hidden != true %}
-					{% include blog-post.html %}
+			{% for eachCategory in post.categories[0] %}
+				{% if eachCategory == "blog/example" %}
+					<h2> EXAMPLE </h2>
+				{% elsif eachCategory == "blog/daily" %}
+					<h2> DAILY </h2>
+				{% elsif eachCategory == "blog/boostCourse" %}
+					<h2> BOOSTCOURSE </h2>
 				{% endif %}
-			{% endif %}
+				{% if post.category == eachCategory %}
+					{% if post.hidden != true %}
+						{% include blog-post.html %}
+					{% endif %}
+				{% endif %}
+			{% endfor %}
 		{% endfor %}
 	{% endif %}
 </section>
