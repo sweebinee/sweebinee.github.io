@@ -21,7 +21,7 @@ pagination:
 		{% include pagination.html%}
 	{% else %}
 		{% for post in site.posts %}
-			{% if post.category == 'blog' %}
+			{% if post.category == 'blog/example' %}
 				{% if post.hidden != true %}
 					{% include blog-post.html %}
 				{% endif %}
