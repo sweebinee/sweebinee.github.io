@@ -19,7 +19,7 @@ resume-url: https://docs.google.com/document/d/1a8gx4WgQrS-goObbtYtI4elzO4f4Ne2J
 url: https://sweebinee.github.io/
 # your url: https://USERNAME.github.io
 
-permalink: /:categories/:year/:title/
+permalink: :categories/:year/:title/
 
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'
