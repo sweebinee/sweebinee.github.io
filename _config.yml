@@ -138,4 +138,4 @@ exclude:
   ]
 
 #### making category 
-blog_subcategory_list: [ daily, scRNA-seq ]
+blog_subcategory_list: [ daily, scRNA-seq, example ]
