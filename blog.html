@@ -11,7 +11,7 @@ pagination:
 		<p class="text-center">Nothing published yet!</p>
 	{% elsif site.pagination.enabled %}
 		{% for post in paginator.posts %}
-			{% if post.category == 'blog' %}
+			{% if post.category == 'blog/example' %}
 				{% if post.hidden != true %}
 					{% include blog-post.html %}
 				{% endif %}
