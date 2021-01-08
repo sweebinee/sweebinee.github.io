@@ -23,14 +23,24 @@ pagination:
 			{% for eachCategory in post.categories[0] %}
 				{% if eachCategory == "blog/example" %}
 					<h2> EXAMPLE </h2>
+					{% if post.category == eachCategory %}
+						{% if post.hidden != true %}
+							{% include blog-post.html %}
+						{% endif %}
+					{% endif %}
 				{% elsif eachCategory == "blog/daily" %}
 					<h2> DAILY </h2>
+					{% if post.category == eachCategory %}
+						{% if post.hidden != true %}
+							{% include blog-post.html %}
+						{% endif %}
+					{% endif %}
 				{% elsif eachCategory == "blog/boostCourse" %}
 					<h2> BOOSTCOURSE </h2>
-				{% endif %}
-				{% if post.category == eachCategory %}
-					{% if post.hidden != true %}
-						{% include blog-post.html %}
+					{% if post.category == eachCategory %}
+						{% if post.hidden != true %}
+							{% include blog-post.html %}
+						{% endif %}
 					{% endif %}
 				{% endif %}
 			{% endfor %}
