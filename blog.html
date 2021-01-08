@@ -22,7 +22,7 @@ pagination:
 		{% for post in site.posts %}
 			{% for eachCategory in post.categories[0] %}
 				<h2> {{eachCategory}} </h2>
-				<h2> {{eachCategory.url}} </h2>
+				<h2> {{eachCategory.urls}} </h2>
 				{% if eachCategory.test(/^blog/) %}
 					<h2> {{eachCategory}} </h2>
 					{% if post.category == eachCategory %}
@@ -31,7 +31,7 @@ pagination:
 						{% endif %}
 					{% endif %}
 				{% else %}
-					<h2> NOPE1 </h2>
+					<h2> NOPE </h2>
 				{% endif %}
 			{% endfor %}
 		{% endfor %}
