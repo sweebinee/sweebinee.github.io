@@ -22,8 +22,7 @@ pagination:
 	{% else %}
 		{% for post in site.posts %}
 			{% for eachCategory in post.categories %}
-			<h2 id="{{eachCategory[0]}}">
-				{{eachCategory[0]}} </h2>
+			<h2> {{eachCategory[0]}} </h2>
 				{% if post.category == eachCategory[0] %}
 					{% if post.hidden != true %}
 						{% include blog-post.html %}
