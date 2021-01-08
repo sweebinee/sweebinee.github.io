@@ -23,21 +23,13 @@ pagination:
 		{% for post in site.posts %}
 			{% for eachCategory in post.categories %}
 				{% for categoryName in eachCategory[0] %}
-					{% if categoryName != null %}
-					<li> 
-						<span><a href='{{categoryName}}'>
-							{{categoryName}}
-						</a></span>
-						<span class="count">{{eachCategory[1].size}}</span>
-					</li>
-					{% endif}
-				{% endfor %}
-			<h2> {{eachCategory[0]}} </h2>
-				{% if post.category == 'blog' %}
-					{% if post.hidden != true %}
-						{% include blog-post.html %}
+					<h2> {{categoryName}} </h2>
+					{% if post.category == 'blog' %}
+						{% if post.hidden != true %}
+							{% include blog-post.html %}
+						{% endif %}
 					{% endif %}
-				{% endif %}
+				{% endfor %}
 			{% endfor %}
 		{% endfor %}
 	{% endif %}
