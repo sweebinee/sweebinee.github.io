@@ -19,7 +19,9 @@ pagination:
 		{% endfor %}
 		{% include pagination.html%}
 	{% else %}
+		<h2> it's test </h2>
 		{% for eachCategory in site.posts.categories[0] %}
+		<h2> eachCategory </h2>
 			{% if eachCategory == "blog/example" %}
 				<h2> EXAMPLE </h2>
 				{% for post in site.posts %}
