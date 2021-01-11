@@ -19,31 +19,31 @@ pagination:
 		{% endfor %}
 		{% include pagination.html%}
 	{% else %}
-		<h2> it's test </h2>
-		{% for eachCategory in site.posts.categories[0] %}
+		<h2> it's hewe </h2>
+		{% for eachCategory in site.blog_subcategories %}
 		<h2> eachCategory </h2>
-			{% if eachCategory == "blog/example" %}
+			{% if eachCategory == "example" %}
 				<h2> EXAMPLE </h2>
 				{% for post in site.posts %}
-					{% if post.category == eachCategory %}
+					{% if post.category == 'blog/example' %}
 						{% if post.hidden != true %}
 							{% include blog-post.html %}
 						{% endif %}
 					{% endif %}
 				{% endfor %}
-			{% elsif eachCategory == "blog/daily" %}
+			{% elsif eachCategory == "daily" %}
 				<h2> DAILY </h2>
 				{% for post in site.posts %}
-					{% if post.category == eachCategory %}
+					{% if post.category == 'blog/daily' %}
 						{% if post.hidden != true %}
 							{% include blog-post.html %}
 						{% endif %}
 					{% endif %}
 				{% endfor %}
-			{% elsif eachCategory == "blog/boostCourse" %}
+			{% elsif eachCategory == "boostCourse" %}
 				<h2> BOOSTCOURSE </h2>
 				{% for post in site.posts %}
-					{% if post.category == eachCategory %}
+					{% if post.category == 'blog/boostCourse' %}
 						{% if post.hidden != true %}
 							{% include blog-post.html %}
 						{% endif %}

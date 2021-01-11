@@ -138,4 +138,4 @@ exclude:
   ]
 
 #### making category 
-blog_subcategories: [ daily, scRNA-seq, example ]
+blog_subcategories: [ daily, scRNA-seq, example, boostCourse ]
