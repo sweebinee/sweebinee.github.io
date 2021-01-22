@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: http://sweebinee.github.io/sitemap.xml

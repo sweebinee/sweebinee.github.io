@@ -1,49 +1,31 @@
----
-layout: compress
----
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
 
-    {% if site.analytics-google %}
-        {% include analytics-google.html %}
-    {% endif %}
+  <head>
+    {% include head.html %}
+    {% include scripts/mathjax.html %}
+  </head>
 
-    <meta charset="utf-8">
-    <meta name=viewport content="width=device-width, initial-scale=1">
-    <meta name=author content="{{ site.name }}">
+  <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
-    {% seo %}
+    <!-- Header -->
 
-    {% include favicon.html %}
+    {% include header.html %}
 
-    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
+    <!-- Content -->
 
-    <style>
-    {% capture scss_sheet %}{% include style.scss %}{% endcapture %}
-    {{ scss_sheet | scssify }}
-    </style>
-
-</head>
-<body>
-
-    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
-        {% if page.tag %}
-            <div class="post">
-        {% else %}
-            {% if showHeader != true %}
-                <div class="page {{ page.title | downcase }}">
-            {% else %}
-                <div class="{{ page.title | downcase }}">
-            {% endif %}
-        {% endif %}
-
-            {{ content }}
-        </div>
+    <div class="container mt-5">
+      {{ content }}
     </div>
 
-    {% include icons.html %}
+    <!-- Footer -->
 
-</body>
+    {% include footer.html %}
+
+  </body>
+
+  {% include scripts/bootstrap.html %}
+  {% include scripts/mansory.html %}
+  {% include scripts/misc.html %}
+
 </html>
