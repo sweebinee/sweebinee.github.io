@@ -4,7 +4,7 @@ permalink:      /:year-:month-:day/:title
 # Setup
 title:          Subin, Cho.
 baseurl:        ""
-url:            "http://www.Sweebinee.com"
+url:            "https://sweebinee.github.io"
 
 # Assets
 sass:
@@ -16,13 +16,13 @@ markdown:       kramdown
 
 # About
 author:
-  name:         Jihye Leee
+  name:         Subin, Cho.
   url:          http://Sweebinee.com/
   email:        subin.cho@i.ewha.ac.kr  
   github:       Sweebinee
-  twitter:      playpingpong
+  twitter:      
 
 # Custom vars
-version:        3.4.1
+version:        1.0.0
 github:
   repo:         https://github.com/sweebinee/sweebinee.github.io
