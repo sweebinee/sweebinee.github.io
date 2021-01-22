@@ -2,36 +2,81 @@
 layout: default
 ---
 
-{% if page._styles %}
-<style type="text/css">
-  {{ page._styles }}
-</style>
-{% endif %}
-
 <div class="post">
+    <div class="post-info">
+        <div class="post-type-tag">
+            {% if page.draft == true %}
+            <div class="catalogue-tag">
+                Coming Soon
+            </div>
+            {% endif %}
+            <div class="post-type">
+                {{ page.type }}
+            </div>
+        </div>
+        <h1 class="post-title">
+            {{ page.title }}
+        </h1>
+        <h2 class="post-subtitle">
+            {{ page.subtitle }}
+        </h2>
+    </div>
+    
+<!--포트폴리오 상단 정보-->
+    
+    {% if page.portfolio == true %}
+    <article class="portfolio-info">
+        <div>
+            <span class="info-title">Role</span>
+            <p class="info-medium">{{ page.role-title }}</p>
+            <p class="info-small">{{ page.role-specific }}</p>
+        </div>
+        <div>
+            <span class="info-title">Team</span>
+            <p class="info-medium">{{ page.team }}</p>
+        </div>
+        <div>
+            <span class="info-title">Platforms</span>
+            <p class="info-medium">{{ page.platforms }}</p>
+        </div>    
+        <div>
+            <span class="info-title">Date</span>
+            <p class="info-medium">{{ page.date }}</p>
+        </div>    
+    </article>
+    {% endif %}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-    <p class="post-meta">{{ page.date | date: "%B %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
+<!--draft 일 때-->
+    
+    {% if page.draft == true %}
+        <div class="catalogue-draft-message">
+            <h1>
+                &#x1F64B; Coming Soon!
+            </h1>
+            현재 열심히 글을 쓰고 있어요. 조금만 기다려주세요!
+        </div>
+    {% endif %}
+    
+<!--큐레이션 영역-->
     {{ content }}
-  </article>
+    
+    {% if page.book == true %}
+        {% if page.ridibooks == true %}
+            {% for book-list in site.data[page.data-name] %}   
+                <a href="https://ridibooks.com/books/{{ book-list.bookid }}" target="_blank" class="book-link">
+                    <img class="book-cover transition" src="https://misc.ridibooks.com/cover/{{ book-list.bookid }}/xxlarge"/>
+                </a>   
+            {% endfor %}
+        {% endif %}
+        {% if page.ridiselect == true %}
+            {% for book-list in site.data[page.data-name] %}   
+                <a href="https://select.ridibooks.com/book/{{ book-list.bookid }}" target="_blank" class="book-link">
+                    <img class="book-cover transition" src="https://misc.ridibooks.com/cover/{{ book-list.bookid }}/xxlarge?dpi=xxhdpi"/>
+                </a>   
+            {% endfor %}
+        {% endif %}
+    {% endif %}
+    
 
-  {% if site.disqus_shortname and page.comments %}
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-      var disqus_shortname  = '{{ site.disqus_shortname }}';
-      var disqus_identifier = '{{ page.id }}';
-      var disqus_title      = {{ page.title | jsonify }};
-      (function() {
-        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  {% endif %}
-
+    
 </div>
