@@ -138,5 +138,8 @@ exclude:
     "vendor",
   ]
 
+categories: [daily, boostCourse]
+
+
 #### making category 
 blog_subcategories: [ daily, scRNA-seq, example, boostCourse ]
