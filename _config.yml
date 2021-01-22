@@ -19,7 +19,7 @@ resume-url: https://docs.google.com/document/d/1a8gx4WgQrS-goObbtYtI4elzO4f4Ne2J
 url: https://sweebinee.github.io/
 # your url: https://USERNAME.github.io
 
-permalink: :categories/:year/:title/
+permalink: /:year/:month/:day/:title:output_ext
 
 # To enable google analytics, supply your token below
 # analytics-google: 'UA-MYANALYTICS'
@@ -116,6 +116,7 @@ plugins:
   - jemoji
   - jekyll-admin
   - jekyll-paginate-v2
+  - jekyll-category-pages
 
 jekyll-mentions:
   base_url: 
