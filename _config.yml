@@ -2,9 +2,9 @@
 permalink:      /:year-:month-:day/:title
 
 # Setup
-title:          Jihye Leee
+title:          Subin, Cho.
 baseurl:        ""
-url:            "http://www.jihyeleee.com"
+url:            "http://www.Sweebinee.com"
 
 # Assets
 sass:
@@ -17,12 +17,12 @@ markdown:       kramdown
 # About
 author:
   name:         Jihye Leee
-  url:          http://jihyeleee.com/
-  email:        iam.leejihye@gmail.com  
-  github:       iamleejihye
+  url:          http://Sweebinee.com/
+  email:        subin.cho@i.ewha.ac.kr  
+  github:       Sweebinee
   twitter:      playpingpong
 
 # Custom vars
 version:        3.4.1
 github:
-  repo:         https://github.com/iamleejihye/iamleejihye.github.io
+  repo:         https://github.com/sweebinee/sweebinee.github.io
