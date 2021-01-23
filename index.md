@@ -15,6 +15,7 @@ description: .
     <h4 class="intro">#Linux #R #Python</h4>
     <br>
     <br>
+    <img src="img/my.png" alt="My Image">
     <br>
 </section>
 </div>
