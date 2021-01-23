@@ -1,18 +1,20 @@
 ---
 layout: default
-title: "Jihye Leee"
+title: "Subin, Cho."
 main: true
-subtitle: Digital Product Designer Jihye Leee
-description: Jihye Leee, who is a Digital Product Designer based in Seoul, South Korea. | '이지혜' 디지털 프로덕트 디자이너입니다.
+subtitle: Bioinformatician Subin Cho.
+description: S_beeni's blog.
 ---
 <div class="intro-animation">
 <section class="explanation">
     <h1 class="intro">
-    I'm Jihye Leee,
+    I'm Subin,
     </h1>
-    <h1 class="intro">a Digital Product Designer.
+    <h1 class="intro">Graduate student majoring bioinformatics.
     </h1>
-    <h2 class="intro">프로덕트 디자이너 이지혜입니다.</h2>
+    <h2 class="intro">바이오정보학 통합과정생</h2>
+    <h4 class="intro">#Bioinformatics #CancerGenomics #SingleCellSequencing </h4>
+    <h4 class="intro">#Linux #R #Python</h4>
 </section>
 </div>
 {% include resume.html %}
