@@ -41,6 +41,10 @@
             {% include share.html %}
         {% endif %}
 
+        {% if page.disqus == true %}
+          {% include disqus.html %}
+        {% endif %}
+
       </main>
       
       {% include footer.html %}
@@ -51,8 +55,5 @@
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-{% if page.disqus == true %}
-    {% include disqus.html %}
-{% endif %}
 
 </html>
