@@ -8,6 +8,7 @@ text: true
 author: "Jihye Leee"
 post-header: true
 header-img: "img/android-device.jpg"
+disqus: true
 order: 1
 ---
 
