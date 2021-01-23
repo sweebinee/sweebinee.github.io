@@ -1,17 +1,30 @@
 ---
 layout: post
-title: "Jihye Leee"
+title: "Subin, Cho."
 subtitle: "이지혜"
 type: "About"
-author: "Jihye Lee"
+author: "subin"
 permalink: /about/
 post-header: true
 header-img: img/about.jpg
 ---
 
-UX 에이전시 GUI 디자이너를 거쳐 RIDI에서 6년 가까이 일했습니다. 디자이너에게 코딩을 알려주는 코딩하는 디자이너라는 프로그램을 운영하고 브랜딩하기도 했습니다. 더 좋은 디자인 문화 만들기와 디자이너의 글쓰기에 관심이 많습니다.
+바이오정보학 전공중인 대학원생.
+싱글셀 데이터를 주로 분석중이고 여기저기 관심이 많은 코린이.
 
-# Media
+# Publications
+- Jang, Y. E., Jang, I., Kim, S., Cho, S., Kim, D., Kim, K., ... & Kang, J. (2020). [ChimerDB 4.0: an updated and expanded database of fusion genes.](https://doi.org/10.1093/nar/gkz1013) Nucleic acids research, 48(D1), D817-D824.
+
+{% include skills.html %}
+
+# Awards
+- "2018년 유전체 Bio-Express 활용 경진대회" 우수상 
+한국생명공학연구원 국가생명연구자원정보센터(KOBIC), 2018
+
+# Lectures
+- 구리고등학교 과학과제 역량강화 프로젝트, '생명과학 분야 연구에서의 선행연구 논문 요약 및  연구계획서 작성법', 2020May
+
+
 ### Design Spectrum의 팟캐스트 Design Table
 
 - Design Table Ep 19. `끊임없이 배우는 디자이너`
@@ -32,3 +45,4 @@ UX 에이전시 GUI 디자이너를 거쳐 RIDI에서 6년 가까이 일했습�
 - [이지혜 DXD세미나 운영진 “코딩은 또 하나의 즐거움”](http://14.49.34.137/?p=3207)
 
 <br />
+
