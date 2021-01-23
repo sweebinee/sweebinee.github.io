@@ -14,7 +14,7 @@ header-img: img/about.jpg
 # Publications
 - Jang, Y. E., Jang, I., Kim, S., Cho, S., Kim, D., Kim, K., ... & Kang, J. (2020). [ChimerDB 4.0: an updated and expanded database of fusion genes.](https://doi.org/10.1093/nar/gkz1013) Nucleic acids research, 48(D1), D817-D824.
 
-{% include skills.html %}
+{% include resume.html %}
 
 # Awards
 - "2018년 유전체 Bio-Express 활용 경진대회" 우수상  
