@@ -13,6 +13,9 @@ description: .
     <h2 class="intro">바이오정보학 통합과정생</h2>
     <h4 class="intro">#Bioinformatics #CancerGenomics #SingleCellSequencing </h4>
     <h4 class="intro">#Linux #R #Python</h4>
+    <br>
+    <br>
+    <br>
 </section>
 </div>
 <!--{% include resume.html %}-->
