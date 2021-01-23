@@ -1,14 +1,14 @@
 ---
 layout: default
-title: "Subin, Cho."
+title: "S_beeni's blog"
 main: true
 subtitle: Bioinformatician Subin Cho.
-description: S_beeni's blog.
+description: .
 ---
 <div class="intro-animation">
 <section class="explanation">
     <h1 class="intro">
-    I'm Subin,
+    I'm Subin, Cho.
     </h1>
     <h1 class="intro">Graduate student majoring bioinformatics.
     </h1>
