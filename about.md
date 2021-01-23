@@ -14,6 +14,7 @@ header-img: img/about.jpg
 # Publications
 - Jang, Y. E., Jang, I., Kim, S., Cho, S., Kim, D., Kim, K., ... & Kang, J. (2020). [ChimerDB 4.0: an updated and expanded database of fusion genes.](https://doi.org/10.1093/nar/gkz1013) Nucleic acids research, 48(D1), D817-D824.
 <br/>
+<br/>
 
 {% include resume.html %}
 
@@ -23,3 +24,4 @@ header-img: img/about.jpg
 
 # Lectures
 - 구리고등학교 과학과제 역량강화 프로젝트, '생명과학 분야 연구에서의 선행연구 논문 요약 및  연구계획서 작성법', 2020May
+<br/>
