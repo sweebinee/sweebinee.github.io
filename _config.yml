@@ -26,3 +26,8 @@ author:
 version:        1.0.0
 github:
   repo:         https://github.com/sweebinee/sweebinee.github.io
+
+  # if you don't want comments in your posts, leave categories empty
+disqus:
+  shortname: sweebinee-github-io # enter this from your disqus account
+  
