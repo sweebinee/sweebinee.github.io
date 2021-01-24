@@ -61,8 +61,6 @@ Index switching이라고도 하며, sample multiplexing[^1]이 개발된 이후�
 
 ------------------
 
-
-### Reference
 [^1]: sample multiplexing : multiplex sequencing, 많은 수의 라이브러리들을 모아서 동시에 시퀀싱(single run)하는것. High-throughput이 가능하게 하며, cost-effective하다. 샘플을 "바코드"를 통해 구분해서 분석이 용이하다는 장점이 있다.
 [^2]: [index hopping](https://www.illumina.com/content/dam/illumina-marketing/documents/products/whitepapers/index-hopping-white-paper-770-2017-004.pdf)
 [^3]: [Chromium Next GEM Single Cell 3ʹ v3.1: Dual Index Libraries](https://assets.ctfassets.net/an68im79xiti/Licpd2PiHP4hrHKDpjO89/2779c006e6317ed9ca724635b32e14e9/CG000325_TechNote_ChromiumNextGEMSingle_Cell_3___v3.1_Dual_Index_Rev_A.pdf)
