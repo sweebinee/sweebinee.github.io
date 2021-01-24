@@ -20,7 +20,9 @@ header-img: https://user-images.githubusercontent.com/43258282/105624857-2f69ba8
 Dual index가 가장 최근 버전이며, 세 가지 버전 모두 `Gene Expression Type`과 `Feature Barcode Selection`, `Automation` 옵션을 선택할 수 있다.
 
 <center>
+
 ![10X genomics product list에서 제공하는 옵션](https://user-images.githubusercontent.com/43258282/105625290-5c6b9c80-5e6b-11eb-942c-21b9e8966a31.png)*10X genomics product list에서 제공하는 옵션*
+
 </center> 
 
 Gene Expression solution은 모두 3' end만을 잡아내는 kit이다. 5'이나 full length를 원하면 V(D)J solution 쪽에서 알아봐야 한다. 3' seq과 5'seq의 차이와 장단점은 다른 포스트에서 다루도록 하자.
@@ -39,7 +41,7 @@ Gene Expression solution은 모두 3' end만을 잡아내는 kit이다. 5'이나
 
 i5 index를 추가함으로써 어떤 <span style="color:#6495ED">**장점**</span>이 있을까?
 
-##Index Hopping Migration
+###Index Hopping Migration
 
 **Index hopping** 이란..
 Index switching이라고도 하며, sample multiplexing[^1]이 개발된 이후로 NGS 기술에서 중요한 이슈 중 하나이다.
