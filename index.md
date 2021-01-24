@@ -4,6 +4,7 @@ title: "S_beeni's blog"
 main: true
 subtitle: Bioinformatician Subin Cho.
 description: .
+og
 ---
 
 <div class="intro-animation">
