@@ -13,38 +13,53 @@ header-img: https://user-images.githubusercontent.com/43258282/105624857-2f69ba8
 
 현재 Chromium에는 3가지 버전의 solution을 팔고 있다.
 
-- Gene Expression v3.1-Dual Index
-- Gene Expression v3.1-Single Index
-- Gene Expression v3
+- `Gene Expression v3.1-Dual Index`
+- `Gene Expression v3.1-Single Index`
+- `Gene Expression v3`
 
-# 카테고리
-- 에세이 `7권`
-- 자기계발 `5권` (인간관계, 성공/삶의 자세, 설득/화술/협상, 취업/창업)
-- 경영경제 `3권` (마케팅/세일즈, CEO/리더십)
-- 인문/사회/역사 `1권`
+Dual index가 가장 최근 버전이며, 세 가지 버전 모두 `Gene Expression Type`과 `Feature Barcode Selection`, `Automation` 옵션을 선택할 수 있다.
+<center>
+![10X genomics product list에서 제공하는 옵션](https://user-images.githubusercontent.com/43258282/105625290-5c6b9c80-5e6b-11eb-942c-21b9e8966a31.png)*10X genomics product list에서 제공하는 옵션*
+</center> 
 
-# 신선했던 책은?
-### 〈 4시간만 일한다 〉
-하루에 4시간이 아니라 일주일에 4시간만 일한다는 내용이란 걸 알았을 때 충격이란. 회사 일 뿐 아니라 심지어 여행 계획까지도 외주로 돌려서 시간 절약을 해내는 이야기도 신기했다.
-### 〈 딱 1년만, 나만 생각할게요 〉
-이 책의 저자 마리안은 자기계발서에 나온 지침을 실천했을 때 자신의 인생이 바뀔 수 있을지를 몸소 테스트한다. 마리안이 본 책은 총 12권. 하지만 결국 마리안은 우울증을 얻게 된다.
+Gene Expression solution은 모두 3' end만을 잡아내는 kit이다. 5'이나 full length를 원하면 V(D)J solution 쪽에서 알아봐야 한다. 3' seq과 5'seq의 차이와 장단점은 다른 포스트에서 다루도록 하자.
 
-아주 잠깐 뭐든 해낼 것 같은 기분을 잠깐 얻고 그 뒤에는 다시 원래 게으른 자신으로 돌아가고는 자괴감에 빠진다. 아주 잠깐의 희망을 얻을 뿐이었다. 마리안은 이렇게 말한다. "진짜 일을 하는 대신 유튜브로 영감을 준다는 영상이나 봤고, 우주가 해결해 준다는 가정 하에 가지고 있지도 않은 돈을 썼으니까."
+어떤 점이 업그레이드되어 출시됐는지 알아보자.
 
-실험 자체가 재밌게 느껴졌다. 한편으론 나도 왠지 이런 건 아닐까 반성하기도 했다. 하지만 자기계발 서적이라도 힘을 얻어서 작심삼일씩이라도 무언가를 계속 해나갈 수 있는 것도 좋다고 생각한다.
+# Dual Index vs. Single Index
+이름에서도 알 수 있듯이 Dual Index에서는 library 만드는 과정에 index가 하나 더 추가됐다.
+(Sample index i5)
+<center>
+![dual_single_index](https://user-images.githubusercontent.com/43258282/105625512-3515cf00-5e6d-11eb-858c-3a062cde8a7c.png)*Dual Index(왼) 와 Single Index(오)의 library condtruction 과정 모식도*
+</center> 
 
-# 인간 관계
+두 개의 index를 처리하기 위해 **CellRanger 4.0**의 `cellranger mkfastq`에서 **dual index libarary demultiplexing**을 지원한다고 한다. 
 
-### 〈 말 그릇 〉
+i5 index를 추가함으로써 어떤 <span style="color:#6495ED">**장점**</span>이 있을까?
 
-2019년 나의 화두는 인간 관계였고 많지 않지만 2권의 책을 읽었다. 특히 〈 말 그릇 〉 이 굉장히 도움을 많이 줬다. 말의 힘과 중요성을 알 수 있고 말에 문제가 있는 경우 어떻게 개선해 나갈 수 있는 방법을 알려주는 책이다. 말 자체만 고칠 수 없고 말을 하게 되는 기저에 깔린 심리부터 요목조목 파악할 수 있게 해준 책이었다. 2018년에 읽은 [우울할 땐 뇌 과학](https://ridibooks.com/books/2189000124)과 더불어 두고두고 읽어야지. (그나저나 두 권 다 리디북스에서 샀는데 어느 날 리디셀렉트에 들어와 있었다. 😭)
+##Index Hopping Migration
 
-### 〈 선 긋기의 기술 〉
+**Index hopping** 이란..
+Index switching이라고도 하며, sample multiplexing[^1]이 개발된 이후로 NGS 기술에서 중요한 이슈 중 하나이다.
+<center>
+![index-hopping](https://user-images.githubusercontent.com/43258282/105625769-b588ff80-5e6e-11eb-8ba9-bbc4a527c078.png)
+</center> 
 
-처음으로 발췌독을 해본 책이었다. 나 하고 관계 있는 챕터만 쏙쏙 골라서 읽었다. 리디셀렉트여서 가능한 게 아닐까 싶다. 돈 주고 산 책이면 한 글자도 놓치지 않고 읽으려고 노력했을 것 같다.
+이는 demultiplexing과정 도중에 발생하는 현상을 말하는데, <U>read가 expected index가 아닌 다른 index에 붙어 read와 index가 잘못 배치</U>된다. 이런 잘못은 misalignment 와 부정확한 sequencing results로 이어져 후속 분석에도 영향을 미친다.
+<center>
+![index-hopping-effect](https://user-images.githubusercontent.com/43258282/105625823-187a9680-5e6f-11eb-8aa8-e78febfeaaa5.png)
+</center> 
 
-책 내용은 어떻게 하면 선을 그을 수 있는지 알려주는 책이다. 이 책에서 얻은 제일 좋은 문장은 바로 '어떻게 하면 행복해 질 수 있지?'였다. 이 말을 생각하면 인간 관계로 힘든 상황에서 어떻게 하면 행복해 질 수 있는지를 고민하게 된다. 제일 좋은 방법은 어딘가로 가는 거다. 화장실이든, 카페든, 지금 내 환경에서 잠시 벗어나는 것만으로 기분전환이 된다. 이 방법을 이 책에서 배웠다.
+그래서 dual index를 사용하게 되면, demultiplexing과정에서 unique한 i5와 i7 pair를 갖고 있는지 검사를 함께 진행하고 index hopping이 일어나 unique pair를 갖지 못한 read를 제거할 수 있다. 일반적으로 **0.1~2%의 read**가 이 과정에서 제거된다고 한다.[^2]  
 
+첨부한 reference[^3]의 pdf에 같은 샘플을 가지고 single index와 dual index로 시퀀싱해서 비교한 결과가 나와있다. 궁금한 사람을 열어봐라. (clustering, immune cell subpopulation, library complexity & correlation) <U>모든 측면에서 눈에 띄는 큰 차이는 없었다.</U>
+
+10,000개가 넘는 cell을 분석해서 그럴수도.. cell갯수가 적어지면 그 영향이 더 크지 않을까 싶다. 그래도 난 가격 차이가 별로 안난다면 dual index를 선택할 듯!
+- - - 
+#####Reference
+[^1]: sample multiplexing : multiplex sequencing, 많은 수의 라이브러리들을 모아서 동시에 시퀀싱(single run)하는것. High-throughput이 가능하게 하며, cost-effective하다. 샘플을 "바코드"를 통해 구분해서 분석이 용이하다는 장점이 있다.
+[^2]: [index hopping](https://www.illumina.com/content/dam/illumina-marketing/documents/products/whitepapers/index-hopping-white-paper-770-2017-004.pdf)
+[^3]: [Chromium Next GEM Single Cell 3ʹ v3.1: Dual Index Libraries] (https://assets.ctfassets.net/an68im79xiti/Licpd2PiHP4hrHKDpjO89/2779c006e6317ed9ca724635b32e14e9/CG000325_TechNote_ChromiumNextGEMSingle_Cell_3___v3.1_Dual_Index_Rev_A.pdf)
 
 
 <br><br><br>
