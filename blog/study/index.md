@@ -2,12 +2,13 @@
 layout: post
 title: "Study"
 description: 배운것들 정리
-project-header: true
 post-header: true
 header-img: img/header.jpg
 type: "Archive"
 blog: true
 ---
+
+
 
 <ul class="catalogue">
 {% assign sorted = site.pages | sort: 'order' | reverse %}
