@@ -1,17 +1,17 @@
 ---
 layout: default
-title: "Daily"
-description: 일상이야기
+title: "Study"
+description: 배운것들 정리
 project-header: true
-header-img: img/about.jpg
-type: "Daily"
+header-img: study/img/header.jpg
+type: "Archive"
 blog: true
 ---
 
 <ul class="catalogue">
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 {% for page in sorted %}
-{% if page.category == "daily" %}
+{% if page.category == "study" %}
 {% include post-list.html %}
 {% endif %}
 {% endfor %}
