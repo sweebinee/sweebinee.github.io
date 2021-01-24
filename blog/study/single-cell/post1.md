@@ -5,6 +5,7 @@ title:  "2019년에 읽은 리디북스, 리디셀렉트 책들"
 subtitle: "딱 1년만, 나만 생각할게요 외 15권"
 type: "RIDIBOOKS, RIDI Select"
 category: "study/singleCell"
+disqus: true
 text: true
 post-header: true
 header-img: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2730&q=80"
