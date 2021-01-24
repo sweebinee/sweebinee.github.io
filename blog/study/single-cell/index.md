@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "scRNAseq analysis"
-description: single cell RNA seq analysis
+subtitle: single cell 분석 기법 및 공부 내용
 project-header: true
 type: "Archive"
 category: study
