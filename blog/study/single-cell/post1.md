@@ -15,7 +15,7 @@ header-img: https://user-images.githubusercontent.com/43258282/105624857-2f69ba8
 
 - `Gene Expression v3.1-Dual Index`
 - `Gene Expression v3.1-Single Index`
-- `Gene Expression v3`
+- `Gene Expression v3`  
 
 Dual index가 가장 최근 버전이며, 세 가지 버전 모두 `Gene Expression Type`과 `Feature Barcode Selection`, `Automation` 옵션을 선택할 수 있다.
 <center>
