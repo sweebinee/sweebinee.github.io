@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Daily"
+subtitle: 대학원생의 일상이야기
 description: 일상이야기
 project-header: true
 header-img: /blog/img/about.jpg

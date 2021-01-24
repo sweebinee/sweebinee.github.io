@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Study"
-description: 배운것들 정리
+subtitle: 배운것들 정리
 post-header: true
 header-img: img/header.jpg
 type: "Archive"

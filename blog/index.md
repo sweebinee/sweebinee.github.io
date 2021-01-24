@@ -10,7 +10,7 @@ header-img: img/blog_main.png
 <ul class="catalogue">
 {% for page in site.pages %}
 {% if page.blog == true %}
-{% include category-list.html %}
+{% include blog-list.html %}
 {% endif %}
 {% endfor %}
 </ul>
