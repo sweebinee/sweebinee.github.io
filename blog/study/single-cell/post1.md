@@ -1,18 +1,17 @@
 ---
 layout: post
 author: "subin"
-title:  "2019년에 읽은 리디북스, 리디셀렉트 책들"
-subtitle: "딱 1년만, 나만 생각할게요 외 15권"
-type: "RIDIBOOKS, RIDI Select"
+title:  "Chromium Single Cell Gene Expression Version 별 차이"
+subtitle: "Dual Index vs. Single Index"
+type: "10X"
 category: "study/singleCell"
 disqus: true
 text: true
 post-header: true
-header-img: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2730&q=80"
-link: "https://ridibooks.com/books/"
+header-img: img/header.jpg
 ---
 
-2019년에 읽은 책들을 모아보았다. 모두 리디북스, 리디셀렉트에서 사고 본 책들만 있고 종이책은 제외다.
+현재 Chromium에는 3가지 버전의 solution을 팔고 있다.
 
 # 카테고리
 - 에세이 `7권`
