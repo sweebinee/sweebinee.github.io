@@ -18,6 +18,7 @@ header-img: https://user-images.githubusercontent.com/43258282/105624857-2f69ba8
 - `Gene Expression v3`  
 <br>
 Dual index가 가장 최근 버전이며, 세 가지 버전 모두 `Gene Expression Type`과 `Feature Barcode Selection`, `Automation` 옵션을 선택할 수 있다.
+
 <center>
 ![10X genomics product list에서 제공하는 옵션](https://user-images.githubusercontent.com/43258282/105625290-5c6b9c80-5e6b-11eb-942c-21b9e8966a31.png)*10X genomics product list에서 제공하는 옵션*
 </center> 
@@ -29,6 +30,7 @@ Gene Expression solution은 모두 3' end만을 잡아내는 kit이다. 5'이나
 # Dual Index vs. Single Index
 이름에서도 알 수 있듯이 Dual Index에서는 library 만드는 과정에 index가 하나 더 추가됐다.
 (Sample index i5)
+
 <center>
 ![dual_single_index](https://user-images.githubusercontent.com/43258282/105625512-3515cf00-5e6d-11eb-858c-3a062cde8a7c.png)*Dual Index(왼) 와 Single Index(오)의 library condtruction 과정 모식도*
 </center> 
@@ -41,11 +43,13 @@ i5 index를 추가함으로써 어떤 <span style="color:#6495ED">**장점**</sp
 
 **Index hopping** 이란..
 Index switching이라고도 하며, sample multiplexing[^1]이 개발된 이후로 NGS 기술에서 중요한 이슈 중 하나이다.
+
 <center>
 ![index-hopping](https://user-images.githubusercontent.com/43258282/105625769-b588ff80-5e6e-11eb-8ba9-bbc4a527c078.png)
 </center> 
 
 이는 demultiplexing과정 도중에 발생하는 현상을 말하는데, <U>read가 expected index가 아닌 다른 index에 붙어 read와 index가 잘못 배치</U>된다. 이런 잘못은 misalignment 와 부정확한 sequencing results로 이어져 후속 분석에도 영향을 미친다.
+
 <center>
 ![index-hopping-effect](https://user-images.githubusercontent.com/43258282/105625823-187a9680-5e6f-11eb-8aa8-e78febfeaaa5.png)
 </center> 
