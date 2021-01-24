@@ -3,7 +3,7 @@ layout: default
 title: "Daily"
 description: 일상이야기
 project-header: true
-header-img: img/about.jpg
+header-img: /blog/img/about.jpg
 type: "Daily"
 blog: true
 ---

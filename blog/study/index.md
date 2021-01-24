@@ -3,7 +3,7 @@ layout: default
 title: "Study"
 description: 배운것들 정리
 project-header: true
-header-img: study/img/header.jpg
+header-img: /study/img/header.jpg
 type: "Archive"
 blog: true
 ---
