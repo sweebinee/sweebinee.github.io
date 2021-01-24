@@ -1,0 +1,20 @@
+<div class="loading-animation">
+<section class="skill">
+    <div class="resume-info">
+        <p class="second-label">
+            <span class="label-emoji">
+                &#x1F4AA;
+            </span>
+            &nbsp; tags
+        </p>
+    </div>    
+    <ul>
+        {% for tag in page.tags %}
+            <li class="skill_name">
+                {{ tag }}
+            </li>
+        {% endfor %}
+    </ul>
+</section>
+</div>
+
