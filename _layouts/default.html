@@ -36,6 +36,9 @@
       
     <main>
       {{ content }}
+        {% if page.tag != null %}
+          {% include tag.html %}
+        {% endif %}
         
         {% if page.text == true %}
             {% include share.html %}
@@ -44,6 +47,8 @@
         {% if page.disqus == true %}
           {% include disqus.html %}
         {% endif %}
+
+
 
       </main>
       
