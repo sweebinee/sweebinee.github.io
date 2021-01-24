@@ -40,7 +40,7 @@ Gene Expression solution은 모두 3' end만을 잡아내는 kit이다. 5'이나
 i5 index를 추가함으로써 어떤 <span style="color:#6495ED">**장점**</span>이 있을까?
 
 
-##Index Hopping Migration
+### Index Hopping Migration
 
 **Index hopping** 이란..
 Index switching이라고도 하며, sample multiplexing[^1]이 개발된 이후로 NGS 기술에서 중요한 이슈 중 하나이다.
@@ -63,7 +63,7 @@ Index switching이라고도 하며, sample multiplexing[^1]이 개발된 이후�
 ------------------
 
 
-##Reference
+### Reference
 
 [^1]: sample multiplexing : multiplex sequencing, 많은 수의 라이브러리들을 모아서 동시에 시퀀싱(single run)하는것. High-throughput이 가능하게 하며, cost-effective하다. 샘플을 "바코드"를 통해 구분해서 분석이 용이하다는 장점이 있다.
 [^2]: [index hopping](https://www.illumina.com/content/dam/illumina-marketing/documents/products/whitepapers/index-hopping-white-paper-770-2017-004.pdf)
