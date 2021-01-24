@@ -1,9 +1,10 @@
 ---
-layout: default
+layout: post
 title: "Study"
 description: 배운것들 정리
 project-header: true
-header-img: /study/img/header.jpg
+post-header: true
+header-img: img/header.jpg
 type: "Archive"
 blog: true
 ---
