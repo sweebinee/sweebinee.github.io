@@ -6,7 +6,6 @@ project-header: true
 header-img: img/about.jpg
 type: "Daily"
 blog: true
-order: 11
 ---
 
 <ul class="catalogue">

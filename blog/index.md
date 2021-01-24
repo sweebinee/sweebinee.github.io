@@ -8,8 +8,7 @@ header-img: img/about.jpg
 ---
 
 <ul class="catalogue">
-{% assign sorted = site.pages | sort: 'order' | reverse %}
-{% for page in sorted %}
+{% for page in site.pages %}
 {% if page.blog == true %}
 {% include blog-list.html %}
 {% endif %}
