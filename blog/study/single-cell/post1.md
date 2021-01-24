@@ -7,7 +7,6 @@ type: "10X"
 category: "study/singleCell"
 tags: ['10X','chromium','dual index']
 disqus: true
-text: true
 post-header: true
 header-img: https://user-images.githubusercontent.com/43258282/105624857-2f69ba80-5e68-11eb-83ee-14a55783cb6d.jpg
 ---
