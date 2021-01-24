@@ -5,7 +5,7 @@ main: true
 subtitle: Bioinformatician Subin Cho.
 description: .
 post-header: true
-header-img: pngimg/my.png
+header-img: img/my.png
 ---
 
 <div class="intro-animation">
