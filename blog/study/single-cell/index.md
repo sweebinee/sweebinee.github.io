@@ -1,13 +1,11 @@
 ---
-layout: post
+layout: default
 title: "scRNAseq analysis"
 description: single cell RNA seq analysis
-post-header: true
-header-img: img/Cover-photo.jpg
+project-header: true
 type: "Archive"
 category: study
 ---
-
 
 <ul class="catalogue">
 {% assign sorted = site.pages | sort: 'order' | reverse %}

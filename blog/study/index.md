@@ -13,7 +13,7 @@ blog: true
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 {% for page in sorted %}
 {% if page.category == "study" %}
-{% include post-list.html %}
+{% include category-list.html %}
 {% endif %}
 {% endfor %}
 </ul>
