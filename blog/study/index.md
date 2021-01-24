@@ -9,7 +9,6 @@ blog: true
 ---
 
 
-
 <ul class="catalogue">
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 {% for page in sorted %}
