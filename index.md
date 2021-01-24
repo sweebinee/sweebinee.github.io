@@ -6,7 +6,7 @@ subtitle: Bioinformatician Subin Cho.
 description: .
 header-img: img/my.png
 ---
----
+
 <div class="intro-animation">
 <section class="explanation">
     <h1 class="intro">
