@@ -1,0 +1,15 @@
+<li class="catalogue-item">
+    <a href="{{ page.url | prepend: site.baseurl }}" >
+        {% if page.portfolio == true %}
+        <img src="{{ page.main-img }}" class="catalogue-img"/>
+        {% endif %}
+        {% if page.draft == true %}
+        <span class="catalogue-tag">
+            Coming Soon
+        </span>
+        {% endif %}
+        <p class="catalogue-type">
+            {{ page.type }}
+        </p>
+    </a>
+</li>    

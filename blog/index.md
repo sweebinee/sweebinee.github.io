@@ -11,7 +11,7 @@ header-img: img/about.jpg
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 {% for page in sorted %}
 {% if page.blog == true %}
-{% include post-list.html %}
+{% include blog-list.html %}
 {% endif %}
 {% endfor %}
 </ul>
