@@ -18,7 +18,7 @@ header-img: https://user-images.githubusercontent.com/43258282/105624857-2f69ba8
 - `Gene Expression v3`  
 <br>
 Dual index가 가장 최근 버전이며, 세 가지 버전 모두 `Gene Expression Type`과 `Feature Barcode Selection`, `Automation` 옵션을 선택할 수 있다.
-<br>
+<br><br>
 
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625290-5c6b9c80-5e6b-11eb-942c-21b9e8966a31.png" alt="10X genomics product list에서 제공하는 옵션" height="150px">10X genomics product list에서 제공하는 옵션
 </p>
