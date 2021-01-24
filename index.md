@@ -4,7 +4,7 @@ title: "S_beeni's blog"
 main: true
 subtitle: Bioinformatician Subin Cho.
 description: .
-header-img: "img/my.png"
+header-img: img/my.png
 ---
 ---
 <div class="intro-animation">
