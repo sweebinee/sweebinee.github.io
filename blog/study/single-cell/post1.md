@@ -52,7 +52,8 @@ Index switching이라고도 하며, sample multiplexing[^1]이 개발된 이후�
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625823-187a9680-5e6f-11eb-8aa8-e78febfeaaa5.png" alt="index-hopping-effect" height="300px">
 </p>
 
-그래서 dual index를 사용하게 되면, demultiplexing과정에서 unique한 i5와 i7 pair를 갖고 있는지 검사를 함께 진행하고 index hopping이 일어나 unique pair를 갖지 못한 read를 제거할 수 있다. 일반적으로 **0.1~2%의 read**가 이 과정에서 제거된다고 한다.[^2]  
+그래서 dual index를 사용하게 되면, demultiplexing과정에서 unique한 i5와 i7 pair를 갖고 있는지 검사를 함께 진행하고 index hopping이 일어나 unique pair를 갖지 못한 read를 제거할 수 있다. 
+일반적으로 **0.1~2%의 read**가 이 과정에서 제거된다고 한다.[^2]  
 
 첨부한 reference[^3]의 pdf에 같은 샘플을 가지고 single index와 dual index로 시퀀싱해서 비교한 결과가 나와있다. 궁금한 사람을 열어봐라. (clustering, immune cell subpopulation, library complexity & correlation) <U>모든 측면에서 눈에 띄는 큰 차이는 없었다.</U>
 
