@@ -58,10 +58,10 @@ Index switching이라고도 하며, sample multiplexing[^1]이 개발된 이후�
 첨부한 reference[^3]의 pdf에 같은 샘플을 가지고 single index와 dual index로 시퀀싱해서 비교한 결과가 나와있다. 궁금한 사람을 열어봐라. (clustering, immune cell subpopulation, library complexity & correlation) <U>모든 측면에서 눈에 띄는 큰 차이는 없었다.</U>
 
 10,000개가 넘는 cell을 분석해서 그럴수도.. cell갯수가 적어지면 그 영향이 더 크지 않을까 싶다. 그래도 난 가격 차이가 별로 안난다면 dual index를 선택할 듯!
-<br>
+
 
 ------------------
-### Reference
+
 [^1]: sample multiplexing : multiplex sequencing, 많은 수의 라이브러리들을 모아서 동시에 시퀀싱(single run)하는것. High-throughput이 가능하게 하며, cost-effective하다. 샘플을 "바코드"를 통해 구분해서 분석이 용이하다는 장점이 있다.
 [^2]: [index hopping](https://www.illumina.com/content/dam/illumina-marketing/documents/products/whitepapers/index-hopping-white-paper-770-2017-004.pdf)
 [^3]: [Chromium Next GEM Single Cell 3ʹ v3.1: Dual Index Libraries](https://assets.ctfassets.net/an68im79xiti/Licpd2PiHP4hrHKDpjO89/2779c006e6317ed9ca724635b32e14e9/CG000325_TechNote_ChromiumNextGEMSingle_Cell_3___v3.1_Dual_Index_Rev_A.pdf)
