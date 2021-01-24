@@ -30,9 +30,8 @@ Gene Expression solution은 모두 3' end만을 잡아내는 kit이다. 5'이나
 이름에서도 알 수 있듯이 Dual Index에서는 library 만드는 과정에 index가 하나 더 추가됐다.
 (Sample index i5)
 
-<center>
-![dual_single_index](https://user-images.githubusercontent.com/43258282/105625512-3515cf00-5e6d-11eb-858c-3a062cde8a7c.png)*Dual Index(왼) 와 Single Index(오)의 library condtruction 과정 모식도*
-</center> 
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625512-3515cf00-5e6d-11eb-858c-3a062cde8a7c.png" alt="dual_single_index">*Dual Index(왼) 와 Single Index(오)의 library condtruction 과정 모식도*
+</p>
 
 두 개의 index를 처리하기 위해 **CellRanger 4.0**의 `cellranger mkfastq`에서 **dual index libarary demultiplexing**을 지원한다고 한다. 
 
@@ -43,15 +42,13 @@ i5 index를 추가함으로써 어떤 <span style="color:#6495ED">**장점**</sp
 **Index hopping** 이란..
 Index switching이라고도 하며, sample multiplexing[^1]이 개발된 이후로 NGS 기술에서 중요한 이슈 중 하나이다.
 
-<center>
-![index-hopping](https://user-images.githubusercontent.com/43258282/105625769-b588ff80-5e6e-11eb-8ba9-bbc4a527c078.png)
-</center> 
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625769-b588ff80-5e6e-11eb-8ba9-bbc4a527c078.png" alt="index-hopping">
+</p>
 
 이는 demultiplexing과정 도중에 발생하는 현상을 말하는데, <U>read가 expected index가 아닌 다른 index에 붙어 read와 index가 잘못 배치</U>된다. 이런 잘못은 misalignment 와 부정확한 sequencing results로 이어져 후속 분석에도 영향을 미친다.
 
-<center>
-![index-hopping-effect](https://user-images.githubusercontent.com/43258282/105625823-187a9680-5e6f-11eb-8aa8-e78febfeaaa5.png)
-</center> 
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625823-187a9680-5e6f-11eb-8aa8-e78febfeaaa5.png" alt="index-hopping-effect">
+</p>
 
 그래서 dual index를 사용하게 되면, demultiplexing과정에서 unique한 i5와 i7 pair를 갖고 있는지 검사를 함께 진행하고 index hopping이 일어나 unique pair를 갖지 못한 read를 제거할 수 있다. 일반적으로 **0.1~2%의 read**가 이 과정에서 제거된다고 한다.[^2]  
 
