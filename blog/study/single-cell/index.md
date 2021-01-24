@@ -8,9 +8,9 @@ category: study
 ---
 
 <ul class="catalogue">
-{% assign sorted = site.pages | sort: 'order' | reverse %}
-{% for page in sorted %}
-{% if page.category == "study/singleCell" %}
+{% assign sorted = site.posts | sort: 'order' | reverse %}
+{% for post in sorted %}
+{% if post.category == "study/singleCell" %}
 {% include post-list.html %}
 {% endif %}
 {% endfor %}
