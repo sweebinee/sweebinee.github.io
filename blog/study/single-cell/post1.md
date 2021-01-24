@@ -8,10 +8,14 @@ category: "study/singleCell"
 disqus: true
 text: true
 post-header: true
-header-img: img/header.jpg
+header-img: https://user-images.githubusercontent.com/43258282/105624857-2f69ba80-5e68-11eb-83ee-14a55783cb6d.jpg
 ---
 
 현재 Chromium에는 3가지 버전의 solution을 팔고 있다.
+
+- Gene Expression v3.1-Dual Index
+- Gene Expression v3.1-Single Index
+- Gene Expression v3
 
 # 카테고리
 - 에세이 `7권`
