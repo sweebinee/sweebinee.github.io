@@ -23,7 +23,7 @@ header-img: https://user-images.githubusercontent.com/43258282/107766537-efb3360
 컴퓨터에서는 오직 0과 1로만 데이터를 표현한다. 숫자뿐만 아니라 글자, 사진, 영상, 소리 등을 저장할 수 있다. HOW?!
 
 먼저 2진법을 잠시 짚고 넘어가자면, 각 자리수가 2의 거듭제곱을 의미하고 0과 1만을 이용해서 각 자리의 숫자를 더해나가는 식으로 표현할 수 있다. 
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107794632-023f6680-6d9b-11eb-9ad6-743e7f7749f2.png" alt="example of binary">이건 101이 아니라 5다! Oh!
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107794632-023f6680-6d9b-11eb-9ad6-743e7f7749f2.png" alt="example of binary" width="70%" height="70%">이건 101이 아니라 5다! Oh!
 </p>
 
 컴퓨터에는 수많은 **스위치(=트렌지스터)**가 있고 **on/off**의, 전기를 통하게 하느냐/아니냐의, **상태를 통해 0과 1을 표현**한다. 
@@ -43,6 +43,11 @@ bit(비트)는 "binary digit"의 줄임말. 0과 1, 두가지 값만 가질 수 
 프로그래머들은 컴퓨터가 문자를 숫자로 표현할 수 있도록 표준을 정해뒀다! <span style="color:#6495ED">**ASCII**</span> code(American Standard Code for Information Interchange). ASCII는 총 128개의 부호로 정의 되어 있고, 그 안에는 upper/lower case 뿐만 아니라 !?#같은 문장부호도 포함되어 있다.
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/107799479-cc04e580-6da0-11eb-98e3-2f804ee3fa6a.png" alt="part of ASCII code table"></p>
 
-ASCII는 8bit만 사용하기 때문에 표현하는데는 한계가 있었고, 세상에는 알파벳 말고도 더 많은 문자들이 존재하기 때문에 (emoji도 포함해서:wink:)<span style="color:#6495ED">**Unicode**</span>가 나왔다. 유니코드는 더 많은 bit를 사용하기 때문에 :smiling_imp: 이런 emoji도 표현이 가능하다. 
+ASCII는 8bit만 사용하기 때문에 표현하는데는 한계가 있었고, 세상에는 알파벳 말고도 더 많은 문자들이 존재하기 때문에 (emoji도 포함해서:wink:) <span style="color:#6495ED">**Unicode**</span>가 나왔다. 유니코드는 더 많은 bit를 사용하기 때문에 :smiling_imp: 이런 emoji도 표현이 가능하다. 
 
+### 그림, 영상의 표현
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107806502-4d14aa80-6daa-11eb-94a7-3ac1e1b5eb59.gif" alt="rgb graphics" width="50%", height="50%" ></p>
+문자와 똑같이 그림 역시 숫자로 표현한다. 스크린을 통해 보는 글미을 수많은 작은 점들로 구성되어 있는데 이것을 **픽셀**이라고 한다. 각각의 픽셀은 <span style="color:#FF0000">**red**</span>, <span style="color:#0000FF">**blue**</span>, <span style="color:#00FF00">**green**</span> 세 가지 색의 다양한 조합으로 특정 색을 나타내게 된다. ex) 빨강72, 파랑33, 초록72 = 노랑! 이렇게 숫자로 색을 표현하는 방식을 **RGB**(Red,Green,Blue)라고 한다.
+
+# Algorithm
 
