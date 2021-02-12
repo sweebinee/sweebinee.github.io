@@ -10,30 +10,18 @@ disqus: true
 post-header: true
 header-img: https://user-images.githubusercontent.com/43258282/107766537-efb33600-6d76-11eb-9ec6-a8fd6916fce7.png
 ---
-
  > What ultimately matters in this course is not so much where you end up relative to your classmates but where you end up relative to yourself when you began.  
- > -pf.David Malan 
+ > pf. David Malan 
 
-## 
-현재 Chromium에는 3가지 버전의 solution을 팔고 있다.
-
-- `Gene Expression v3.1-Dual Index`
-- `Gene Expression v3.1-Single Index`
-- `Gene Expression v3`  
-<br>
-Dual index가 가장 최근 버전이며, 세 가지 버전 모두 `Gene Expression Type`과 `Feature Barcode Selection`, `Automation` 옵션을 선택할 수 있다.
-<br><br>
-
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625290-5c6b9c80-5e6b-11eb-942c-21b9e8966a31.png" alt="10X genomics product list에서 제공하는 옵션" height="150px">10X genomics product list에서 제공하는 옵션
+# 컴퓨터 과학이란?<br>"the process of sloving problem"
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107792022-fdc57e80-6d97-11eb-8351-118f2e2d2359.png" alt="computer science">input을 받아서 output을 만들어내는 과정
 </p>
 <br>
-Gene Expression solution은 모두 3' end만을 잡아내는 kit이다. 5'이나 full length를 원하면 V(D)J solution 쪽에서 알아봐야 한다. 3' seq과 5'seq의 차이와 장단점은 다른 포스트에서 다루도록 하자.
 
-어떤 점이 업그레이드되어 출시됐는지 알아보자.
+문제를 해결하기 위해서는 입력과 출력을 어떻게 표현할지 모두가 동의할만한 표준이 필요하고, '컴퓨터 과학'의 첫번째 개념은 **정보의 표현 방법**이다.
 
-# Dual Index vs. Single Index
-이름에서도 알 수 있듯이 Dual Index에서는 library 만드는 과정에 index가 하나 더 추가됐다.  
-(Sample index i5)
+# Binary : 2진법
+
 
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625512-3515cf00-5e6d-11eb-858c-3a062cde8a7c.png" alt="dual_single_index" height="250px">Dual Index(왼) 와 Single Index(오)의 library condtruction 과정 모식도
 </p>
