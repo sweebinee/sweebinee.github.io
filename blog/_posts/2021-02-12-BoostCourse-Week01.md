@@ -43,16 +43,6 @@ bit(비트)는 "binary digit"의 줄임말. 0과 1, 두가지 값만 가질 수 
 프로그래머들은 컴퓨터가 문자를 숫자로 표현할 수 있도록 표준을 정해뒀다! <span style="color:#6495ED">**ASCII**</span> code(American Standard Code for Information Interchange). ASCII는 총 128개의 부호로 정의 되어 있고, 그 안에는 upper/lower case 뿐만 아니라 !?#같은 문장부호도 포함되어 있다.
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/107799479-cc04e580-6da0-11eb-98e3-2f804ee3fa6a.png" alt="part of ASCII code table"></p>
 
-ASCII는 8bit만 사용하기 때문에 표현하는데는 한계가 있었고, 세상에는 알파벳 말고도 더 많은 문자들이 존재하기 때문에 (emoji도 포함해서:wink:)
+ASCII는 8bit만 사용하기 때문에 표현하는데는 한계가 있었고, 세상에는 알파벳 말고도 더 많은 문자들이 존재하기 때문에 (emoji도 포함해서:wink:)<span style="color:#6495ED">**Unicode**</span>가 나왔다. 유니코드는 더 많은 bit를 사용하기 때문에 :smiling_imp: 이런 emoji도 표현이 가능하다. 
 
 
-[^2]  
-
-첨부한 reference[^3]의 pdf에 같은 샘플을 가지고 single index와 dual index로 시퀀싱해서 비교한 결과가 나와있다. 궁금한 사람을 열어봐라. (clustering, immune cell subpopulation, library complexity & correlation) <U>모든 측면에서 눈에 띄는 큰 차이는 없었다.</U>
-
-10,000개가 넘는 cell을 분석해서 그럴수도.. cell갯수가 적어지면 그 영향이 더 크지 않을까 싶다. 그래도 난 가격 차이가 별로 안난다면 dual index를 선택할 듯!
-
-
-[^1]: sample multiplexing : multiplex sequencing, 많은 수의 라이브러리들을 모아서 동시에 시퀀싱(single run)하는것. High-throughput이 가능하게 하며, cost-effective하다. 샘플을 "바코드"를 통해 구분해서 분석이 용이하다는 장점이 있다.
-[^2]: [index hopping](https://www.illumina.com/content/dam/illumina-marketing/documents/products/whitepapers/index-hopping-white-paper-770-2017-004.pdf)
-[^3]: [Chromium Next GEM Single Cell 3ʹ v3.1: Dual Index Libraries](https://assets.ctfassets.net/an68im79xiti/Licpd2PiHP4hrHKDpjO89/2779c006e6317ed9ca724635b32e14e9/CG000325_TechNote_ChromiumNextGEMSingle_Cell_3___v3.1_Dual_Index_Rev_A.pdf)
