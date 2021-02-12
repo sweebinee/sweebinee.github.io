@@ -1,5 +1,13 @@
-// for emoji
-.emoji{display:inline;margin:0px 2px 3px 2px;width:16px}
+img.emoji {
+    display: inline-block;
+    left: 0;
+    transform: none;
+    width: 20px;
+    height: 20px;
+    vertical-align: text-top;
+    padding: 0;
+    margin: 0;
+}
 
 //post header
 
