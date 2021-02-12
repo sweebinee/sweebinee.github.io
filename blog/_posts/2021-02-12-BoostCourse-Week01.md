@@ -23,7 +23,7 @@ header-img: https://user-images.githubusercontent.com/43258282/107766537-efb3360
 컴퓨터에서는 오직 0과 1로만 데이터를 표현한다. 숫자뿐만 아니라 글자, 사진, 영상, 소리 등을 저장할 수 있다. HOW?!
 
 2진법을 잠시 짚고 넘어가자면, 각 자리수가 2의 거듭제곱을 의미하고 0과 1만을 이용해서 각 자리의 숫자를 더해나가는 식으로 표현할 수 있다. 
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107794632-023f6680-6d9b-11eb-9ad6-743e7f7749f2.png"alt="example of binary">이건 101이 아니라 5다! Oh!
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107794632-023f6680-6d9b-11eb-9ad6-743e7f7749f2.png" alt="example of binary">이건 101이 아니라 5다! Oh!
 </p>
 
 컴퓨터에는 수많은 스위치(=트렌지스터)가 있고 on/off의, 전기를 통하게 하느냐/아니냐의, 상태를 통해 0과 1을 표현한다. 
@@ -32,7 +32,7 @@ header-img: https://user-images.githubusercontent.com/43258282/107766537-efb3360
 
 ### bit
 bit(비트)는 "binary digit"의 줄임말. 0과 1, 두가지 값만 가질 수 있는 측정 단위이다. 
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107797229-0c169900-6d9e-11eb-977d-f7dfb13fcdbb.png"alt="bit and byte"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107797229-0c169900-6d9e-11eb-977d-f7dfb13fcdbb.png" alt="bit and byte"></p>
 컴퓨터에서 물리적으로 하나의 비트는 하나의 스위치로 표현된다. 스위치 켜기=1, 끄기=0.   
 하지만 하나의 비트만으로 방대한 양의 데이터를 표현하는 것은 불가능하다. 그래서 더 큰 단위의 비트열들이 존재하고, **byte**는 8개의 bit가 모여 만들어진 단위이다. byte를 모으면 더 큰 단위를 표현하는 것도 가능하다.
 
