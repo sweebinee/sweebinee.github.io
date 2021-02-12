@@ -5,12 +5,16 @@ title:  "Computational Thinking, Scratch"
 subtitle: "Week01"
 type: "CS50"
 category: "study/boostCourse"
-tags: ['']
+tags: ['Computer Science','2진법','bit','byte']
 disqus: true
 post-header: true
 header-img: https://user-images.githubusercontent.com/43258282/107766537-efb33600-6d76-11eb-9ec6-a8fd6916fce7.png
 ---
 
+ > What ultimately matters in this course is not so much where you end up relative to your classmates but where you end up relative to yourself when you began.  
+ > -pf.David Malan 
+
+## 
 현재 Chromium에는 3가지 버전의 solution을 팔고 있다.
 
 - `Gene Expression v3.1-Dual Index`
