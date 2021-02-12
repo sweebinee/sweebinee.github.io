@@ -30,3 +30,6 @@ github:
   # if you don't want comments in your posts, leave categories empty
 disqus:
   shortname: sweebinee-github-io # enter this from your disqus account
+
+plugins:
+  - jemoji
