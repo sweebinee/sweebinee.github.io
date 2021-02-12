@@ -31,3 +31,5 @@ github:
 disqus:
   shortname: sweebinee-github-io # enter this from your disqus account
 
+plugins:
+  - jemoji

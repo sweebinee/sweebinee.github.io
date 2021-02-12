@@ -43,6 +43,6 @@ bit(비트)는 "binary digit"의 줄임말. 0과 1, 두가지 값만 가질 수 
 프로그래머들은 컴퓨터가 문자를 숫자로 표현할 수 있도록 표준을 정해뒀다! <span style="color:#6495ED">**ASCII**</span> code(American Standard Code for Information Interchange). ASCII는 총 128개의 부호로 정의 되어 있고, 그 안에는 upper/lower case 뿐만 아니라 !?#같은 문장부호도 포함되어 있다.
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/107799479-cc04e580-6da0-11eb-98e3-2f804ee3fa6a.png" alt="part of ASCII code table"></p>
 
-ASCII는 8bit만 사용하기 때문에 표현하는데는 한계가 있었고, 세상에는 알파벳 말고도 더 많은 문자들이 존재하기 때문에 (emoji도 포함해서:wink:)<span style="color:#6495ED">**Unicode**</span>가 나왔다. 유니코드는 더 많은 bit를 사용하기 때문에 :smiling_imp: 이런 emoji도 표현이 가능하다. 
+ASCII는 8bit만 사용하기 때문에 표현하는데는 한계가 있었고, 세상에는 알파벳 말고도 더 많은 문자들이 존재하기 때문에 (emoji도 포함해서 :wink:)<span style="color:#6495ED">**Unicode**</span>가 나왔다. 유니코드는 더 많은 bit를 사용하기 때문에 :smiling_imp: 이런 emoji도 표현이 가능하다. 
 
 
