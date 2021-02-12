@@ -5,7 +5,7 @@ title:  "Computational Thinking, Scratch"
 subtitle: "Week01"
 type: "CS50"
 category: "study/boostCourse"
-tags: ['Computer Science','2진법','bit','byte']
+tags: ['Computer Science','2진법','bit','byte','ASCII','']
 disqus: true
 post-header: true
 header-img: https://user-images.githubusercontent.com/43258282/107766537-efb33600-6d76-11eb-9ec6-a8fd6916fce7.png
@@ -35,6 +35,9 @@ bit(비트)는 "binary digit"의 줄임말. 0과 1, 두가지 값만 가질 수 
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/107797229-0c169900-6d9e-11eb-977d-f7dfb13fcdbb.png"alt="bit and byte"></p>
 컴퓨터에서 물리적으로 하나의 비트는 하나의 스위치로 표현된다. 스위치 켜기=1, 끄기=0.   
 하지만 하나의 비트만으로 방대한 양의 데이터를 표현하는 것은 불가능하다. 그래서 더 큰 단위의 비트열들이 존재하고, **byte**는 8개의 bit가 모여 만들어진 단위이다. byte를 모으면 더 큰 단위를 표현하는 것도 가능하다.
+
+### "컴퓨터는 어떻게 0과 1만으로 문자, 사진, 영상, 음악등 다양한 정보를 처리할 수 있었을까?"
+
 
 
 [^2]  
