@@ -17,35 +17,27 @@ header-img: https://user-images.githubusercontent.com/43258282/107766537-efb3360
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/107792022-fdc57e80-6d97-11eb-8351-118f2e2d2359.png" alt="computer science">input을 받아서 output을 만들어내는 과정
 </p>
 <br>
-
 문제를 해결하기 위해서는 입력과 출력을 어떻게 표현할지 모두가 동의할만한 표준이 필요하고, '컴퓨터 과학'의 첫번째 개념은 **정보의 표현 방법**이다.
 
 # Binary : 2진법
+컴퓨터에서는 오직 0과 1로만 데이터를 표현한다. 숫자뿐만 아니라 글자, 사진, 영상, 소리 등을 저장할 수 있다. HOW?!
 
-
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625512-3515cf00-5e6d-11eb-858c-3a062cde8a7c.png" alt="dual_single_index" height="250px">Dual Index(왼) 와 Single Index(오)의 library condtruction 과정 모식도
-</p>
-<br>
-두 개의 index를 처리하기 위해 **CellRanger 4.0**의 `cellranger mkfastq`에서 **dual index libarary demultiplexing**을 지원한다고 한다. 
-
-i5 index를 추가함으로써 어떤 <span style="color:#6495ED">**장점**</span>이 있을까?
-
-
-## Index Hopping Migration
-------------------
-**Index hopping** 이란..
-Index switching이라고도 하며, sample multiplexing[^1]이 개발된 이후로 NGS 기술에서 중요한 이슈 중 하나이다.
-
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625769-b588ff80-5e6e-11eb-8ba9-bbc4a527c078.png" alt="index-hopping" height="350px">
+2진법을 잠시 짚고 넘어가자면, 각 자리수가 2의 거듭제곱을 의미하고 0과 1만을 이용해서 각 자리의 숫자를 더해나가는 식으로 표현할 수 있다. 
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107794632-023f6680-6d9b-11eb-9ad6-743e7f7749f2.png"alt="example of binary">이건 101이 아니라 5다! Oh!
 </p>
 
-이는 demultiplexing과정 도중에 발생하는 현상을 말하는데, <U>read가 expected index가 아닌 다른 index에 붙어 read와 index가 잘못 배치</U>된다. 이런 잘못은 misalignment 와 부정확한 sequencing results로 이어져 후속 분석에도 영향을 미친다.
+컴퓨터에는 수많은 스위치(=트렌지스터)가 있고 on/off의, 전기를 통하게 하느냐/아니냐의, 상태를 통해 0과 1을 표현한다. 
 
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625823-187a9680-5e6f-11eb-8aa8-e78febfeaaa5.png" alt="index-hopping-effect" height="300px">
-</p>
+컴퓨터에서 하나의 자릿수를 표현하는 단위를 <span style="color:#6495ED">**bit**</span>라고 한다.
 
-그래서 dual index를 사용하게 되면, demultiplexing과정에서 unique한 i5와 i7 pair를 갖고 있는지 검사를 함께 진행하고 index hopping이 일어나 unique pair를 갖지 못한 read를 제거할 수 있다. 
-일반적으로 **0.1~2%의 read**가 이 과정에서 제거된다고 한다.[^2]  
+### bit
+bit(비트)는 "binary digit"의 줄임말. 0과 1, 두가지 값만 가질 수 있는 측정 단위이다. 
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107797229-0c169900-6d9e-11eb-977d-f7dfb13fcdbb.png"alt="bit and byte"></p>
+컴퓨터에서 물리적으로 하나의 비트는 하나의 스위치로 표현된다. 스위치 켜기=1, 끄기=0.   
+하지만 하나의 비트만으로 방대한 양의 데이터를 표현하는 것은 불가능하다. 그래서 더 큰 단위의 비트열들이 존재하고, **byte**는 8개의 bit가 모여 만들어진 단위이다. byte를 모으면 더 큰 단위를 표현하는 것도 가능하다.
+
+
+[^2]  
 
 첨부한 reference[^3]의 pdf에 같은 샘플을 가지고 single index와 dual index로 시퀀싱해서 비교한 결과가 나와있다. 궁금한 사람을 열어봐라. (clustering, immune cell subpopulation, library complexity & correlation) <U>모든 측면에서 눈에 띄는 큰 차이는 없었다.</U>
 
