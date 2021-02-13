@@ -42,5 +42,6 @@ header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b2528
 난 우연하게 팔로잉하고 있는 친구가 <span style="background-color:#ffd966ff">**:tada:클럽하우스 신입생 환영회 (초보자 가이드)**</span>를 듣고 있어서 따라가서 듣고 왔다! 클하초보라면 가서 한번쯤 들어보는걸 추천한다.<br/>
 아직 시각적 정보가 더 좋은 사람들을 위해 여기에서 배운 내용을 정리해본다.
 
-### 
+### Moderator & Speaker & Listener
+
 
