@@ -57,7 +57,7 @@ ex) 빨강72, 파랑33, 초록72 = 노랑! 이렇게 숫자로 색을 표현하�
 지금까지 글자, 색깔 등을 컴퓨터가 이해할 수 있게 2진법으로 표현하는 표준에 대해서 알아봤다. 이것은 input(입력)에 해당하는 것. 이번에는 output(출력)에 대해서 알아보자.
 
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/107845093-5d656d80-6e1c-11eb-80cc-56289a0ceae6.png" alt="the algorithm"></p>
-알고리즘은 **문제를 해결하는 단계적 방법**이다.즉, input으로 받은 자료를 output 의 형태로 만드는 처리과정.
+알고리즘은 **문제를 해결하는 단계적 방법**이다. 즉, input으로 받은 자료를 output 의 형태로 만드는 처리과정.
 
 문제를 해결하기 위한 방법(알고리즘)은 여러가지가 있을 수 있지만, **정확성**과 **효율성**의 측면에서 평가하여 가장 좋은 알고리즘을 고를 수 있다. 
 
@@ -87,11 +87,12 @@ ex) 빨강72, 파랑33, 초록72 = 노랑! 이렇게 숫자로 색을 표현하�
 12 Else
 13 		Quit
 ```
-위 의사코드에는 다른 프로그래밍 언어에서도 볼 수 있는 공통 규약이 있는데,
-`pick up`, `Open to`, `Look at`, `Go back`, `Quit`과 같은 동사 부분은 <span style="color:#6495ED">**함수(function)**</span>이라고 불린다.
-다음으로 `If`, `Else if`, `Else`와 같은 부분은 <span style="color:#6495ED">**조건(condition)**</span>.
-`Smith is on page`, `Smith is earlier in book`, `Smith is later in book`와 같은 부분은 <span style="color:#6495ED">**참거짓(Boolean)**</span>.
+위 의사코드에는 다른 프로그래밍 언어에서도 볼 수 있는 공통 규약이 있는데,  
+`pick up`, `Open to`, `Look at`, `Go back`, `Quit`과 같은 동사 부분은 <span style="color:#6495ED">**함수(function)**</span>이라고 불린다.  
+다음으로 `If`, `Else if`, `Else`와 같은 부분은 <span style="color:#6495ED">**조건(condition)**</span>.  
+`Smith is on page`, `Smith is earlier in book`, `Smith is later in book`와 같은 부분은 <span style="color:#6495ED">**참거짓(Boolean)**</span>.  
 `Go back to line 3`와 같은 부분은 <span style="color:#6495ED">**반복(loop)**</span>라고 한다.
+
 앞으로 계속 나올 이야기..
 
 
