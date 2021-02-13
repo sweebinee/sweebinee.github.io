@@ -5,62 +5,26 @@ title:  "Clubhouse 사용법"
 subtitle: "아싸의 인싸 입문기"
 type: "vibe"
 category: "daily"
-tags: ['clubhouse','클럽하우스','클하초보']
+tags: ['clubhouse','클럽하우스','클하초보','클럽하우스 신입생 환영회','초보자 가이드']
 disqus: true
 post-header: true
-header-img: https://user-images.githubusercontent.com/43258282/107851937-bcdd7080-6e50-11eb-95dc-6164f9a31e03.jpg
+header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b25280-6e52-11eb-92ed-e4c8a18f5165.png
 ---
 
-현재 Chromium에는 3가지 버전의 solution을 팔고 있다.
+세상은 참 따라가기도 벅차게 변화한다. 요즘은 Clubhouse라는 음성 SNS가 유행이란다. 
 
-- `Gene Expression v3.1-Dual Index`
-- `Gene Expression v3.1-Single Index`
-- `Gene Expression v3`  
-<br>
-Dual index가 가장 최근 버전이며, 세 가지 버전 모두 `Gene Expression Type`과 `Feature Barcode Selection`, `Automation` 옵션을 선택할 수 있다.
-<br><br>
+아직 창업한지 1년도 안돼서 직원수가 20명이 안되고 앱도 베타버전이라 소수의 사람들만 초대를 통해서 사용할 수 있지만, 전세계 사람들의 주목을 받고 기업가치가 무려 10억이나 된다는..
 
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625290-5c6b9c80-5e6b-11eb-942c-21b9e8966a31.png" alt="10X genomics product list에서 제공하는 옵션" height="150px">10X genomics product list에서 제공하는 옵션
-</p>
-<br>
-Gene Expression solution은 모두 3' end만을 잡아내는 kit이다. 5'이나 full length를 원하면 V(D)J solution 쪽에서 알아봐야 한다. 3' seq과 5'seq의 차이와 장단점은 다른 포스트에서 다루도록 하자.
-
-어떤 점이 업그레이드되어 출시됐는지 알아보자.
-
-# Dual Index vs. Single Index
-이름에서도 알 수 있듯이 Dual Index에서는 library 만드는 과정에 index가 하나 더 추가됐다.  
-(Sample index i5)
-
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625512-3515cf00-5e6d-11eb-858c-3a062cde8a7c.png" alt="dual_single_index" height="250px">Dual Index(왼) 와 Single Index(오)의 library condtruction 과정 모식도
-</p>
-<br>
-두 개의 index를 처리하기 위해 **CellRanger 4.0**의 `cellranger mkfastq`에서 **dual index libarary demultiplexing**을 지원한다고 한다. 
-
-i5 index를 추가함으로써 어떤 <span style="color:#6495ED">**장점**</span>이 있을까?
+일론머스크와 실리콘밸리의 유명 개발자들이 사용한다고 알려지면서 레딧과 당근에는 이 초대권을 사려는 사람들이 줄을 서고 있다. 그래서 인싸인척하고 싶었던 나도 당장 깔아봤다. 
 
 
-## Index Hopping Migration
-------------------
-**Index hopping** 이란..
-Index switching이라고도 하며, sample multiplexing[^1]이 개발된 이후로 NGS 기술에서 중요한 이슈 중 하나이다.
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625290-5c6b9c80-5e6b-11eb-942c-21b9e8966a31.png" alt="10X genomics product list에서 제공하는 옵션"></p>
+### :star:클럽하우스는 오직 음성으로만 소통한다는 점에서 다른 SNS와 다르다!:star:
 
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625769-b588ff80-5e6e-11eb-8ba9-bbc4a527c078.png" alt="index-hopping" height="350px">
-</p>
+그리고 내가 생각하는 클럽하우스의 가장 큰 특징은..   
+**팔로워를 늘리는 것보다 팔로잉을 늘려야 더 많은 활동이 가능해진다는 것!**이다.
 
-이는 demultiplexing과정 도중에 발생하는 현상을 말하는데, <U>read가 expected index가 아닌 다른 index에 붙어 read와 index가 잘못 배치</U>된다. 이런 잘못은 misalignment 와 부정확한 sequencing results로 이어져 후속 분석에도 영향을 미친다.
-
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/105625823-187a9680-5e6f-11eb-8aa8-e78febfeaaa5.png" alt="index-hopping-effect" height="300px">
-</p>
-₩₩₩
-그래서 dual index를 사용하게 되면, demultiplexing과정에서 unique한 i5와 i7 pair를 갖고 있는지 검사를 함께 진행하고 index hopping이 일어나 unique pair를 갖지 못한 read를 제거할 수 있다. 
-일반적으로 **0.1~2%의 read**가 이 과정에서 제거된다고 한다.[^2]  
-₩₩₩
-
-첨부한 reference[^3]의 pdf에 같은 샘플을 가지고 single index와 dual index로 시퀀싱해서 비교한 결과가 나와있다. 궁금한 사람을 열어봐라. (clustering, immune cell subpopulation, library complexity & correlation) <U>모든 측면에서 눈에 띄는 큰 차이는 없었다.</U>
-
-10,000개가 넘는 cell을 분석해서 그럴수도.. cell갯수가 적어지면 그 영향이 더 크지 않을까 싶다. 그래도 난 가격 차이가 별로 안난다면 dual index를 선택할 듯!
+지금까지의 SNS에서는 날 쫓아다니는 추종자(팔로워)가 많아야 인싸고 
 
 
-[^1]: sample multiplexing : multiplex sequencing, 많은 수의 라이브러리들을 모아서 동시에 시퀀싱(single run)하는것. High-throughput이 가능하게 하며, cost-effective하다. 샘플을 "바코드"를 통해 구분해서 분석이 용이하다는 장점이 있다.
-[^2]: [index hopping](https://www.illumina.com/content/dam/illumina-marketing/documents/products/whitepapers/index-hopping-white-paper-770-2017-004.pdf)
-[^3]: [Chromium Next GEM Single Cell 3ʹ v3.1: Dual Index Libraries](https://assets.ctfassets.net/an68im79xiti/Licpd2PiHP4hrHKDpjO89/2779c006e6317ed9ca724635b32e14e9/CG000325_TechNote_ChromiumNextGEMSingle_Cell_3___v3.1_Dual_Index_Rev_A.pdf)
+
