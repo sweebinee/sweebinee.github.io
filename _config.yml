@@ -36,3 +36,4 @@ disqus:
 
 plugins:
   - jemoji
+  - jekyll-seo-tag
