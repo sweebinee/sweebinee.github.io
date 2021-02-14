@@ -5,7 +5,7 @@ title:  "Clubhouse 사용법"
 subtitle: "아싸의 인싸 입문기"
 type: "vibe"
 category: "daily"
-tags: ['clubhouse','클럽하우스','클하초보','클럽하우스 신입생 환영회','초보자 가이드']
+tags: ['clubhouse','클럽하우스','클하초보','클럽하우스 신입생 환영회','초보자 가이드','클럽하우스 사용법']
 disqus: true
 post-header: true
 header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b25280-6e52-11eb-92ed-e4c8a18f5165.png
