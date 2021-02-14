@@ -71,7 +71,7 @@ header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b2528
 - **계정 연동**<br/> 아직까지 클하에는 DM기능이 없다. 방 또한 한번 주제가 끝난 이후로는 사라지기 때문에 따로 더 대화를 나누고 싶다면 보조수단으로 인스타나 트위터 계정을 연동해 놓는 것이 좋다. 
 - **bio**<br/> <u>자기소개에 쓰는 모든 단어는 (emoji도!) search tool에서 검색이 가능하다.</u> 이점을 염두에 두고, 나와 같은 관심분야를 가진 사람을 찾고 그들이 날 찾을 수 있게 bio를 작성해보자. 클하에서는 두가지 버전의 프로필을 볼 수 있는데, 방에서 사용자 프사를 한번 누르면 bio의 맨 위 3줄(short profile)이 보이고 한번 더 카드를 누르면 전체 프로필(full profile)이 보이게 된다. 방에 들어가 있으면 맞팔을 할 수 있는 좋은 기회가 되는데 많은 사람들이 short profile을 보고 팔로잉 여부를 결정하기 때문에 **자신을 잘 표현할 수 있는 단어와 가장 중요한 내용들은 맨 위 세줄에 넣어주자.** 
 
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107869256-77ac5380-6ecf-11eb-855c-2086acd62b79.jpeg" width="30%" height="30%"><span style="color:#ADADC9"> *하지만 일론 머스크는 아무것도 필요없다.. 사진 무엇ㅋㅋㅋ* </span></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107869256-77ac5380-6ecf-11eb-855c-2086acd62b79.jpeg" width="30%" height="30%"><span style="color:#ADADC9">*하지만 일론 머스크는 아무것도 필요없다.. 사진 무엇ㅋㅋㅋ*</span></p>
 
 클럽하우스는 아직까지 검색기능이 잘 되어 있지 않다. 그리고 한번 방이 끝나면 팔로우를 해두지 않는한 함께 대화를 나누던 사람을 다시 찾을 수 있는 가능성은 매우 낮다. :star:**프로필을 잘 만들어두면 더 많은 기회를 얻을 수 있을 것이다!**:star:<br/><br/>
 
@@ -99,10 +99,18 @@ header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b2528
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/107870439-ba742880-6edb-11eb-9679-ac575df33208.png" width="70%" height="70%"></p>
 - **Stage**<br/> moderator와 speaker들이 올라와 있는 맨 위 공간을 stage라고 한다. stage에 올라와있는 사람들의 프로필 사진이 좀 더 크게 보인다. 이들 중에 초록색 뱃지를 단 사람들이 moderator다. <br/> 사진 바깥쪽으로 <span style="background-color:#e0e0e0">회색 링</span>은 그 사람이 지금 <u>말하고 있는 중</u>임을 뜻한다. 오디오가 겹칠 수 있기 때문에 <u>다른 사람이 발언하고 있다면 마이크를 꺼두는것이 예의.</u> 
 - **Listener** <br/> stage 아래로는 지금 같은 방에 있는 listener들이다. 두개의 탭으로 나뉘어 있는데, `Followed by the speakers`는 말그대로 stage에 올라와있는 사람들이 팔로우하고 있는 사람들이다. `Others in ghe room`은 그냥 와서 듣고 있는 사람들. 계속 이 주제와 관련한 이야기들을 듣고 싶다면 stage나 followed by speakers에 있는 사람들을 팔로우하자. 
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107871225-0b3b4f80-6ee3-11eb-8cd8-69cf942aff85.jpeg" width="70%" height="70%">클럽하우스는 모두의 다양성을 존중한다</p>
 - 방안에 있는 모든 사람들은 **active listner**다. <br/> 듣고 있다가도 **발언**하고 싶다면 **오른쪽 하단의 :hand:`손바닥 모양 버튼`**을 누르면 손을 들어서 moderator에게 발언권을 요청할 수 있다. moderator가 허가하면 내 프로필사진이 stage로 올라가게 되고 말할 수 있게 된다. 올라가기 전에 다시 손모양을 누르면 손을 내릴 수 있고, 손 버튼을 꾹- 누르고 있으면 내 정체성/다양성(?)에 맞는 손 색을 선택할 수도 있다! <br/> stage에 있다가도 다시 listener가 될 수도 있고 그만 듣고 싶다면 :v:`Leave quietly`를 눌러서 방 선택화면으로 돌아올 수 있다. 
-- 하단 `+` 버튼으로 다른 사람을 이방에 초대할 수 있다.<br/> 내가 팔로우 하고 있는 사람을 초대하거나 아예 외부로 링크의 형태로 방에 초대할 수도 있다. *물론 링크를 받는 사람이 클하 유저여야 한다.*
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107871228-0d9da980-6ee3-11eb-92ed-715bb8caf2ec.PNG" width="50%" height="50%"></p>
+- **Ping someone into the room** <br/>하단 `+` 버튼으로 내가 팔로우 하고 있는 사람을 초대하거나 아예 외부로 링크의 형태로 방에 초대할 수도 있다. *물론 링크를 받는 사람이 클하 유저여야 한다.*
 - 상단 `...` 버튼을 누르면, 신고 기능과 방안에서 유저 검색 기능을 사용할 수 있다.
 - 클럽하우스는 방에 들어가 있어도 들으면서 다른 방을 검색할 수 있고 심지어 어플을 나가도 끄지 않는 이상 백그라운드에서 재생이 된다. 라디오처럼 틀어놓고 할일을 하는 사람들도 많은것 같다.
+
+
+### <span style="background-color:#d4fdf2">- 상단 네비게이터 기능 -</span>
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107871312-a7655680-6ee3-11eb-9a59-573eaf7aa2ea.jpg" width="70%" height="70%"></p>
+클럽 하우스 시작 화면은 
+
 
 ### <span style="background-color:#d4fdf2">- 클하 방(room) 만들기 -</span>
 
