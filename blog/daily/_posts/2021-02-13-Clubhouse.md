@@ -46,7 +46,7 @@ header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b2528
 
 아직 시각적 정보가 더 좋은 사람 + 특정기능만 알아보고 싶은 사람 + 아직 클하에 들어가진 못했지만 어떤 기능들이 있는지 알고 싶은 사람들을 위해 여기에서 배운 내용을 정리해본다.
 
-### <span style="background-color:#9BFBE1"> Moderator & Speaker & Listener </span>
+### <span style="background-color:#C1FDEC">- Moderator & Speaker & Listener -</span>
 클럽하우스에 들어가면 수많은 주제별로 방(room)이 있고 그 안에서 주제에 맞게 대화를 나눌 수 있다. 방 안에서는 그 역할에 따라 크게 3가지로 사용자가 나뉘는데,
 - `Moderator`: 주최자이자 **진행자**. 방을 운영하는 모든 권한을 갖고 있다. 
 - `Speaker`: **발언권**을 가진 사람. 마이크를 켜고 이야기 할 수 있다.
@@ -60,6 +60,6 @@ header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b2528
 :heart: **어떠한 불법행위도 허용되지 않음**<br/>
 당연한 이야기겠지만, 방안에서 루머를 퍼트린다던지, 명예회손, 사기 같은 행위는 절대 금지다. 갑자기 도른자가 방에 난입해서 :dog:소리를 하고 방을 나가더라도 최근 말한 speaker를 신고할 수 있는 기능이 있다. 깨끗한 문화를 만들어가도록 노력하자.<br/>
 
-### <span style="background-color:#9BFBE1"> 클럽 하우스 기본 기능 </span>
+### <span style="background-color:#C1FDEC">- 클럽 하우스 기본 기능 -</span>
 
 
