@@ -92,6 +92,10 @@ header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b2528
 
 > `클럽하우스 신입생 환영회 (초보자 가이드)`의 moderator 한 분이 클럽하우스를 유럽의 펍에 비유했는데 찰떡같은 예라고 생각한다.
  
-<span style="color:#ADADC9">*누구든지 클럽하우스에 모여서 지금까지 만나보지 못했던 새로운 사람들을 만나고 서로의 경험을 공유하는 시간을 갖는 것. 그게 클럽하우스의 매력인것 같다.*</span>
-<br/><br/>
+<span style="color:#ADADC9">*누구든지 클럽하우스에 모여서 지금까지 만나보지 못했던 새로운 사람들을 만나고 서로의 경험을 공유하는 시간을 갖는 것. 그게 클럽하우스의 매력인것 같다.*</span><br/>
 
+### <span style="background-color:#d4fdf2">- 클하 방(room) 안의 기능 -</span>
+관심주제를 논하고 있는 방에 들어갔다면, 아래와 같이 맨위에는 방 제목이, 그 아래로는 프로필 사진들이 가득 떠 있는 화면을 볼 수 있을 것이다. 
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107869505-4e40f700-6ed2-11eb-8659-154688256ea2.png" alt="notification setting" width="70%" height="70%"></p>
+
+### <span style="background-color:#d4fdf2">- 클하 방(room) 만들기 -</span>
