@@ -96,6 +96,12 @@ header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b2528
 
 ### <span style="background-color:#d4fdf2">- 클하 방(room) 안의 기능 -</span>
 관심주제를 논하고 있는 방에 들어갔다면, 아래와 같이 맨위에는 방 제목이, 그 아래로는 프로필 사진들이 가득 떠 있는 화면을 볼 수 있을 것이다. 
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107869505-4e40f700-6ed2-11eb-8659-154688256ea2.png" alt="notification setting" width="70%" height="70%"></p>
-
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107870439-ba742880-6edb-11eb-9679-ac575df33208.png" width="70%" height="70%"></p>
+- **Stage**<br/> moderator와 speaker들이 올라와 있는 맨 위 공간을 stage라고 한다. stage에 올라와있는 사람들의 프로필 사진이 좀 더 크게 보인다. 이들 중에 초록색 뱃지를 단 사람들이 moderator다. <br/> 사진 바깥쪽으로 <span style="background-color:#e0e0e0">회색 링</span>은 그 사람이 지금 <u>말하고 있는 중</u>임을 뜻한다. 오디오가 겹칠 수 있기 때문에 <u>다른 사람이 발언하고 있다면 마이크를 꺼두는것이 예의.</u> 
+- **Listener** <br/> stage 아래로는 지금 같은 방에 있는 linstener들이다. 두개의 탭으로 나뉘어 있는데, `Followed by the speakers`는 말그대로 stage에 올라와있는 사람들이 팔로우하고 있는 사람들이다. `Others in ghe room`은 그냥 와서 듣고 있는 사람들. 계속 이 주제와 관련한 이야기들을 듣고 싶다면 stage나 followed by speakers에 있는 사람들을 팔로우하자. 
+- 방안에 있는 모든 사람들은 **active listner**다. <br/> 듣고 있다가도 **발언**하고 싶다면 **오른쪽 하단의 `:hand:손바닥 모양 버튼`**을 누르면 손을 들어서 moderator에게 발언권을 요청할 수 있다. moderator가 허가하면 내 프로필사진이 stage로 올라가게 되고 말할 수 있게 된다. 올라가기 전에 다시 손모양을 누르면 손을 내릴 수 있고, 손 버튼을 꾹- 누르고 있으면 내 정체성/다양성(?)에 맞는 손 색을 선택할 수도 있다! <br/> stage에 있다가도 다시 listener로 돌아올 수 있다. <br/> 그만 듣고 싶다면 `:v:**Leave quietly**`를 눌러서 방 선택화면으로 돌아올 수 있다. 
+- 하단 `+` 버튼으로 다른 사람을 이방에 초대할 수 있다.<br/> 내가 팔로우 하고 있는 사람을 초대하거나 아예 외부로 링크의 형태로 방에 초대할 수도 있다. *물론 링크를 받는 사람이 클하 유저여야 한다.*
+- 상단 `...` 버튼을 누르면, 신고 기능과 방안에서 유저 검색 기능을 사용할 수 있다.
 ### <span style="background-color:#d4fdf2">- 클하 방(room) 만들기 -</span>
+
+- **Moderator**는 호스트로서의 역할을 수행한다.<br/> 
