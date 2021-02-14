@@ -70,10 +70,27 @@ header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b2528
 - **계정 연동**<br/> 아직까지 클하에는 DM기능이 없다. 방 또한 한번 주제가 끝난 이후로는 사라지기 때문에 따로 더 대화를 나누고 싶다면 보조수단으로 인스타나 트위터 계정을 연동해 놓는 것이 좋다. 
 - **bio**<br/> <u>자기소개에 쓰는 모든 단어는 (emoji도!) search tool에서 검색이 가능하다.</u> 이점을 염두에 두고, 나와 같은 관심분야를 가진 사람을 찾고 그들이 날 찾을 수 있게 bio를 작성해보자. 클하에서는 두가지 버전의 프로필을 볼 수 있는데, 방에서 사용자 프사는 한번 누르면 bio의 맨 위 3줄(short profile)이 보이고 한번 더 카드를 누르면 전체 프로필(full profile)이 보이게 된다. 방에 들어가 있으면 맞팔을 할 수 있는 좋은 기회가 되는데 많은 사람들이 short profile을 보고 팔로잉 여부를 결정하기 때문에 **자신을 잘 표현할 수 있는 단어와 가장 중요한 내용들은 맨 위 세줄에 넣어주자.** 
 
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107869256-77ac5380-6ecf-11eb-855c-2086acd62b79.jpeg" width="30%" height="30%"><span style="color:#ADADC9">*하지만 일론 머스크는 말이 필요없지..사진 무엇ㅋㅋㅋ*</span></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107869256-77ac5380-6ecf-11eb-855c-2086acd62b79.jpeg" width="30%" height="30%"><span style="color:#ADADC9">*하지만 일론 머스크는 아무것도 필요없다.. 사진 무엇ㅋㅋㅋ*</span></p>
+
+클럽하우스는 아직까지 검색기능이 잘 되어 있지 않다. 그리고 한번 방이 끝나면 팔로우를 해두지 않는한 함께 대화를 나누던 사람을 다시 찾을 수 있는 가능성은 매우 낮다. :star:**프로필을 잘 만들어두면 더 많은 기회를 얻을 수 있을 것이다!**:star:
 
 :wrench: **알람 설정**<br/>
+클럽하우스는 생각보다 알림을 자주 보낸다. real life를 방해받고 싶지 않다면 알람 설정을 바꾸는걸 추천한다.<br/>
+알림 설정은 내 프로필 우측 상단의 톱니바퀴 모양을 누르면 나오는 ` notification`에서 설정 가능하다.
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107869505-4e40f700-6ed2-11eb-8659-154688256ea2.png" alt="notification setting" width="70%" height="70%"></p>
+- **Frequency**<br/> 알림 빈도를 설정할 수 있다. `Very Frequent` ~ `Very Infrequent` 의 다섯가지 정도 중에 선택할 수 있고 기본은 `Normal`이다.
+- **Pause Notifications**
+일정 시간 동안 어떤 알림도 받지 않게 설정 할 수 있다. `For an Hour`, `Until this Evening`, `Until Morning`, `For a Week` 중에 선택. 
 
-:wrench: **팔로우 설정**<br/>
+:wrench: **팔로우 설정**:star::star::star:<br/>
+앞서 언급했지만 클럽하우스는 팔로워가 많은 것보다 <u>팔로잉이 많을수록 좋다.</u> 누군가를 팔로잉 해야지만 그 사람이 돌아다니는 방이 보이고 나도 참여할 수 있기 때문이다.
+
+처음에는 친구가 없어 시작하기 어려울 수 있는데 :mag_right:돋보기 버튼으로 키워드를 검색해 나와 공통의 관심사를 갖고 있는 사람이나 방에 들어갈 수 있다.
+
+초반에 어떤 사람을 팔로우하고 어떤 방에 들어가냐에 따라서 경험의 폭이 달라질 수 있다. 지금까지의 SNS처럼 친구만, 또는 엄청난 인플루언서만 팔로우 한다면 그냥 친구들끼리 웃고 떠드는 수다방이나 엄청난 conference같은 방밖에 들어가지 못할 수 있다. **최대한 다양한 사람을 팔로우 해보자**
+
+> `클럽하우스 신입생 환영회 (초보자 가이드)`의 moderator 한 분이 클럽하우스를 유럽의 펍에 비유했는데 찰떡같은 예라고 생각한다.
+ 
+누구든지 클럽하우스에 모여서 지금까지 만나보지 못했던 새로운 사람들을 만나고 서로의 경험을 공유하는 시간을 갖는 것. 그게 클럽하우스의 매력인것 같다.
 
 
