@@ -52,6 +52,7 @@ header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b2528
 - `Speaker`: **발언권**을 가진 사람. 마이크를 켜고 이야기 할 수 있다.
 - `Listener`: **듣는 사람**<br/>
 
+
 클럽하우스에는 클하만의 중요한 규칙이 있다.<br/>
 :heart: **발언을 강요하지 않는다.**<br/>
 굳이 말을 하지 않고 듣기만 해도 괜찮다. speaker이던 사람도 `내려가기`버튼을 통해 다시 listener로 돌아갈수도 있고, 자유롭게 자신의 역할을 정하고 바꿀 수 있다.<br/>
