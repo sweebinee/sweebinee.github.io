@@ -72,7 +72,7 @@ header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b2528
 
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/107869256-77ac5380-6ecf-11eb-855c-2086acd62b79.jpeg" width="30%" height="30%"><span style="color:#ADADC9"> *하지만 일론 머스크는 아무것도 필요없다.. 사진 무엇ㅋㅋㅋ* </span></p>
 
-클럽하우스는 아직까지 검색기능이 잘 되어 있지 않다. 그리고 한번 방이 끝나면 팔로우를 해두지 않는한 함께 대화를 나누던 사람을 다시 찾을 수 있는 가능성은 매우 낮다. :star:**프로필을 잘 만들어두면 더 많은 기회를 얻을 수 있을 것이다!**:star:<br/>
+클럽하우스는 아직까지 검색기능이 잘 되어 있지 않다. 그리고 한번 방이 끝나면 팔로우를 해두지 않는한 함께 대화를 나누던 사람을 다시 찾을 수 있는 가능성은 매우 낮다. :star:**프로필을 잘 만들어두면 더 많은 기회를 얻을 수 있을 것이다!**:star:<br/><br/>
 
 :wrench: **알람 설정**<br/>
 클럽하우스는 생각보다 알림을 자주 보낸다. real life를 방해받고 싶지 않다면 알람 설정을 바꾸는걸 추천한다.<br/>
@@ -80,7 +80,7 @@ header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b2528
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/107869505-4e40f700-6ed2-11eb-8659-154688256ea2.png" alt="notification setting" width="70%" height="70%"></p>
 - **Frequency**<br/> 알림 빈도를 설정할 수 있다. `Very Frequent` ~ `Very Infrequent` 의 다섯가지 정도 중에 선택할 수 있고 기본은 `Normal`이다.
 - **Pause Notifications**
-일정 시간 동안 어떤 알림도 받지 않게 설정 할 수 있다. `For an Hour`, `Until this Evening`, `Until Morning`, `For a Week` 중에 선택. <br/>
+일정 시간 동안 어떤 알림도 받지 않게 설정 할 수 있다. `For an Hour`, `Until this Evening`, `Until Morning`, `For a Week` 중에 선택. <br/><br/>
 
 :wrench: **팔로우 설정**:star::star::star:<br/>
 앞서 언급했지만 클럽하우스는 팔로워가 많은 것보다 <u>팔로잉이 많을수록 좋다.</u> 누군가를 팔로잉 해야지만 그 사람이 돌아다니는 방이 보이고 나도 참여할 수 있기 때문이다.
@@ -92,5 +92,5 @@ header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b2528
 > `클럽하우스 신입생 환영회 (초보자 가이드)`의 moderator 한 분이 클럽하우스를 유럽의 펍에 비유했는데 찰떡같은 예라고 생각한다.
  
 <span style="color:#ADADC9">*누구든지 클럽하우스에 모여서 지금까지 만나보지 못했던 새로운 사람들을 만나고 서로의 경험을 공유하는 시간을 갖는 것. 그게 클럽하우스의 매력인것 같다.*</span>
-
+<br/><br/>
 
