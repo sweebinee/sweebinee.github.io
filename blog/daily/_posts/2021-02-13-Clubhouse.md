@@ -109,9 +109,13 @@ header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b2528
 
 ### <span style="background-color:#d4fdf2">- 상단 네비게이터 기능 -</span>
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/107871312-a7655680-6ee3-11eb-9a59-573eaf7aa2ea.jpg" width="70%" height="70%"></p>
-클럽 하우스 시작 화면은 
-
-
+클럽 하우스 시작 화면 상단에는 5가지 기능의 네비게이터들이 있다. 왼쪽부터 `EXPLORE`, `INVITES`, `ACTIVITY`, `Profile`.
+- **Explore**<br/> 검색어로 사람들의 bio를 검색해서 나랑 비슷한 사람을 찾아서 팔로우 할수도 있고 club에 가입할 수도 있다. 
+- **Activity**<br/> :calendar:달력모양 버튼을 누르면 내가 팔로우하는 사람이 만든 이벤트나 내가 속한 클럽에서 열리는 일정이 표시된다. 가까운 시일에 열리는 이벤트들은 제일 첫 페이지 상단에도 뜨긴 하지만 여기에선 좀 더 자세한 정보와 미래의 이벤트를 확인할 수 있다. <br/> 기본 셋팅은 `Upcoming For You`로 되어 있지만 `All Upcoming`으로 바꾸면 전세계에서 열리는 모든 이벤트들을 확인할 수 있는데 이 기능으로 유일하게 사람을 <u>팔로우하지 않고도 어떤 방이 열릴지 볼 수 있다!</u> <br/> `My Events`는 내가 주최하는 이벤트를 볼 수 있는데 이벤트 생성은 좌측 상단의 플러스 달력 버튼으로 할 수 있다.
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/107871522-c533bb00-6ee5-11eb-8d7b-012d30b26e9c.png" width="50%" height="50%"></p>
+- **Activity**<br/> 
+- ****<br/>오른쪽에서 왼쪽으로 스와이프하면 지금 활동중이거나 최근에 활동했던 팔로워들을 볼 수 있다.
 ### <span style="background-color:#d4fdf2">- 클하 방(room) 만들기 -</span>
 
 - **Moderator**는 호스트로서의 역할을 수행한다.<br/> 사람들이 방제(주제)와 맞는 내용을 이야기할 수 있도록 방향을 잡아주자. 다른 사람에게 권한을 위임해준다면 방을 만들어준 사람이 나가더라도 방이 계속 유지될 수 있다. 하지만 나간 이후로는 다른 평범한 유저들과 동일하게 방안에 있는 사람을 팔로우 하지 않는 이상 다시 들어올 수 없다. 믿을만한 사람에게만 권한을 주는 것이 바람직하다.
+
