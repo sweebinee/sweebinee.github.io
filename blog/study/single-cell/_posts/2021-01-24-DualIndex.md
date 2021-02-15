@@ -4,7 +4,7 @@ author: "subin"
 title:  "Chromium Single Cell Gene Expression Version 별 차이"
 subtitle: "Dual Index vs. Single Index"
 type: "10X"
-category: "study/singleCell"
+category: "singleCell"
 tags: ['10X','chromium','dual index']
 disqus: true
 post-header: true
