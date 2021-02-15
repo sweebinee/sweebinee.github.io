@@ -10,7 +10,7 @@ category: study
 <ul class="catalogue">
 {% assign sorted = site.posts | sort: 'order' | reverse %}
 {% for post in sorted %}
-{% if post.category == "study/boostCourse" %}
+{% if post.category == "boostCourse" %}
 {% include post-list.html %}
 {% endif %}
 {% endfor %}
