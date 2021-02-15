@@ -16,4 +16,11 @@ blog: true
 {% include category-list.html %}
 {% endif %}
 {% endfor %}
+
+{% assign sorted = site.posts | sort: 'order' | reverse %}
+{% for post in sorted %}
+{% if post.category == "study" %}
+{% include post-list.html %}
+{% endif %}
+{% endfor %}
 </ul>
