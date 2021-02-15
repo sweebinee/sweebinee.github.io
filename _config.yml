@@ -1,10 +1,14 @@
 # Permalinks
-permalink:      pretty
+permalink:      /:categories/:year-:month-:day/:title
+
 
 # Setup
 title:          Subin, Cho.
 baseurl:        ""
 url:            "https://sweebinee.github.io"
+name: "S_beeni_'s blog"
+description: "코딩하는 도비의 블로그"
+
 
 # Assets
 sass:
@@ -31,3 +35,6 @@ github:
 disqus:
   shortname: sweebinee-github-io # enter this from your disqus account
 
+plugins:
+  - jemoji
+  - jekyll-seo-tag

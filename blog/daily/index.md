@@ -10,9 +10,9 @@ blog: true
 ---
 
 <ul class="catalogue">
-{% assign sorted = site.pages | sort: 'order' | reverse %}
-{% for page in sorted %}
-{% if page.category == "daily" %}
+{% assign sorted = site.posts | sort: 'order' | reverse %}
+{% for post in sorted %}
+{% if post.category == "daily" %}
 {% include post-list.html %}
 {% endif %}
 {% endfor %}
