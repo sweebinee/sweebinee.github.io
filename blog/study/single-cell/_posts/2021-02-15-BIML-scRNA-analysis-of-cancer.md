@@ -1,9 +1,9 @@
 ---
 layout: post
 author: "subin"
-title:  "Single-cell RNA-sequencing Analysis of Cancer"
-subtitle: "UNIST 이세민 교수님 강의 정리"
-type: "KSBi-BIML 2021"
+title:  "Single-cell RNA-sequencing Analysis"
+subtitle: "기초적인 scRNAseq data 분석 방법"
+type: "Basic"
 category: "singleCell"
 tags: ['single-cell RNA seq','']
 disqus: true
