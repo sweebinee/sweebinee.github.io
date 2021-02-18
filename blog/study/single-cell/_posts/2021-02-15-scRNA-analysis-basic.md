@@ -8,6 +8,6 @@ category: "singleCell"
 tags: ['single-cell RNA seq','']
 disqus: true
 post-header: true
-header-img: https://user-images.githubusercontent.com/43258282/105624857-2f69ba80-5e68-11eb-83ee-14a55783cb6d.jpg
+header-img: https://user-images.githubusercontent.com/43258282/108373640-78344980-7243-11eb-898d-0e67df70d6b8.png
 draft: true
 ---
