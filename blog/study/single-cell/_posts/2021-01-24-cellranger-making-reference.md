@@ -13,20 +13,21 @@ header-img: https://user-images.githubusercontent.com/43258282/108465761-f46f710
 
 CellRanger에서는 대중적으로 많이 쓰이는 (GRCh38, mm10같은..)reference는 다운받아서 바로 사용할 수 있게 미리 만들어 제공하고 있다.[^1] 
 
-다른 종이나 제공하지 않는 버전의 reference를 사용해서 분석하고 싶다면 <span style="background-color:#ffd966ff">**custom reference**</span>를 만들어서 cellranger pipeline에 먹이면 되는데, **reference genome sequence(FASTA file)와 gene annotation(GTF file) 정보**가 필요하다.[^2]
+다른 종이나 제공하지 않는 버전의 reference를 사용해서 분석하고 싶다면 <span style="background-color:#ffd966ff">**custom reference**</span>를 만들어서 cellranger pipeline에 먹이면 되는데, **reference genome sequence(FASTA file)와 gene annotation(GTF file) 정보**가 필요하다.[^2] 
 
 <span style="color:#ADADC9">*나는 TdTomato transgene positive한 cell만을 따로 보고 싶어서 제작함. 보통 이런경우에는 FACS로 sorting하고 sequencing하는 것 같긴 하지만 이미 만들었으니 어쨌든.. 만들어보자!* </span>
 
 ### Add a Marker Gene to the FASTA and GTF
-나같은 경우에는 원래의 reference + α 가 필요한 케이스.[^3]
+나같은 경우에는 원래의 reference + α 가 필요한 케이스.[^3] 
 <br/> 10X tutorial에는 GFP를 예시로 나와있는데, TdTomato gene을 추가해보자.
 
 사용한 cellrnager version: `cellranger-5.0.1`
 
 위에서 언급했듯이 custom reference 만들기 위해서는 fasta file과 GTF file이 필요하다. 나는 cellranger에서 기본제공하는 mm10 reference에 TdTomato 정보를 추가해 완성할 생각이다.
 
-**1. Download TdTomato sequence ** 
-<br/> fasta file에 추가하기 위해 TdTomato sequence를 다운 받아[^4] *tdTomato.fa* 로 저장했다.
+
+**1. Download TdTomato sequence** <br/>
+fasta file에 추가하기 위해 TdTomato sequence를 다운 받아[^4] *tdTomato.fa* 로 저장했다.
 <details>
 <div markdown="1">
 <summary>TdTomato sequence: **tdTomato.fa** file</summary>
