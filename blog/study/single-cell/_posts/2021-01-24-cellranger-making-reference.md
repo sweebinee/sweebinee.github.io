@@ -9,6 +9,7 @@ tags: ['10X','chromium','cellranger','mkref','reference']
 disqus: true
 post-header: true
 header-img: https://user-images.githubusercontent.com/43258282/105624857-2f69ba80-5e68-11eb-83ee-14a55783cb6d.jpg
+draft: true
 ---
 
 CellRanger에서는 대중적으로 많이 쓰이는 reference는 다운받아서 바로 사용할 수 있게 미리 만들어 제공하고 있다.[^1] 
