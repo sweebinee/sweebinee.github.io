@@ -88,8 +88,7 @@ cellranger mkref --genome=mm10-2020-A-w-tdTomato \
 <br/><br/><br/>
 
 [^1]: [CellRanger reference 다운로드 바로가기](https://support.10xgenomics.com/single-cell-gene-expression/software/downloads/latest)<br/>이름과 소속등을 입력하고 term에 동의해야 가능할 것이다.
-[^2]: [10X genomics: Creating a Reference Package with cellranger mkref
-](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references#header)
+[^2]: [10X genomics: Creating a Reference Package with cellranger mkref](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references#header)
 [^3]: [10X genomics: Build a Custom Reference With cellranger mkref](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/using/tutorial_mr)
 [^4]: [SnapGene: TdTomato](https://www.snapgene.com/resources/plasmid-files/?set=fluorescent_protein_genes_and_plasmids&plasmid=tdTomato)
 
