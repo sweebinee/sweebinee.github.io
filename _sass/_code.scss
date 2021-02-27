@@ -12,7 +12,7 @@ code {
 }
 
 pre {
-  margin: 0 0 0;
+  margin: 0 0 1rem;
 }
 
 pre code {
@@ -27,19 +27,19 @@ pre code {
   background: #343434;
   color: $white;
   font-family: 'D2 coding', "Consolas", monospace;
-  padding: 2px 2px 2px 2px;
+  padding: 5px 5px 5px 5px;
   border-radius: 5px;
 
   pre {
     overflow-x: auto;
-    white-space: normal;
+    white-space: pre;
     tab-size: 2;
   }
 
   pre code{
-	white-space:normal;
+	white-space:pre;
 	overflow-x:auto;
-	word-wrap:break-word;
+	word-wrap:normal;
   }
 
   .lineno {
