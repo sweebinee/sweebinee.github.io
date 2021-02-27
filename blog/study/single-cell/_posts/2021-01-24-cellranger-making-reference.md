@@ -43,19 +43,19 @@ ATGGTGAGCAAGGGCGAGGAGGTCATCAAAGAGTTCATGCGCTTCAAGGTGCGCATGGAG GGCTCCATGAACGGCCACG
 
 **2. Make TdTomato .fa & .gtf** <br/>
 tdTomato가 몇개의 base로 이루어졌는지 알아보자 = 1,431 bases
-```
+```bash
 cat tdTomato.fa | grep -v "^>" | tr -d "\n" | wc -c
 ```
 이제 이 정보를 활용해서 tdTomato.gtf file을 만들어보자. GTF file에는 총 9가지 column이 필요하다. <span style="color:#EC7063">\t</span>
 로 구분하자.
-```
+```bash
 echo -e 'tdTomato\tunknown\texon\t1\t1431\t.\t+\t.\tgene_id "tdTomato"; transcript_id "tdTomato"; gene_name "tdTomato"; gene_biotype "protein_coding";' > tdTomato.gtf
 ```
 <details>
 <summary>tdTomato.gtf file</summary>
 <div markdown="1">
 만들면 이렇게 된다.
-```
+```bash
 tdTomato	unknown	exon	1	1431	.	+	.	gene_id "tdTomato"; transcript_id "tdTomato"; gene_name "tdTomato"; gene_biotype "protein_coding";
 ```
 </div>
@@ -64,12 +64,12 @@ tdTomato	unknown	exon	1	1431	.	+	.	gene_id "tdTomato"; transcript_id "tdTomato";
 
 **3. Add TdTomato .fa & .gtf to the end of the mm10 reference file** <br/>
 추가 하기전에 원래 있던 데이터가 손상되지 않게 복사본을 만들어주자.
-```
+```bash
 cp cellranger-5.0.1/refdata-gex-mm10-2020-A/fasta/genome.fa mm10-2020-A-w-tdTomato_genome.fa
 cp cellranger-5.0.1/refdata-gex-mm10-2020-A/genes/genes.gtf mm10-2020-A-w-tdTomato_genes.gtf
 ```
 아까 만들어둔 tdTomato fasta file과 gtf file을 아래 붙여준다.
-```
+```bash
 cat tdTomato.fa >> mm10-2020-A-w-tdTomato_genome.fa
 grep ">" mm10-2020-A-w-tdTomato_genome.fa  // 잘 붙었는지 확인해보자
 
@@ -79,7 +79,7 @@ tail mm10-2020-A-w-tdTomato_genes.gtf  // 잘 붙었는지 확인해보자
 <br/>
 **4. Make custom reference** <br/>
 지금까지 만든 .fa와 .gtf file을 사용해서 Cellranger `count` 단계에서 쓸 custom reference를 완성해보자! `cellranger mkref`를 사용한다.
-```
+```bash
 cellranger mkref --genome=mm10-2020-A-w-tdTomato \
 --fasta=mm10-2020-A-w-tdTomato_genome.fa \
 --genes=mm10-2020-A-w-tdTomato_genes.gtf
