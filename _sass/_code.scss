@@ -27,11 +27,11 @@ pre code {
   background: #343434;
   color: $white;
   font-family: 'D2 coding', "Consolas", monospace;
-  padding: 5px;
+  padding: 5px 5px 5px 5px;;
   border-radius: 5px;
 
   pre {
-   // margin-bottom: 0;
+    margin-bottom: 10px;
     overflow-x: auto;
     white-space: pre;
   }
@@ -39,7 +39,7 @@ pre code {
   pre code{
 	display:block;
 	white-space:pre;
-	overflow-x:auto;
+	overflow-x:break-word;
 	word-wrap:normal
   }
 
