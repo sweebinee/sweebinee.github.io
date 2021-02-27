@@ -21,6 +21,8 @@ pre code {
   font-size: 100%;
   padding: 0;
   font-size: 16px;
+  word-wrap:normal
+  display:block;
 }
 
 .highlight {
@@ -34,13 +36,6 @@ pre code {
    // margin-bottom: 0;
     overflow-x: auto;
     white-space: pre;
-  }
-
-  pre code{
-	display:block;
-	white-space:pre;
-	overflow-x:auto;
-	word-wrap:normal
   }
 
   .lineno {
