@@ -37,10 +37,9 @@ pre code {
   }
 
   pre code{
-	display:block;
 	white-space:pre;
-	overflow-x:break-word;
-	word-wrap:normal
+	overflow-x:auto;
+	word-wrap:break-word;
   }
 
   .lineno {
