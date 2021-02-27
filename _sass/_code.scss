@@ -32,12 +32,12 @@ pre code {
 
   pre {
     overflow-x: auto;
-    white-space: pre;
+    white-space: normal;
     tab-size: 2;
   }
 
   pre code{
-	white-space:pre;
+	white-space:normal;
 	overflow-x:auto;
 	word-wrap:break-word;
   }
