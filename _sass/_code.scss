@@ -24,12 +24,10 @@ pre code {
 }
 
 .highlight {
-  background-color: $grey-3;
-    border: 1px solid $grey-2-70;
-  border-radius: 3px;
-  line-height: 1.4;
-  margin: 0 0 1rem;
-  padding: 1rem;
+  background: #343434;
+  color: #aab1bf;
+  font-family: 'D2 coding', "Consolas", monospace;
+  padding: 5px;
 
   pre {
     margin-bottom: 0;
