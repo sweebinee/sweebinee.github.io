@@ -12,7 +12,7 @@ code {
 }
 
 pre {
-  margin: 0 0 1rem;
+  margin: 0;
 }
 
 pre code {
@@ -27,7 +27,7 @@ pre code {
   background: #343434;
   color: $white;
   font-family: 'D2 coding', "Consolas", monospace;
-  padding: 5px 5px 5px 5px;
+  padding: 2px 2px 2px 2px;
   border-radius: 5px;
 
   pre {
