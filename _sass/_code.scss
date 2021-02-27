@@ -27,13 +27,13 @@ pre code {
   background: #343434;
   color: $white;
   font-family: 'D2 coding', "Consolas", monospace;
-  padding: 5px;
+  padding: 20px;
   border-radius: 5px;
 
   pre {
     margin-bottom: 0;
     overflow-x: auto;
-    //white-space: pre-wrap;
+ //   white-space: pre-wrap;
   }
 
   .lineno {
