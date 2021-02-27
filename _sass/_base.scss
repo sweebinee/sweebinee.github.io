@@ -88,16 +88,14 @@ td {
 }
 
 ::-webkit-scrollbar{
-  width: 6px; // 세로 스크롤의 너비
-  height: 3px; // 가로 스크롤의 너비
-  background-color: #FFFFFF; // 스크롤의 기본 배경색상
-  
+  width: 6px; 
+  height: 3px; 
+  background-color: #FFFFFF; 
 }
 ::-webkit-scrollbar-thumb{
-  border-radius: 3px; // 스크롤바 곡률
-  background-color: $purple; // 스크롤바 색상
+  border-radius: 3px; 
+  background-color: $purple; 
 }
-
 ::-webkit-scrollbar-track:horizontal{
-  background-color: #000000; // 가로 스크롤바 색상
+  background-color: #000000; 
 }
