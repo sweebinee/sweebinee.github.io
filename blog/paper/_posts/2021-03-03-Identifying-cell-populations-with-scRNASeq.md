@@ -6,7 +6,6 @@ subtitle: "Ho."
 type: "cell type identification"
 category: "paper"
 tags: ['scRNA-seq']
-disqus: true
 draft: true
 ---
 
