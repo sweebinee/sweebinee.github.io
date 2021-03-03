@@ -3,7 +3,7 @@ layout: post
 title: "Paper list"
 subtitle: 읽은 논문 정리
 post-header: true
-header-img: img/header.jpg
+header-img: img/paper_header.png
 type: "Archive"
 blog: true
 ---
