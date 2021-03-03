@@ -12,7 +12,7 @@ code {
 }
 
 pre {
-  margin: 0 0 1rem;
+  margin: 0;
 }
 
 pre code {
@@ -24,25 +24,32 @@ pre code {
 }
 
 .highlight {
-  background-color: $grey-3;
-    border: 1px solid $grey-2-70;
-  border-radius: 3px;
-  line-height: 1.4;
-  margin: 0 0 1rem;
-  padding: 1rem;
+  background: #343434;
+  color: $white;
+  font-family: 'D2 coding', "Consolas", monospace;
+  padding: 2px 2px 2px 2px;
+  border-radius: 5px;
 
   pre {
-    margin-bottom: 0;
     overflow-x: auto;
+    white-space: pre;
+    tab-size: 2;
+  }
+
+  pre code{
+	white-space:pre;
+	overflow-x:auto;
+	word-wrap:normal;
   }
 
   .lineno {
-    color: $default-tint;
+  	color:#ccc; //color: $default-tint;
+  	padding: 0 .75rem 0 .25rem;
     display: inline-block; // Ensures the null space also isn't selectable
-    padding: 0 .75rem 0 .25rem;
     // Make sure numbers aren't selectable
     -webkit-user-select: none;
        -moz-user-select: none;
             user-select: none;
+    border-right: 1px solid $purple;
   }
 }

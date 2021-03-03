@@ -86,3 +86,16 @@ td {
     color: #FFF;
     text-shadow: none;
 }
+
+::-webkit-scrollbar{
+  width: 6px; 
+  height: 3px; 
+  background-color: #FFFFFF; 
+}
+::-webkit-scrollbar-thumb{
+  border-radius: 3px; 
+  background-color: $purple; 
+}
+::-webkit-scrollbar-track:horizontal{
+  background-color: #000000; 
+}
