@@ -16,6 +16,6 @@ disqus: true
 기본 분석 툴: `10X` + `Seurat` 사용 가정
 
 ### :poop: subset 따로 떼서 subclustering진행할때, 어떤 assay사용? scTransform 또 진행해도 되나?
-&nbsp;&nbsp;&nbsp;&nbsp; sdfsdfsdf
+: sdfsdfsdf
 
 :link:[Seurat Issue #2014 'SCTransform on subsets'](https://github.com/satijalab/seurat/issues/2014)
