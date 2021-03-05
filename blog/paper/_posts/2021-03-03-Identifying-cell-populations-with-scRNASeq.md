@@ -23,7 +23,7 @@ tags: ['scRNA-seq']
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Feature selection](#32-feature-selection)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Michaelis-Menten modelling of dropouts](#michaelis-menten-modelling-of-dropouts-m3drop)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Highly variable genes](#highly-variable-genes-hvg)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Spike-in based methods](#spikein-based-methods)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Spike-in based methods](#spike-in-based-methods)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Correlated expression](#correlated-expression)<br/>
 
 - [**Unsupervised clustering methods for identification of cell populations**](#4-unsupervised-clustering-methods-for-identification-of-cell-populations)<br/>
