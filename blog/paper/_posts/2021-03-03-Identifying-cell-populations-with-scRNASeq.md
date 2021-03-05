@@ -29,6 +29,14 @@ tags: ['scRNA-seq']
 - [Unsupervised clustering methods for identification of cell populations](#4-unsupervised-clustering-methods-for-identification-of-cell-populations)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[K-means](#kmeans)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Hierarchical clustering](#hierarchical-clustering)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Density-based clustering](#densitybased-clustering)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Graph clustering](#graph-clustering)<br/>
+
+- [Biological characterization of clusters](#5-biological-characterization-of-clusters)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Computational approaches](#51-computational-approaches)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Experimental approaches](#52-experimental-approaches)<br/>
+
+- [Closing remarks](#6-closing-remarks)
 
 
 # 1. Intro
@@ -48,3 +56,12 @@ tags: ['scRNA-seq']
 # 4. Unsupervised clustering methods for identification of cell populations
 ### K-means
 ### Hierarchical clustering
+### Density-based clustering 
+### Graph clustering
+# 5. Biological characterization of clusters
+## 5.1. Computational approaches
+## 5.2. Experimental approaches
+# 6. Closing remarks
+
+
+
