@@ -1,6 +1,6 @@
 .container {
   margin: 40px auto;
-  max-width: 750px;
+  max-width: 1000px;
   width: 80%;
     @media (max-width: $break-small) {
         width: 88%;
@@ -12,7 +12,7 @@ main,
 footer>.footer_wrap,
 .nav-container {
   margin: 0 auto;
-  max-width: 750px;
+  max-width: 1000px;
   width: 80%;
     @media (max-width: $break-small) {
         width: 88%;
