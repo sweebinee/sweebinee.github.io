@@ -2,12 +2,12 @@
 layout: post
 author: "subin"
 title:  "Identifying cell populations with scRNASeq"
-subtitle: "an overview of different exprimental protocols and the most popular methods for facilitatin ghe computational analysis."
+subtitle: "an overview of different exprimental protocols and the most popular methods for facilitating the computational analysis."
 type: "Review"
 category: "paper"
 tags: ['scRNA-seq']
 ---
-| Andrews, Tallulah S., and Martin Hemberg. ["Identifying cell populations with scRNASeq."](https://doi.org/10.1016/j.mam.2017.07.002) Molecular aspects of medicine 59 (2018): 114-122.
+> Andrews, Tallulah S., and Martin Hemberg. ["Identifying cell populations with scRNASeq."](https://doi.org/10.1016/j.mam.2017.07.002) Molecular aspects of medicine 59 (2018): 114-122.
 
 [Introduction](#1.-Intro)<br/>
 [Experimental design considerations for scRNA-seq](#2.-Experimental-design-considerations-for-scRNA-seq)
