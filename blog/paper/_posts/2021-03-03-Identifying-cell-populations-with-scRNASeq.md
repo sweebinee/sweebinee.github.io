@@ -17,11 +17,11 @@ tags: ['scRNA-seq']
 
 [Strategies for dealing with high dimensionality](#3.-Strategies-for-dealing-with-high-dimensionality)
 - [Dimensionality reduction](#3.1.-Dimensionality-reduction)
--- [Principal componet analysis](#Principal-component-analysis-(PCA))
--- [T-distributed stochastic neighbor embedding](#T-distributed-stochastic neighbor-embedding-(tSNE))
--- [Diffusion maps](#Diffusion-maps-(DM))
+ - [Principal componet analysis](#Principal-component-analysis-(PCA))
+ - [T-distributed stochastic neighbor embedding](#T-distributed-stochastic neighbor-embedding-(tSNE))
+ - [Diffusion maps](#Diffusion-maps-(DM))
 - [Feature selection](#3.2.-Feature-selection)
--- [Michaelis-Menten modelling of dropouts](#Michaelis-Menten-modelling-of-dropouts-(M3Drop))
+ - [Michaelis-Menten modelling of dropouts](#Michaelis-Menten-modelling-of-dropouts-(M3Drop))
 
 
 
