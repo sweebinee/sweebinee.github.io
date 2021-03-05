@@ -18,7 +18,7 @@ tags: ['scRNA-seq']
 - [**Strategies for dealing with high dimensionality**](#3-strategies-for-dealing-with-high-dimensionality)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Dimensionality reduction](#31-dimensionality-reduction)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Principal componet analysis](#principal-component-analysis-pca)<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[T-distributed stochastic neighbor embedding](#tdistributed-stochastic-neighbor-embedding-tsne)<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[T-distributed stochastic neighbor embedding](#t-distributed-stochastic-neighbor-embedding-tsne)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Diffusion maps](#diffusion-maps-dm)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Feature selection](#32-feature-selection)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Michaelis-Menten modelling of dropouts](#michaelis-menten-modelling-of-dropouts-m3drop)<br/>
