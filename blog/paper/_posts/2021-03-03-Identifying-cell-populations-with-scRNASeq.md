@@ -7,9 +7,8 @@ type: "Review"
 category: "paper"
 tags: ['scRNA-seq']
 ---
-Andrews, Tallulah S., and Martin Hemberg. ["Identifying cell populations with scRNASeq."](https://doi.org/10.1016/j.mam.2017.07.002) Molecular aspects of medicine 59 (2018): 114-122.
+| Andrews, Tallulah S., and Martin Hemberg. ["Identifying cell populations with scRNASeq."](https://doi.org/10.1016/j.mam.2017.07.002) Molecular aspects of medicine 59 (2018): 114-122.
 
-##### TOC 
 [Introduction](#1.-Intro)<br/>
 [Experimental design considerations for scRNA-seq](#2.-Experimental-design-considerations-for-scRNA-seq)
 - [Experimental protocols](#2.1.-Experimental-protocols)
@@ -20,6 +19,27 @@ Andrews, Tallulah S., and Martin Hemberg. ["Identifying cell populations with sc
 -- [Principal componet analysis](#Principal-component-analysis-(PCA))
 -- [T-distributed stochastic neighbor embedding](#T-distributed-stochastic neighbor-embedding-(tSNE))
 -- [Diffusion maps](#Diffusion-maps-(DM))
+- [Feature selection](#3.2.-Feature-selection)
+-- [Michaelis-Menten modelling of dropouts](#Michaelis-Menten-modelling-of-dropouts-(M3Drop))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # 1. Intro
@@ -31,3 +51,6 @@ Andrews, Tallulah S., and Martin Hemberg. ["Identifying cell populations with sc
 ### Principal component analysis (PCA) 
 ### T-distributed stochastic neighbor embedding (tSNE)
 ### Diffusion maps (DM)
+## 3.2. Feature selection
+### Michaelis-Menten modelling of dropouts (M3Drop)
+
