@@ -11,17 +11,17 @@ tags: ['scRNA-seq']
 
 <br/>
 [Introduction](#1.-intro)
-[Experimental design considerations for scRNA-seq](#2.-Experimental-design-considerations-for-scRNA-seq)
-- [Experimental protocols](#2.1.-Experimental-protocols)
-- [Managing technical noise](#2.2.-Managing-technical-noise)
+[Experimental design considerations for scRNA-seq](#2.-experimental-design-considerations-for-scrna-seq)
+- [Experimental protocols](#2.1.-experimental-protocols)
+- [Managing technical noise](#2.2.-managing-technical-noise)
 
 [Strategies for dealing with high dimensionality](#3.-Strategies-for-dealing-with-high-dimensionality)
-- [Dimensionality reduction](#3.1.-Dimensionality-reduction)
-	- [Principal componet analysis](#Principal-component-analysis-(PCA))
-	- [T-distributed stochastic neighbor embedding](#T-distributed-stochastic neighbor-embedding-(tSNE))
-	- [Diffusion maps](#Diffusion-maps-(DM))
-- [Feature selection](#3.2.-Feature-selection)
- - [Michaelis-Menten modelling of dropouts](#Michaelis-Menten-modelling-of-dropouts-(M3Drop))
+- [Dimensionality reduction](#3.1.-dimensionality-reduction)
+	- [Principal componet analysis](#principal-component-analysis-pca)
+	- [T-distributed stochastic neighbor embedding](#t-distributed-stochastic neighbor-embedding-tsne)
+	- [Diffusion maps](#diffusion-maps-(dm))
+- [Feature selection](#3.2.-feature-selection)
+ - [Michaelis-Menten modelling of dropouts](#michaelis-menten-modelling-of-dropouts-m3drop)
 
 
 
