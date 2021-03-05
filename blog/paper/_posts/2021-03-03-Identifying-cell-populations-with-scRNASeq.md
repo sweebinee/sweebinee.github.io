@@ -11,11 +11,11 @@ tags: ['scRNA-seq']
 
 <br/>
 - [Introduction](#1-intro)<br/>
-- [Experimental design considerations for scRNA-seq](#2-experimental-design-considerations-for-scrna-seq)<br/>
+- [**Experimental design considerations for scRNA-seq**](#2-experimental-design-considerations-for-scrna-seq)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Experimental protocols](#21-experimental-protocols)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Managing technical noise](#22-managing-technical-noise)<br/>
 
-- [Strategies for dealing with high dimensionality](#3-strategies-for-dealing-with-high-dimensionality)<br/>
+- [**Strategies for dealing with high dimensionality**](#3-strategies-for-dealing-with-high-dimensionality)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Dimensionality reduction](#31-dimensionality-reduction)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Principal componet analysis](#principal-component-analysis-pca)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[T-distributed stochastic neighbor embedding](#tdistributed-stochastic neighbor-embedding-tsne)<br/>
@@ -26,13 +26,13 @@ tags: ['scRNA-seq']
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Spike-in based methods](#spikein-based-methods)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Correlated expression](#correlated-expression)<br/>
 
-- [Unsupervised clustering methods for identification of cell populations](#4-unsupervised-clustering-methods-for-identification-of-cell-populations)<br/>
+- [**Unsupervised clustering methods for identification of cell populations**](#4-unsupervised-clustering-methods-for-identification-of-cell-populations)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[K-means](#kmeans)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Hierarchical clustering](#hierarchical-clustering)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Density-based clustering](#densitybased-clustering)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Graph clustering](#graph-clustering)<br/>
 
-- [Biological characterization of clusters](#5-biological-characterization-of-clusters)<br/>
+- [**Biological characterization of clusters**](#5-biological-characterization-of-clusters)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Computational approaches](#51-computational-approaches)<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Experimental approaches](#52-experimental-approaches)<br/>
 
