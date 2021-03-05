@@ -13,14 +13,14 @@ tags: ['scRNA-seq']
 [Introduction](#1-intro)<br/>
 [Experimental design considerations for scRNA-seq](#2-experimental-design-considerations-for-scrna-seq)
 - [Experimental protocols](#21-experimental-protocols)
-- [Managing technical noise](#2.2.-managing-technical-noise)
+- [Managing technical noise](#22-managing-technical-noise)
 
-[Strategies for dealing with high dimensionality](#3.-strategies-for-dealing-with-high-dimensionality)
-- [Dimensionality reduction](#3.1.-dimensionality-reduction)
-	- [Principal componet analysis](#principal-component-analysis-(pca))
+[Strategies for dealing with high dimensionality](#3-strategies-for-dealing-with-high-dimensionality)
+- [Dimensionality reduction](#31-dimensionality-reduction)
+	- [Principal componet analysis](#principal-component-analysis-pca)
 	- [T-distributed stochastic neighbor embedding](#tdistributed-stochastic neighbor-embedding-tsne)
 	- [Diffusion maps](#diffusion-maps-dm)
-- [Feature selection](#3.2.-feature-selection)
+- [Feature selection](#32-feature-selection)
  - [Michaelis-Menten modelling of dropouts](#michaelis-menten-modelling-of-dropouts-m3drop)
 
 
