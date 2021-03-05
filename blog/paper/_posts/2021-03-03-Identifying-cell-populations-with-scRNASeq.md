@@ -10,16 +10,16 @@ tags: ['scRNA-seq']
 > Andrews, Tallulah S., and Martin Hemberg. ["Identifying cell populations with scRNASeq."](https://doi.org/10.1016/j.mam.2017.07.002) Molecular aspects of medicine 59 (2018): 114-122.
 
 <br/>
-[Introduction](#1.-intro)
+[Introduction](#1.-intro)<br/>
 [Experimental design considerations for scRNA-seq](#2.-experimental-design-considerations-for-scrna-seq)
 - [Experimental protocols](#2.1.-experimental-protocols)
 - [Managing technical noise](#2.2.-managing-technical-noise)
 
-[Strategies for dealing with high dimensionality](#3.-Strategies-for-dealing-with-high-dimensionality)
+[Strategies for dealing with high dimensionality](#3.-strategies-for-dealing-with-high-dimensionality)
 - [Dimensionality reduction](#3.1.-dimensionality-reduction)
 	- [Principal componet analysis](#principal-component-analysis-pca)
 	- [T-distributed stochastic neighbor embedding](#t-distributed-stochastic neighbor-embedding-tsne)
-	- [Diffusion maps](#diffusion-maps-(dm))
+	- [Diffusion maps](#diffusion-maps-dm)
 - [Feature selection](#3.2.-feature-selection)
  - [Michaelis-Menten modelling of dropouts](#michaelis-menten-modelling-of-dropouts-m3drop)
 
