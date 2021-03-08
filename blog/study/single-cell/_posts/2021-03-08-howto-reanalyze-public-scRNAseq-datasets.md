@@ -40,7 +40,6 @@ SCP.data <- Read10X("/SCP_data_download_dir_location")
 Error in `[.data.frame`(feature.names, , gene.column) : 
   undefined columns selected
 ```
-
 ```bash
 $ head genes.tsv
 0610007P14Rik
@@ -54,7 +53,6 @@ $ head genes.tsv
 0610030E20Rik
 0610031O16Rik
 ```
-
 </div>
 </details>
 <br/>
