@@ -26,7 +26,7 @@ mv gene_sorted-msi.matrix.mtx matrix.mtx
 mv msi.genes.tsv genes.tsv
 ```
 - Make seurat object<br/>
-```R
+```
 SCP.data <- Read10X("/SCP_data_download_dir_location")
 SCP <- CreateSeuratObject(counts = SCP.data, project = "SCP1038")
 
@@ -40,7 +40,7 @@ SCP <- CreateSeuratObject(counts = SCP.data, project = "SCP1038")
 <summary> Error in '[.data.frame'(feature.names, , gene.column) : </summary>
 <div markdown="1">
 `Read10X` 불러들여오는데 다음과 같이 error가 난다면 genes.tsv 파일을 열어서 column이 몇개인지 확인해보자. 한 column밖에 없다면 `gene.column=1` 옵션을 추가해주자.
-```R
+```
 SCP.data <- Read10X("/SCP_data_download_dir_location")
 Error in `[.data.frame`(feature.names, , gene.column) : 
   undefined columns selected
