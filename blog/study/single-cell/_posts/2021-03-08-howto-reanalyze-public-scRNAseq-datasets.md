@@ -34,9 +34,8 @@ SCP <- CreateSeuratObject(counts = SCP.data, project = "SCP1038")
 #22595 features across 79293 samples within 1 assay 
 #Active assay: RNA (22595 features, 0 variable features)
 ```
-:inerrobang: 
 <details>
-<summary> Error in '[.data.frame'(feature.names, , gene.column) : </summary>
+<summary> <p>&#x1F601;</p> Error in '[.data.frame'(feature.names, , gene.column) : </summary>
 <div markdown="1">
 `Read10X` 불러들여오는데 다음과 같이 error가 난다면 genes.tsv 파일을 열어서 column이 몇개인지 확인해보자. 한 column밖에 없다면 `gene.column=1` 옵션을 추가해주자.
 ```bash
@@ -60,7 +59,7 @@ $ head genes.tsv
 ```
 </div>
 </details>
-<br/>
+
 - Load meta data
 ```
 meta <- read.table("msi.tsne2.txt", sep='\t', header=TRUE, stringsAsFactors=FALSE)
