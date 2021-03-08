@@ -73,3 +73,4 @@ meta <- meta[-1,]
 ```
 SCP$label <- meta$LABEL
 ```
+- 이후에 normalization부터 다시 분석 시작하면 됨. 
