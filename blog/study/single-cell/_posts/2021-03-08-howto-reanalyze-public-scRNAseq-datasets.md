@@ -44,7 +44,7 @@ SCP.data <- Read10X("/SCP_data_download_dir_location")
 Error in `[.data.frame`(feature.names, , gene.column) : 
   undefined columns selected
 ```
-
+<br/>
 ```bash
 $ head genes.tsv
 0610007P14Rik
@@ -62,11 +62,14 @@ $ head genes.tsv
 </details>
 <br/>
 - Load meta data
-	meta <- read.table("msi.tsne2.txt", sep='\t', header=TRUE, stringsAsFactors=FALSE)
-	meta$X <- as.numeric(meta$X)
-	meta$Y <- as.numeric(meta$Y)
-	meta$LABEL <- as.factor(meta$LABEL)
-	meta <- meta[-1,]
-    
-	SCP$label <- meta$LABEL
-
+```
+meta <- read.table("msi.tsne2.txt", sep='\t', header=TRUE, stringsAsFactors=FALSE)
+meta$X <- as.numeric(meta$X)
+meta$Y <- as.numeric(meta$Y)
+meta$LABEL <- as.factor(meta$LABEL)
+meta <- meta[-1,]
+```
+- Add meta data. 전에 만들어준 seurat object에 meta data(cluser annotation results)를 추가해준다. 
+```
+SCP$label <- meta$LABEL
+```
