@@ -61,12 +61,12 @@ $ head genes.tsv
 </div>
 </details>
 <br/>
-- # load meta data
-meta <- read.table("msi.tsne2.txt", sep='\t', header=TRUE, stringsAsFactors=FALSE)
-meta$X <- as.numeric(meta$X)
-meta$Y <- as.numeric(meta$Y)
-meta$LABEL <- as.factor(meta$LABEL)
-meta <- meta[-1,]
-
-SCP$label <- meta$LABEL
+- Load meta data
+	meta <- read.table("msi.tsne2.txt", sep='\t', header=TRUE, stringsAsFactors=FALSE)
+	meta$X <- as.numeric(meta$X)
+	meta$Y <- as.numeric(meta$Y)
+	meta$LABEL <- as.factor(meta$LABEL)
+	meta <- meta[-1,]
+    
+	SCP$label <- meta$LABEL
 
