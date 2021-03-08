@@ -25,12 +25,12 @@ mv msi.barcodes.tsv barcodes.tsv
 mv gene_sorted-msi.matrix.mtx matrix.mtx
 mv msi.genes.tsv genes.tsv
 ```
-- Make seurat object<br/>
+- Make seurat object
 ```
 SCP.data <- Read10X("/SCP_data_download_dir_location")
 SCP <- CreateSeuratObject(counts = SCP.data, project = "SCP1038")
 
-> SCP
+# SCP
 #An object of class Seurat 
 #22595 features across 79293 samples within 1 assay 
 #Active assay: RNA (22595 features, 0 variable features)
