@@ -10,6 +10,10 @@ disqus: true
 post-header: true
 header-img: https://user-images.githubusercontent.com/43258282/107852190-b8b25280-6e52-11eb-92ed-e4c8a18f5165.png
 ---
+
+- [클럽하우스 정보센터 (한글)](www.notion.so/694def75c39944ea9a2029b596d4b372)
+- [커뮤니티 가이드라인 (한글)](www.notion.so/0f0905d5b3094b0cb5e64134ad560a21)
+
 세상은 참 따라가기도 벅차게 변화한다. 요즘은 Clubhouse라는 음성 SNS가 유행이란다. 
 
 아직 창업한지 1년도 안돼서 직원수가 20명이 안되고 앱도 베타버전이라 소수의 사람들만 초대를 통해서 사용할 수 있지만, 전세계 사람들의 주목을 받고 기업가치가 무려 10억이나 된다는..
