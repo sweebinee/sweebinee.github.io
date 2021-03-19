@@ -8,6 +8,8 @@ category: "singleCell"
 tags: ['public single-cell RNA seq','scRNAseq database']
 disqus: true
 ---
+참고 할만한 페이지
+- [Omicsplayground](https://omicsplayground.readthedocs.io/en/latest/examples/examples.html)
 
 기본 분석 툴: `Seurat` 사용 가정
 
