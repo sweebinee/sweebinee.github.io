@@ -31,7 +31,7 @@ SeuratWrapper를 통해서 seurat object로 비슷한 분석이 가능한데, �
 ## Installation
 - python >= 3.6.0 (3.5이하는 지원 안함)
 - [anaconda](https://sweebinee.github.io/blog/study/tools/2021-03-22/Anaconda)로 설치하는 것 추천 (dependency-managing issue)
-- samtools >= 1.6 
+- [samtools](https://sweebinee.github.io/blog/study/tools/2021-03-22/Samtools) >= 1.6 
 
 ```bash
 conda install numpy scipy cython numba matplotlib scikit-learn h5py click
