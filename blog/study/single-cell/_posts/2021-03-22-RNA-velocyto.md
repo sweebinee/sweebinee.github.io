@@ -43,17 +43,18 @@ Velocyto는 두가지 구성요소로 이루어져 있음.
 -  **Command line interface(CLI)**, spliced/unspliced expression matrices를 만드는 파이프라인을 돌릴때 사용.
 -  **A library**, CLI로 만든 expression matrices에서 RNA velocity 측정하는 function을 포함.
 
-### Running CLI[^2]
+### :honey_pot: Running CLI[^2]
 돌리기 전에 준비물
 - genome annotation file<br/> .gtf file을 준비한다.(분석하는 종, 분석에 사용한 reference 버전에 맞춰서)<br/> cellranger pipeline을 사용했다면 그때 사용했던 gene/gene.gtf 파일을 사용하면 된다. 다운로드는 [여기](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references) 
-- expressed repeats annoation (optional)
-<br/>
+- expressed repeats annoation (optional)<br/>
+
+
 #### Running `velocyto` 
 `velocyto run` 으로 기본적인 pipeline을 돌릴 수 있는데, 사람들이 많이 사용하는 scRNA-seq chemistry는 redy-to-use subcommand를 만들어놨다고 한다. 가능한 옵션은 다음과 같다.
-- `run10x`: Run on 10X Chromium samples
-- `run_smartseq2`: Run on SmartSeq2 samples
-- `run_dropest`: Run on DropSeq, InDrops and other techniques
-- `run`: Run on any technique (Advanced use)
+-- `run10x`: Run on 10X Chromium samples
+-- `run_smartseq2`: Run on SmartSeq2 samples
+-- `run_dropest`: Run on DropSeq, InDrops and other techniques
+-- `run`: Run on any technique (Advanced use)
 <br/>
 
 *나는 10X로 생산한 data를 분석할거라 `run10x`로 진행!*
@@ -65,7 +66,7 @@ export HDF5_USE_FILE_LOCKING='FALSE'
 <details>
 <summary>안그러면 이런 에러가 난다.</summary>
 <div markdown="1">
-거의 2시간쯤 후.. 다 돌아가서 결과 loom file writing 하는 와중에 발생한다.
+거의 2시간쯤 후.. 다 돌아가서 결과 loom file writing 하는 와중에 발생한다.[^3]
 
 ```bash
 2021-03-22 19:27:45,677 - DEBUG - Writing loom file
@@ -118,8 +119,9 @@ velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-
 <br/> 
 `--samtools-threads`와 `--samtools-memory` 옵션으로 parallelization 조정가능. 
 
-### Estimating RNA velocity
+### :honey_pot: Estimating RNA velocity
 
 
 [^1]: [Estimating RNA Velocity using Seurat](https://github.com/satijalab/seurat-wrappers/blob/master/docs/velocity.md)
 [^2]: [Running Velocyto CLI](http://velocyto.org/velocyto.py/tutorial/index.html)
+[^3]: [OSError: Unable to create file](https://github.com/qqwweee/keras-yolo3/issues/443)
