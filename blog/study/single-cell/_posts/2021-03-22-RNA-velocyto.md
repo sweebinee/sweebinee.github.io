@@ -122,6 +122,24 @@ velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-
 ### :honey_pot: Estimating RNA velocity
 
 
+<div class="bs-callout bs-callout-info">
+  <h4>Info Callout</h4>
+  This is an info callout.
+</div>
+
+<div class="bs-callout bs-callout-warning">
+  <h4>Warning Callout</h4>
+  This is a warning callout.
+</div>
+
+<div class="bs-callout bs-callout-danger">
+  <h4>Danger Callout</h4>
+  This is a danger callout.
+</div>
+
+
+
+
 [^1]: [Estimating RNA Velocity using Seurat](https://github.com/satijalab/seurat-wrappers/blob/master/docs/velocity.md)
 [^2]: [Running Velocyto CLI](http://velocyto.org/velocyto.py/tutorial/index.html)
 [^3]: [OSError: Unable to create file](https://github.com/qqwweee/keras-yolo3/issues/443)
