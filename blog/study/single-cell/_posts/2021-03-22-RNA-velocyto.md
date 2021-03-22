@@ -51,11 +51,10 @@ Velocyto는 두가지 구성요소로 이루어져 있음.
 
 #### Running `velocyto` 
 `velocyto run` 으로 기본적인 pipeline을 돌릴 수 있는데, 사람들이 많이 사용하는 scRNA-seq chemistry는 redy-to-use subcommand를 만들어놨다고 한다. 가능한 옵션은 다음과 같다.
-- 
- - `run10x`: Run on 10X Chromium samples
- - `run_smartseq2`: Run on SmartSeq2 samples
- - `run_dropest`: Run on DropSeq, InDrops and other techniques
- - `run`: Run on any technique (Advanced use)
+- `run10x`: Run on 10X Chromium samples
+- `run_smartseq2`: Run on SmartSeq2 samples
+- `run_dropest`: Run on DropSeq, InDrops and other techniques
+- `run`: Run on any technique (Advanced use)
 <br/>
 
 *나는 10X로 생산한 data를 분석할거라 `run10x`로 진행!*
