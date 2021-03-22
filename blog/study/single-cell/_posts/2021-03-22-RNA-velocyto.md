@@ -31,6 +31,7 @@ SeuratWrapper를 통해서 seurat object로 비슷한 분석이 가능한데, �
 ## Installation
 - python >= 3.6.0 (3.5이하는 지원 안함)
 - [anaconda](https://sweebinee.github.io/blog/study/tools/2021-03-22/Anaconda)로 설치하는 것 추천 (dependency-managing issue)
+- samtools >= 1.6 
 
 ```bash
 conda install numpy scipy cython numba matplotlib scikit-learn h5py click
@@ -38,6 +39,34 @@ pip install velocyto
 ```
 
 ## Tutorial
+Velocyto는 두가지 구성요소로 이루어져 있음.
+-  **Command line interface(CLI)**, spliced/unspliced expression matrices를 만드는 파이프라인을 돌릴때 사용.
+-  **A library**, CLI로 만든 expression matrices에서 RNA velocity 측정하는 function을 포함.
+
+### Running CLI[^2]
+돌리기 전에 준비물
+- genome annotation file<br/> .gtf file을 준비한다.(분석하는 종, 분석에 사용한 reference 버전에 맞춰서)<br/> cellranger pipeline을 사용했다면 그때 사용했던 gene/gene.gtf 파일을 사용하면 된다. 다운로드는 [여기](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references) 
+- expressed repeats annoation (optional)
+<br/>
+#### Running `velocyto` 
+`velocyto run` 으로 기본적인 pipeline을 돌릴 수 있는데, 사람들이 많이 사용하는 scRNA-seq chemistry는 redy-to-use subcommand를 만들어놨다고 한다. 가능한 옵션은 다음과 같다.
+- `run10x`: Run on 10X Chromium samples
+- `run_smartseq2`: Run on SmartSeq2 samples
+- `run_dropest`: Run on DropSeq, InDrops and other techniques
+- `run`: Run on any technique (Advanced use)
+<br/>
+
+*나는 10X로 생산한 data를 분석할거라 `run10x`로 진행!*
+
+```bash
+#Usage: velocyto run10x [OPTIONS] SAMPLEFOLDER GTFFILE
+velocyto run10x /scRNAseq/02_Preprocessing/SW480/ /cellranger-5.0.1/refdata-gex-GRCh38-2020-A/genes/genes.gtf
+velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-GRCh38-2020-A/genes/genes.gtf
+```
+만약에 **여러개의 데이터는 통합분석할 예정이라면 샘플별로 따로 `velocyto run`을 진행한 후 나중에 합쳐줘야한다!** arg에 들어가는 `SAMPLEFOLDER`의 하위폴더로 `outs`, `outs/analys` and `outs/filtered_gene_bc_matrices`가 있어야하기 때문! Cellranger에서 `aggr`을 진행하면 폴더구성이 저것과 달라서 aggr결과 폴더를 input으로 주면 에러남.
+
+### Estimating RNA velocity
 
 
 [^1]: [Estimating RNA Velocity using Seurat](https://github.com/satijalab/seurat-wrappers/blob/master/docs/velocity.md)
+[^2]: [Running Velocyto CLI](http://velocyto.org/velocyto.py/tutorial/index.html)
