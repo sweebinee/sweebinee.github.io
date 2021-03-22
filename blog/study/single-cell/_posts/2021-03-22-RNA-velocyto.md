@@ -24,8 +24,8 @@ SeuratWrapper를 통해서 seurat object로 비슷한 분석이 가능한데, �
 *내가 원래 원했던 것은..*<br/>
 *이미 integrated seurat data갖고 있고 여기에 velocity data 추가할 수 없을까? 했는데.. 잘 모르겠음.* 
 
-- [Installation](#installation)<br/>
-- [Tutorial](#tutorial)<br/>
+[Installation](#installation)<br/>
+[Tutorial](#tutorial)<br/>
 
 
 ## Installation
@@ -51,6 +51,7 @@ Velocyto는 두가지 구성요소로 이루어져 있음.
 
 #### Running `velocyto` 
 `velocyto run` 으로 기본적인 pipeline을 돌릴 수 있는데, 사람들이 많이 사용하는 scRNA-seq chemistry는 redy-to-use subcommand를 만들어놨다고 한다. 가능한 옵션은 다음과 같다.
+- 
  - `run10x`: Run on 10X Chromium samples
  - `run_smartseq2`: Run on SmartSeq2 samples
  - `run_dropest`: Run on DropSeq, InDrops and other techniques
