@@ -51,9 +51,9 @@ Velocyto는 두가지 구성요소로 이루어져 있음.
 
 #### Running `velocyto` 
 `velocyto run` 으로 기본적인 pipeline을 돌릴 수 있는데, 사람들이 많이 사용하는 scRNA-seq chemistry는 redy-to-use subcommand를 만들어놨다고 한다. 가능한 옵션은 다음과 같다.
-> `run10x`: Run on 10X Chromium samples
-> `run_smartseq2`: Run on SmartSeq2 samples
-> `run_dropest`: Run on DropSeq, InDrops and other techniques
+> `run10x`: Run on 10X Chromium samples <br/>
+> `run_smartseq2`: Run on SmartSeq2 samples<br/>
+> `run_dropest`: Run on DropSeq, InDrops and other techniques<br/>
 > `run`: Run on any technique (Advanced use)
 
 *나는 10X로 생산한 data를 분석할거라 `run10x`로 진행!*
@@ -116,9 +116,10 @@ velocyto run10x /scRNAseq/02_Preprocessing/SW480/ /cellranger-5.0.1/refdata-gex-
 velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-GRCh38-2020-A/genes/genes.gtf
 ```
 
-<div class="bs-callout .bs-callout-default">
+<div class="bs-callout .bs-callout-warning">
 <div markdown="1">
-만약에 **여러개의 데이터는 통합분석할 예정이라면 샘플별로 따로 `velocyto run`을 진행한 후 나중에 합쳐줘야한다!** arg에 들어가는 `SAMPLEFOLDER`의 하위폴더로 `outs`, `outs/analys` and `outs/filtered_gene_bc_matrices`가 있어야하기 때문! Cellranger에서 `aggr`을 진행하면 폴더구성이 저것과 달라서 aggr결과 폴더를 input으로 주면 에러남.
+<h4>:construction: 만약 여러개의 데이터를 통합분석할 예정이라면,</h4>
+**샘플별로 따로 `velocyto run`을 진행한 후 나중에 합쳐줘야한다!** arg에 들어가는 `SAMPLEFOLDER`의 하위폴더로 `outs`, `outs/analys` and `outs/filtered_gene_bc_matrices`가 있어야하기 때문! Cellranger에서 `aggr`을 진행하면 폴더구성이 저것과 달라서 aggr결과 폴더를 input으로 주면 에러남.
 </div></div>
 
 `--samtools-threads`와 `--samtools-memory` 옵션으로 parallelization 조정가능. 
