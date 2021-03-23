@@ -11,10 +11,11 @@ disqus: true
 **RNAvelocyto**는 unspliced와 spliced mRNAs를 구분해서  RNA velocity를 계산해주는 tool이다.
 
 <div class="bs-callout bs-callout-info">
+<div markdown="1">
   <h4>Publication</h4>
 La Manno, Gioele, et al. "[RNA velocity of single cells.](https://doi.org/10.1038/s41586-018-0414-6)" Nature 560.7719 (2018): 494-498.<br/>
 website: http://velocyto.org/
-</div>
+</div></div>
 
 `pyhon`과 `R`, 두 가지 언어로 실행할 수 있다.<br/>  
 
