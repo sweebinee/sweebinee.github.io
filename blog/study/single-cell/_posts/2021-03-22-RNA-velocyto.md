@@ -120,7 +120,7 @@ velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-
 <div markdown="1">
 만약에 **여러개의 데이터는 통합분석할 예정이라면 샘플별로 따로 `velocyto run`을 진행한 후 나중에 합쳐줘야한다!** arg에 들어가는 `SAMPLEFOLDER`의 하위폴더로 `outs`, `outs/analys` and `outs/filtered_gene_bc_matrices`가 있어야하기 때문! Cellranger에서 `aggr`을 진행하면 폴더구성이 저것과 달라서 aggr결과 폴더를 input으로 주면 에러남.
 </div></div>
-<br/> 
+
 `--samtools-threads`와 `--samtools-memory` 옵션으로 parallelization 조정가능. 
 
 ### :honey_pot: Estimating RNA velocity
