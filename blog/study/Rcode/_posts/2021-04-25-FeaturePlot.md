@@ -10,7 +10,7 @@ disqus: true
 post-header: true
 header-img: https://user-images.githubusercontent.com/43258282/116018464-06321380-a67d-11eb-9975-f742c1f2b5fe.png
 ---
-<center>논문에서 예쁜 그림을 봐서 따라해봄 [^1] </center>
+논문에서 예쁜 그림을 봐서 따라해봄[^1] 
 <p align="center"><img src="https://user-images.githubusercontent.com/43258282/116025994-b65b4880-a68c-11eb-94af-056ac7005906.jpg" alt="example of feature plot">Gene expression patterns</p>
 
 
