@@ -22,16 +22,12 @@ disqus: true
 
 
 # Introduction
-RNA velocity는 **시간단위로 각 세포의 미래상태를 예측해주는 high-dimensional vector**로, 한 시점의 snapshot만을 보여주는 기존의 single cell RNA seq 데이터의 특징과 분석의 한계를 극복하기 위한 방법이다.[^1] 
+RNA velocity는 **시간단위로 각 세포의 미래상태를 예측해주는 high-dimensional vector**로, 한 시점의 snapshot만을 보여주는 기존의 single cell RNA seq 데이터의 특징과 분석의 한계를 극복하기 위한 방법이다.[^1] velocity 계산은 unspliced read(precurosr mRNA)와 spliced read(masture mRNA)의 양 측정을 통해 이루어진다고 한다. 자세한건 velocyto 논문리뷰에서..[^2]
 
-계산은 unspliced read(precurosr mRNA)와 spliced read(masture mRNA)의 양 측정을 통해 이루어진다고 한다. 자세한건 velocyto 논문리뷰에서..[^2]
-
-2018년에 velocyto 논문을 통해서 RNA velocity 분석이 소개가 된 이후로 scVelo[^3], VeloSim같은 tool들도 나오고 있는것 같지만 아직까지는 velocyto를 많이 사용하는것 같다.
-
-SeuratWrapper를 통해서 seurat object로도 velocity 분석이 가능한데, 미리 정량한 RNA (spliced/unspliced counts, total counts etc.)정보를 seurat으로 불러들여서 재분석(normalize, dimension reduction, clustering)하고 visualization까지 하는 방법인듯..[^4]<br/>
+2018년에 velocyto 논문을 통해서 RNA velocity 분석이 소개가 된 이후로 scVelo[^3], VeloSim같은 tool들도 나오고 있는것 같지만 아직까지는 velocyto를 많이 사용하는것 같다. SeuratWrapper를 통해서 seurat object로도 velocity 분석이 가능한데, 미리 정량한 RNA (spliced/unspliced counts, total counts etc.)정보를 seurat으로 불러들여서 재분석(normalize, dimension reduction, clustering)하고 visualization까지 하는 방법인듯..[^4]<br/>
 
 *나는 지금까지 분석해온 seurat object가 있으니 velocity를 계산하고 얹어서 같이 보는 방법을 정리해보려고 한다.*<br/>
-주의해야할 점은 Seurat은 R-based이고, 이제부터 진행할 Velocyto는 python-based program 이라는점! 두 언어를 왔다갔다 할거다!!
+:exclamation:주의해야할 점은 Seurat은 R-based이고, 이제부터 진행할 Velocyto는 python-based program 이라는점! 두 언어를 왔다갔다 할거다!!
 <div class="bs-callout bs-callout-default">
 <div markdown="1">
 다음과 같은 tool을 사용할 예정:
@@ -226,11 +222,18 @@ sample이 n개라면, 각 샘플별로 cell filtering해주고 다시 하나로 
 |AAACCCATCCGTAATG-2|
 
 ```python
-cellID_obs_SW480 = sample_obs[sample_obs["x"].str.contains("-1")]
-cellID_obs_SW620 = sample_obs[sample_obs["x"].str.contains("-2")]
-SW480 = SW480[np.isin(SW480.obs.index, cellID_obs_SW480)]
-SW620 = SW620[np.isin(SW620.obs.index, cellID_obs_SW620)]
+cellID_obs_sample1 = sample_obs[sample_obs["x"].str.contains("-1")]
+cellID_obs_sample2 = sample_obs[sample_obs["x"].str.contains("-2")]
+
+#cell filtering
+sample1 = sample1[np.isin(sample1.obs.index, cellID_obs_sample1)]
+sample2 = sample2[np.isin(sample2.obs.index, cellID_obs_sample2)]
+
+#merge the files into one
+sample = np.concatenate(sample1,sample2)
 ```
+<br/><br/>
+여기까지 했으면
 
 ## Running RNA velocity
 ---
