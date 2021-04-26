@@ -14,12 +14,10 @@ disqus: true
     + [Velocyto](#velocyto)
       + [Installation](#installation)
       + [Usage](#usage)
-
-- [Extracting Meta-data From a Seurat Object](#extracting-meta-data)
-- [Integrating Loom File and Meta-data](#integrating-loom-file-and-meta-data)
-  * [Multiple-Sample Integration](#multiple-sample-integration)
-- [Running RNA Velocity](#running-rna-velocity)
-- [FAQ](#faq)
+  * [Extracting Meta-data From a Seurat Object](#extracting-meta-data)
+  * [Integrating Loom File and Meta-data](#integrating-loom-file-and-meta-data)
+    + [Multiple-Sample Integration](#multi-samples-integration)
+  * [Running RNA Velocity](#running-rna-velocity)
 
 
 
@@ -49,10 +47,10 @@ SeuratWrapper를 통해서 seurat object로도 velocity 분석이 가능한데, 
 loom file만들어야한다. 
 
 
-### Velocyto
+### :apple: Velocyto
 **RNAvelocyto**는 앞에서도 말했지만 unspliced와 spliced mRNAs를 구분해서 RNA velocity를 계산해주는 tool이다.
 
-#### Installation
+### Installation
 
 <div class="bs-callout bs-callout-default">
 <div markdown="1">
@@ -69,12 +67,12 @@ conda install numpy scipy cython numba matplotlib scikit-learn h5py click
 pip install velocyto
 ```
 
-#### Usage
+### Usage
 Velocyto는 두가지 구성요소로 이루어져 있음.
 -  **Command line interface(CLI)**, spliced/unspliced expression matrices를 만드는 파이프라인을 돌릴때 사용.
 -  **A library**, CLI로 만든 expression matrices에서 RNA velocity 측정하는 function을 포함.
 
-##### :honey_pot: Running CLI[^2]
+#### :honey_pot: Running CLI[^5]
 <div class="bs-callout bs-callout-default">
 <div markdown="1">
 **돌리기 전에 준비물** 
@@ -82,12 +80,15 @@ Velocyto는 두가지 구성요소로 이루어져 있음.
 - <u>expressed repeats annoation</u> (optional)<br/>
 </div></div>
 
-** Running `velocyto` **
+#### ** Running `velocyto` **
 `velocyto run` 으로 기본적인 pipeline을 돌릴 수 있는데, 사람들이 많이 사용하는 scRNA-seq chemistry는 redy-to-use subcommand를 만들어놨다고 한다. 가능한 옵션은 다음과 같다.
-> `run10x`: Run on 10X Chromium samples <br/>
-> `run_smartseq2`: Run on SmartSeq2 samples<br/>
-> `run_dropest`: Run on DropSeq, InDrops and other techniques<br/>
-> `run`: Run on any technique (Advanced use)
+<div class="bs-callout bs-callout-default">
+<div markdown="1">
+ `run10x`: Run on 10X Chromium samples <br/>
+ `run_smartseq2`: Run on SmartSeq2 samples<br/>
+ `run_dropest`: Run on DropSeq, InDrops and other techniques<br/>
+ `run`: Run on any technique (Advanced use)
+</div></div>
 
 *나는 10X로 생산한 data를 분석할거라 `run10x`로 진행!*
 
@@ -98,7 +99,7 @@ export HDF5_USE_FILE_LOCKING='FALSE'
 <details>
 <summary>안그러면 이런 에러가 난다.</summary>
 <div markdown="1">
-거의 2시간쯤 후.. 다 돌아가서 결과 loom file writing 하는 와중에 발생한다.[^3]
+거의 2시간쯤 후.. 다 돌아가서 결과 loom file writing 하는 와중에 발생한다.[^6]
 
 ```bash
 2021-03-22 19:27:45,677 - DEBUG - Writing loom file
@@ -149,11 +150,6 @@ velocyto run10x /scRNAseq/02_Preprocessing/SW480/ /cellranger-5.0.1/refdata-gex-
 velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-GRCh38-2020-A/genes/genes.gtf
 ```
 
-
-
-
-
-
 <div class="bs-callout bs-callout-warning">
 <div markdown="1">
 <h4>:construction: 만약 여러개의 데이터를 통합분석할 예정이라면,</h4>
@@ -164,6 +160,12 @@ velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-
 
 :honey_pot: Estimating RNA velocity
 
+## Extracting meta-data
+## Integrating loom file and meta-data
+### Multi-samples integration
+## Running RNA velocity
+
+
 
 <br/><br/><br/><br/><br/><br/><br/><br/>
 
@@ -172,6 +174,5 @@ velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-
 [^2]: 논문 리뷰페이지()
 [^3]: Bergen, Volker, et al. ["Generalizing RNA velocity to transient cell states through dynamical modeling."](https://www.nature.com/articles/s41587-020-0591-3) Nature biotechnology 38.12 (2020): 1408-1414.
 [^4]: [Estimating RNA Velocity using Seurat](https://github.com/satijalab/seurat-wrappers/blob/master/docs/velocity.md)
-
-[^2]: [Running Velocyto CLI](http://velocyto.org/velocyto.py/tutorial/index.html)
-[^3]: [OSError: Unable to create file](https://github.com/qqwweee/keras-yolo3/issues/443)
+[^5]: [Running Velocyto CLI](http://velocyto.org/velocyto.py/tutorial/index.html)
+[^6]: [OSError: Unable to create file](https://github.com/qqwweee/keras-yolo3/issues/443)
