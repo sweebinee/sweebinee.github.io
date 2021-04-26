@@ -32,7 +32,14 @@ RNA velocity는 **시간단위로 각 세포의 미래상태를 예측해주는 
 
 SeuratWrapper를 통해서 seurat object로도 velocity 분석이 가능한데, 미리 계산한 RNA velocity 정보를 seurat으로 불러들여서 재분석(normalize, dimension reduction, clustering) 하고 visualization까지 하는 방법인듯..[^4]<br/>
 
-*나는 지금까지 분석해온 seurat object가 있으니(UMAP visualizaion까지 한 상태) velocity를 계산하고 얹어서 같이 보는 방법을 정리해보려고 한다.*
+*나는 지금까지 분석해온 seurat object가 있으니(UMAP visualizaion까지 한 상태) velocity를 계산하고 얹어서 같이 보는 방법을 정리해보려고 한다.*<br/>
+주의해야할 점은 Seurat은 R-based이고, 이제부터 진행할 Velocyto는 python-based program 이라는점! 
+
+다음과 같은 tool을 사용할 예정:
+- [Seurat](https://satijalab.org/seurat/)
+- [Velocyto](http://velocyto.org/)
+- Samtools(optional)
+- [Anndata](https://anndata.readthedocs.io/en/stable/)
 
 # Tutorial
 ## Generating Loom files
