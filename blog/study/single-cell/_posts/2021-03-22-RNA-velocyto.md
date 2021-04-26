@@ -203,6 +203,7 @@ sample_obs = pd.read_csv("cellID_obs.csv")
 umap_cord = pd.read_csv("cell_embeddings.csv")
 cell_clusters = pd.read_csv("clusters.csv")
 ```
+<br/>
 if, sample이 여러개가 아니라 sample1뿐이라면..<br/>
 다음처럼 cell filtering하고 RNA velocity계산하는 단계로 넘어가면 됨.
 ```python
@@ -211,7 +212,8 @@ sample1 = sample1[np.isin(sample1.obs.index,sample_obs["x"])]
 ### Multi-samples integration
 sample이 n개라면, 각 샘플별로 cell filtering해주고 다시 하나로 합쳐서 준비해준다.
 
-*내 데이터는 뒤에 라벨이 붙은 형식으로 생겨서 이렇게 처리해줬다.*<br/>
+*내 데이터는 뒤에 라벨이 붙은 형식으로 생겨서 이렇게 처리해줬다.*
+
 | Cell ID_obs | 
 | ---------------- | 
 |AAACCCAGTCCGATCG-1|
