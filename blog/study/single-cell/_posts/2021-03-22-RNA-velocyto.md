@@ -28,12 +28,12 @@ RNA velocity는 **시간단위로 각 세포의 미래상태를 예측해주는 
 
 계산은 unspliced read(precurosr mRNA)와 spliced read(masture mRNA)의 양 측정을 통해 이루어진다고 한다. 자세한건 velocyto 논문리뷰에서..[^2]
 
-2018년에 velocyto 논문을 통해서 RNA velocity 분석이 소개가 된 이후로 scVelo[^3], VeloSim같은 tool들도 나오고 있는것 같지만 아직(2021년까지는 velocyto를 많이 사용하는것 같다.
+2018년에 velocyto 논문을 통해서 RNA velocity 분석이 소개가 된 이후로 scVelo[^3], VeloSim같은 tool들도 나오고 있는것 같지만 아직까지는 velocyto를 많이 사용하는것 같다.
 
-SeuratWrapper를 통해서 seurat object로도 velocity 분석이 가능한데, 미리 계산한 RNA velocity 정보를 seurat으로 불러들여서 재분석(normalize, dimension reduction, clustering) 하고 visualization까지 하는 방법인듯..[^4]<br/>
+SeuratWrapper를 통해서 seurat object로도 velocity 분석이 가능한데, 미리 정량한 RNA (spliced/unspliced counts, total counts etc.)정보를 seurat으로 불러들여서 재분석(normalize, dimension reduction, clustering)하고 visualization까지 하는 방법인듯..[^4]<br/>
 
-*나는 지금까지 분석해온 seurat object가 있으니(UMAP visualizaion까지 한 상태) velocity를 계산하고 얹어서 같이 보는 방법을 정리해보려고 한다.*<br/>
-주의해야할 점은 Seurat은 R-based이고, 이제부터 진행할 Velocyto는 python-based program 이라는점! 
+*나는 지금까지 분석해온 seurat object가 있으니 velocity를 계산하고 얹어서 같이 보는 방법을 정리해보려고 한다.*<br/>
+주의해야할 점은 Seurat은 R-based이고, 이제부터 진행할 Velocyto는 python-based program 이라는점! 두 언어를 왔다갔다 할거다!!
 
 다음과 같은 tool을 사용할 예정:
 - [Seurat](https://satijalab.org/seurat/)
@@ -43,45 +43,36 @@ SeuratWrapper를 통해서 seurat object로도 velocity 분석이 가능한데, 
 
 # Tutorial
 ## Generating Loom files
-loom file만들어야한다
+loom file만들어야한다. 
 
 
 ### Velocyto
-**RNAvelocyto**는 unspliced와 spliced mRNAs를 구분해서 RNA velocity를 계산해주는 tool이다.
-
-<div class="bs-callout bs-callout-info">
-<div markdown="1">
-  <h4>Publication</h4>
-La Manno, Gioele, et al. "[RNA velocity of single cells.](https://doi.org/10.1038/s41586-018-0414-6)" Nature 560.7719 (2018): 494-498.<br/>
-website: [velocyto.org](http://velocyto.org/)
-</div></div>
-
-`pyhon`과 `R`, 두 가지 언어로 실행할 수 있다.<br/>  
+**RNAvelocyto**는 앞에서도 말했지만 unspliced와 spliced mRNAs를 구분해서 RNA velocity를 계산해주는 tool이다.
 
 #### Installation
-
+**dependencies**
 - python >= 3.6.0 (3.5이하는 지원 안함)
 - [anaconda](https://sweebinee.github.io/blog/study/tools/2021-03-22/Anaconda)로 설치하는 것 추천 (dependency-managing issue)
 - [samtools](https://sweebinee.github.io/blog/study/tools/2021-03-22/Samtools) >= 1.6 
 
 ```bash
+#dependencies
 conda install numpy scipy cython numba matplotlib scikit-learn h5py click
+#install velocyto
 pip install velocyto
 ```
 
 #### Usage
-
 Velocyto는 두가지 구성요소로 이루어져 있음.
 -  **Command line interface(CLI)**, spliced/unspliced expression matrices를 만드는 파이프라인을 돌릴때 사용.
 -  **A library**, CLI로 만든 expression matrices에서 RNA velocity 측정하는 function을 포함.
 
-:honey_pot: Running CLI[^2]
-돌리기 전에 준비물
+##### :honey_pot: Running CLI[^2]
+**돌리기 전에 준비물** 
 - <u>genome annotation file</u><br/> .gtf file을 준비한다.(분석하는 종, 분석에 사용한 reference 버전에 맞춰서)<br/> cellranger pipeline을 사용했다면 그때 사용했던 gene/gene.gtf 파일을 사용하면 된다. 다운로드는 [여기](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references) 
 - <u>expressed repeats annoation</u> (optional)<br/>
 
-
-#### Running `velocyto` 
+** Running `velocyto` **
 `velocyto run` 으로 기본적인 pipeline을 돌릴 수 있는데, 사람들이 많이 사용하는 scRNA-seq chemistry는 redy-to-use subcommand를 만들어놨다고 한다. 가능한 옵션은 다음과 같다.
 > `run10x`: Run on 10X Chromium samples <br/>
 > `run_smartseq2`: Run on SmartSeq2 samples<br/>
@@ -147,6 +138,11 @@ OSError: Unable to create file (file locking disabled on this file system (use H
 velocyto run10x /scRNAseq/02_Preprocessing/SW480/ /cellranger-5.0.1/refdata-gex-GRCh38-2020-A/genes/genes.gtf
 velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-GRCh38-2020-A/genes/genes.gtf
 ```
+
+
+
+
+
 
 <div class="bs-callout bs-callout-warning">
 <div markdown="1">
