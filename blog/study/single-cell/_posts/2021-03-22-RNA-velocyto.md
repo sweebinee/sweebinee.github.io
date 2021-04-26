@@ -233,11 +233,32 @@ sample2 = sample2[np.isin(sample2.obs.index, cellID_obs_sample2)]
 sample = np.concatenate(sample1,sample2)
 ```
 <br/><br/>
-여기까지 했으면
+여기까지 했으면 filtered velocity file에 seurat의 umap정보를 얹을 차례. 그전에 두 file에서의 cell id 순서를 동일하게 맞춰준다.
+```python
+sample_index = pd.DataFrame(sample.obs.index)
+sample = sample_index.rename(columns = {0:'Cell ID'})
+
+umap = umap_cord.rename(Columns = {'Unnamed: 0':'Cell ID'})
+
+umap_ordered = sample_index.merge(umap, on = "Cell ID")
+
+umap_ordered = umap_ordered.iloc[:,1:]
+sample.obsm['X_umap'] = umap_ordered.values
+
+#add Clusters and their cluster colors
+sample.uns['Cluster_colors']
+```
 
 ## Running RNA velocity
 ---
+```python
+scv.pp.filter_and_normalize(sample)
+scv.pp.moments(sample)
+scv.tl.velocity(sample, mode = "stochastic")
+scv.tl.velocity_graph(sample)
+scv.pl.velocity_embedding(sample, basis = 'umap')
 
+```
 
 
 <br/><br/><br/><br/><br/><br/><br/><br/>
