@@ -211,7 +211,7 @@ sample1 = sample1[np.isin(sample1.obs.index,sample_obs["x"])]
 ### Multi-samples integration
 sample이 n개라면, 각 샘플별로 cell filtering해주고 다시 하나로 합쳐서 준비해준다.
 
-*내 데이터는 뒤에 라벨이 붙은 형식으로 생겨서 이렇게 처리해줬다.*
+*내 데이터는 뒤에 라벨이 붙은 형식으로 생겨서 이렇게 처리해줬다.*<br/>
 | Cell ID_obs | 
 | ---------------- | 
 |AAACCCAGTCCGATCG-1|
