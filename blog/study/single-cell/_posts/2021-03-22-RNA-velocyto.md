@@ -8,18 +8,13 @@ category: "singleCell"
 tags: ['RNAvelocyto','RNA velocity','Seurat to RNAvelocity','scRNAseq','Python','R']
 disqus: true
 ---
-
--[Installation](#installation)<br/>
--[Tutorial](#tutorial)<br/>
-
 - [Introduction](#introduction)
-- [Generating Loom files](#generating-loom-files)
-  * [Kallisto Bustools](#kallisto-bustools)
-    + [Installation](#installation)
-    + [Usage](#usage)
-  * [Velocyto](#velocyto)
-    + [Installation](#installation-1)
-    + [Usage](#usage-1)
+- [Tutorial](#tutorial)
+  * [Generating Loom files](#generating-loom-files)
+    + [Velocyto](#velocyto)
+      + [Installation](#installation)
+      + [Usage](#usage)
+
 - [Extracting Meta-data From a Seurat Object](#extracting-meta-data)
 - [Integrating Loom File and Meta-data](#integrating-loom-file-and-meta-data)
   * [Multiple-Sample Integration](#multiple-sample-integration)
@@ -28,6 +23,7 @@ disqus: true
 
 
 
+# Introduction
 **RNAvelocyto**는 unspliced와 spliced mRNAs를 구분해서  RNA velocity를 계산해주는 tool이다.
 
 <div class="bs-callout bs-callout-info">
@@ -57,6 +53,11 @@ pip install velocyto
 Velocyto는 두가지 구성요소로 이루어져 있음.
 -  **Command line interface(CLI)**, spliced/unspliced expression matrices를 만드는 파이프라인을 돌릴때 사용.
 -  **A library**, CLI로 만든 expression matrices에서 RNA velocity 측정하는 function을 포함.
+
+### Velocyto
+#### Installation
+#### Usage
+
 
 ### :honey_pot: Running CLI[^2]
 돌리기 전에 준비물
