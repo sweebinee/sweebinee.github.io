@@ -69,7 +69,7 @@ Velocyto는 두가지 구성요소로 이루어져 있음.
 -  **Command line interface(CLI)**, spliced/unspliced expression matrices를 만드는 파이프라인을 돌릴때 사용.
 -  **A library**, CLI로 만든 expression matrices에서 RNA velocity 측정하는 function을 포함.
 
-#### :honey_pot: Running CLI[^5]
+#### Running CLI[^5]
 <div class="bs-callout bs-callout-default">
 <div markdown="1">
 **돌리기 전에 준비물** 
