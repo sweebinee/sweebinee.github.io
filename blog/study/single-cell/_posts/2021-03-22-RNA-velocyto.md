@@ -50,10 +50,10 @@ loom file만들어야한다.
 **RNAvelocyto**는 앞에서도 말했지만 unspliced와 spliced mRNAs를 구분해서 RNA velocity를 계산해주는 tool이다.
 
 #### Installation
-**dependencies**
-> python >= 3.6.0 (3.5이하는 지원 안함)<br/>
-> [anaconda](https://sweebinee.github.io/blog/study/tools/2021-03-22/Anaconda)로 설치하는 것 추천 (dependency-managing issue)<br/>
-> [samtools](https://sweebinee.github.io/blog/study/tools/2021-03-22/Samtools) >= 1.6 <br/>
+> **dependencies**
+> - python >= 3.6.0 (3.5이하는 지원 안함)<br/>
+> - [anaconda](https://sweebinee.github.io/blog/study/tools/2021-03-22/Anaconda)로 설치하는 것 추천 (dependency-managing issue)<br/>
+> - [samtools](https://sweebinee.github.io/blog/study/tools/2021-03-22/Samtools) >= 1.6 <br/>
 
 ```bash
 #dependencies
