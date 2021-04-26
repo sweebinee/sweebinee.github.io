@@ -44,6 +44,7 @@ SeuratWrapper를 통해서 seurat object로도 velocity 분석이 가능한데, 
 
 # Tutorial
 ## Generating Loom files
+---
 loom file만들어야한다. 
 
 
@@ -162,6 +163,7 @@ velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-
 끝나면, `SAMPLEFOLDER/velocyto` folder아래 loom file이 만들어진다. 다음 단계로 넘어가기 전에 filtering과 후속분석에 필요한 meta data를 seurat object에서 뽑아 따로 저장한다.
 
 ## Extracting meta-data
+---
 <div class="bs-callout bs-callout-default">
 <div markdown="1">
 **뽑아낼 meta-data**
@@ -185,6 +187,7 @@ write.csv(seurat.obj@meta.data$seurat_clusters, file = "clusters.csv")
 ```
 
 ## Integrating loom file and meta-data
+---
 아까 velocyto로 만들었던 loom file에 seurat에서 뽑아온 meta-data를 합쳐준다.
 ```python
 #in python3
@@ -230,6 +233,7 @@ SW620 = SW620[np.isin(SW620.obs.index, cellID_obs_SW620)]
 ```
 
 ## Running RNA velocity
+---
 
 
 
