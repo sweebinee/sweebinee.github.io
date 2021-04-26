@@ -5,7 +5,7 @@ title:  "RNAvelocyto"
 subtitle: "Estimations of RNA velocities of single cells by distinguishing unspliced and spliced mRNAs"
 type: "Tool"
 category: "singleCell"
-tags: ['RNAvelocyto','RNA velocity']
+tags: ['RNAvelocyto','RNA velocity','Seurat to RNAvelocity','scRNAseq','Python','R']
 disqus: true
 ---
 **RNAvelocyto**는 unspliced와 spliced mRNAs를 구분해서  RNA velocity를 계산해주는 tool이다.
