@@ -24,6 +24,17 @@ disqus: true
 
 
 # Introduction
+
+
+SeuratWrapper를 통해서 seurat object로 비슷한 분석이 가능한데, 미리 계산한 RNA velocity 정보를 seurat으로 불러들여서 재분석 하고 visualization까지 하는 방법인듯..[^1]<br/>
+예시는 한 데이터만 갖고 하는 방법이고 여기서는 여러개의 dataset의 velocity 계산하고 seurat으로 다시 엮어보자.  
+
+# Tutorial
+## Generating Loom files
+loom file만들어야한다
+
+
+### Velocyto
 **RNAvelocyto**는 unspliced와 spliced mRNAs를 구분해서  RNA velocity를 계산해주는 tool이다.
 
 <div class="bs-callout bs-callout-info">
@@ -35,11 +46,8 @@ website: [velocyto.org](http://velocyto.org/)
 
 `pyhon`과 `R`, 두 가지 언어로 실행할 수 있다.<br/>  
 
-SeuratWrapper를 통해서 seurat object로 비슷한 분석이 가능한데, 미리 계산한 RNA velocity 정보를 seurat으로 불러들여서 재분석 하고 visualization까지 하는 방법인듯..[^1]<br/>
-예시는 한 데이터만 갖고 하는 방법이고 여기서는 여러개의 dataset의 velocity 계산하고 seurat으로 다시 엮어보자.  
+#### Installation
 
-
-## Installation
 - python >= 3.6.0 (3.5이하는 지원 안함)
 - [anaconda](https://sweebinee.github.io/blog/study/tools/2021-03-22/Anaconda)로 설치하는 것 추천 (dependency-managing issue)
 - [samtools](https://sweebinee.github.io/blog/study/tools/2021-03-22/Samtools) >= 1.6 
@@ -49,17 +57,13 @@ conda install numpy scipy cython numba matplotlib scikit-learn h5py click
 pip install velocyto
 ```
 
-## Tutorial
+#### Usage
+
 Velocyto는 두가지 구성요소로 이루어져 있음.
 -  **Command line interface(CLI)**, spliced/unspliced expression matrices를 만드는 파이프라인을 돌릴때 사용.
 -  **A library**, CLI로 만든 expression matrices에서 RNA velocity 측정하는 function을 포함.
 
-### Velocyto
-#### Installation
-#### Usage
-
-
-### :honey_pot: Running CLI[^2]
+:honey_pot: Running CLI[^2]
 돌리기 전에 준비물
 - <u>genome annotation file</u><br/> .gtf file을 준비한다.(분석하는 종, 분석에 사용한 reference 버전에 맞춰서)<br/> cellranger pipeline을 사용했다면 그때 사용했던 gene/gene.gtf 파일을 사용하면 된다. 다운로드는 [여기](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references) 
 - <u>expressed repeats annoation</u> (optional)<br/>
@@ -140,7 +144,7 @@ velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-
 
 `--samtools-threads`와 `--samtools-memory` 옵션으로 parallelization 조정가능. 
 
-### :honey_pot: Estimating RNA velocity
+:honey_pot: Estimating RNA velocity
 
 
 
