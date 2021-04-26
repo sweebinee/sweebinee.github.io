@@ -257,7 +257,6 @@ scv.pp.moments(sample)
 scv.tl.velocity(sample, mode = "stochastic")
 scv.tl.velocity_graph(sample)
 scv.pl.velocity_embedding(sample, basis = 'umap')
-
 ```
 
 
