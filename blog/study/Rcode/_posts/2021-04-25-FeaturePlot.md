@@ -20,8 +20,8 @@ header-img: https://user-images.githubusercontent.com/43258282/116018464-0632138
 - axis 없고 제목은 gene name.
 
 
-그렇게 따라한 내 코드
-▶ Seurat object 이름과 원하는 gene list,  표현하고자 하는 method (tSNE 또는 UMAP)을 넣으면 그려준다!
+### 내 코드
+▶ `Seurat object` 이름과 원하는 `gene list`,  표현하고자 하는 `method` (tSNE 또는 UMAP)을 넣으면 그려준다!
 
 ```R
 #원하는 cell type 과 그 known marker gene list를 담은 vector
