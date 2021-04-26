@@ -75,9 +75,12 @@ Velocyto는 두가지 구성요소로 이루어져 있음.
 -  **A library**, CLI로 만든 expression matrices에서 RNA velocity 측정하는 function을 포함.
 
 ##### :honey_pot: Running CLI[^2]
+<div class="bs-callout bs-callout-default">
+<div markdown="1">
 **돌리기 전에 준비물** 
 - <u>genome annotation file</u><br/> .gtf file을 준비한다.(분석하는 종, 분석에 사용한 reference 버전에 맞춰서)<br/> cellranger pipeline을 사용했다면 그때 사용했던 gene/gene.gtf 파일을 사용하면 된다. 다운로드는 [여기](https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/advanced/references) 
 - <u>expressed repeats annoation</u> (optional)<br/>
+</div></div>
 
 ** Running `velocyto` **
 `velocyto run` 으로 기본적인 pipeline을 돌릴 수 있는데, 사람들이 많이 사용하는 scRNA-seq chemistry는 redy-to-use subcommand를 만들어놨다고 한다. 가능한 옵션은 다음과 같다.
