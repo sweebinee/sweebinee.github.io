@@ -36,10 +36,10 @@ SeuratWrapper를 통해서 seurat object로도 velocity 분석이 가능한데, 
 주의해야할 점은 Seurat은 R-based이고, 이제부터 진행할 Velocyto는 python-based program 이라는점! 두 언어를 왔다갔다 할거다!!
 
 다음과 같은 tool을 사용할 예정:
-- [Seurat](https://satijalab.org/seurat/)
-- [Velocyto](http://velocyto.org/)
-- Samtools(optional)
-- [Anndata](https://anndata.readthedocs.io/en/stable/)
+> [Seurat](https://satijalab.org/seurat/)
+> [Velocyto](http://velocyto.org/)
+> Samtools(optional)
+> [Anndata](https://anndata.readthedocs.io/en/stable/)
 
 # Tutorial
 ## Generating Loom files
@@ -51,9 +51,9 @@ loom file만들어야한다.
 
 #### Installation
 **dependencies**
-- python >= 3.6.0 (3.5이하는 지원 안함)
-- [anaconda](https://sweebinee.github.io/blog/study/tools/2021-03-22/Anaconda)로 설치하는 것 추천 (dependency-managing issue)
-- [samtools](https://sweebinee.github.io/blog/study/tools/2021-03-22/Samtools) >= 1.6 
+> python >= 3.6.0 (3.5이하는 지원 안함)
+> [anaconda](https://sweebinee.github.io/blog/study/tools/2021-03-22/Anaconda)로 설치하는 것 추천 (dependency-managing issue)
+> [samtools](https://sweebinee.github.io/blog/study/tools/2021-03-22/Samtools) >= 1.6 
 
 ```bash
 #dependencies
