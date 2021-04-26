@@ -34,12 +34,15 @@ SeuratWrapper를 통해서 seurat object로도 velocity 분석이 가능한데, 
 
 *나는 지금까지 분석해온 seurat object가 있으니 velocity를 계산하고 얹어서 같이 보는 방법을 정리해보려고 한다.*<br/>
 주의해야할 점은 Seurat은 R-based이고, 이제부터 진행할 Velocyto는 python-based program 이라는점! 두 언어를 왔다갔다 할거다!!
-
+<div class="bs-callout bs-callout-default">
+<div markdown="1">
 다음과 같은 tool을 사용할 예정:
-> [Seurat](https://satijalab.org/seurat/)<br/>
-> [Velocyto](http://velocyto.org/)<br/>
-> Samtools(optional)<br/>
-> [Anndata](https://anndata.readthedocs.io/en/stable/)<br/>
+- [Seurat](https://satijalab.org/seurat/)<br/>
+- [Velocyto](http://velocyto.org/)<br/>
+- Samtools(optional)<br/>
+- [Anndata](https://anndata.readthedocs.io/en/stable/)<br/>
+</div></div>
+
 
 # Tutorial
 ## Generating Loom files
@@ -50,10 +53,14 @@ loom file만들어야한다.
 **RNAvelocyto**는 앞에서도 말했지만 unspliced와 spliced mRNAs를 구분해서 RNA velocity를 계산해주는 tool이다.
 
 #### Installation
-> **dependencies**
-> - python >= 3.6.0 (3.5이하는 지원 안함)<br/>
-> - [anaconda](https://sweebinee.github.io/blog/study/tools/2021-03-22/Anaconda)로 설치하는 것 추천 (dependency-managing issue)<br/>
-> - [samtools](https://sweebinee.github.io/blog/study/tools/2021-03-22/Samtools) >= 1.6 <br/>
+
+<div class="bs-callout bs-callout-default">
+<div markdown="1">
+**Dependencies**
+- python >= 3.6.0 (3.5이하는 지원 안함)<br/>
+- [anaconda](https://sweebinee.github.io/blog/study/tools/2021-03-22/Anaconda)로 설치하는 것 추천 (dependency-managing issue)<br/>
+- [samtools](https://sweebinee.github.io/blog/study/tools/2021-03-22/Samtools) >= 1.6 <br/>
+</div></div>
 
 ```bash
 #dependencies
