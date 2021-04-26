@@ -10,11 +10,11 @@ disqus: true
 post-header: true
 header-img: https://user-images.githubusercontent.com/43258282/116018464-06321380-a67d-11eb-9975-f742c1f2b5fe.png
 ---
-<center>논문[^1] 에서 예쁜 그림을 봐서 따라해봄</center>
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/116025994-b65b4880-a68c-11eb-94af-056ac7005906.jpg" alt="example of feature plot">Gene expression patterns</p>
+<center>논문에서 예쁜 그림을 봐서 따라해봄</center>
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/116025994-b65b4880-a68c-11eb-94af-056ac7005906.jpg" alt="example of feature plot">Gene expression patterns[^1] </p>
 
 
-####<center> **특징** </center>
+#### <center> **특징** </center>
 - gene ecpression이 없으면 회색, 있으면 노랑에서 빨강으로 gradient를 줬다.
 - 발현이 없는 cell보다 있는 cell의  크기가 큰 것 같음.
 - axis 없고 제목은 gene name.
