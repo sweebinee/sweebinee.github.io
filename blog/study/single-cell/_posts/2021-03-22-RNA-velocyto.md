@@ -24,10 +24,15 @@ disqus: true
 
 
 # Introduction
+RNA velocity는 **시간단위로 각 세포의 미래상태를 예측해주는 high-dimensional vector**로, 한 시점의 snapshot만을 보여주는 기존의 single cell RNA seq 데이터의 특징과 분석의 한계를 극복하기 위한 방법이다.[^1] 
 
+계산은 unspliced read(precurosr mRNA)와 spliced read(masture mRNA)의 양 측정을 통해 이루어진다고 한다. 자세한건 velocyto 논문리뷰에서..[^2]
 
-SeuratWrapper를 통해서 seurat object로 비슷한 분석이 가능한데, 미리 계산한 RNA velocity 정보를 seurat으로 불러들여서 재분석 하고 visualization까지 하는 방법인듯..[^1]<br/>
-예시는 한 데이터만 갖고 하는 방법이고 여기서는 여러개의 dataset의 velocity 계산하고 seurat으로 다시 엮어보자.  
+2018년에 velocyto 논문을 통해서 RNA velocity 분석이 소개가 된 이후로 scVelo[^3], VeloSim같은 tool들도 나오고 있는것 같지만 아직(2021년까지는 velocyto를 많이 사용하는것 같다.
+
+SeuratWrapper를 통해서 seurat object로도 velocity 분석이 가능한데, 미리 계산한 RNA velocity 정보를 seurat으로 불러들여서 재분석(normalize, dimension reduction, clustering) 하고 visualization까지 하는 방법인듯..[^4]<br/>
+
+*나는 지금까지 분석해온 seurat object가 있으니(UMAP visualizaion까지 한 상태) velocity를 계산하고 얹어서 같이 보는 방법을 정리해보려고 한다.*
 
 # Tutorial
 ## Generating Loom files
@@ -35,7 +40,7 @@ loom file만들어야한다
 
 
 ### Velocyto
-**RNAvelocyto**는 unspliced와 spliced mRNAs를 구분해서  RNA velocity를 계산해주는 tool이다.
+**RNAvelocyto**는 unspliced와 spliced mRNAs를 구분해서 RNA velocity를 계산해주는 tool이다.
 
 <div class="bs-callout bs-callout-info">
 <div markdown="1">
@@ -147,9 +152,13 @@ velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-
 :honey_pot: Estimating RNA velocity
 
 
+<br/><br/><br/><br/><br/><br/><br/><br/>
 
 
+[^1]: La Manno, Gioele, et al. ["RNA velocity of single cells."](https://doi.org/10.1038/s41586-018-0414-6) Nature 560.7719 (2018): 494-498.
+[^2]: 논문 리뷰페이지()
+[^3]: Bergen, Volker, et al. ["Generalizing RNA velocity to transient cell states through dynamical modeling."](https://www.nature.com/articles/s41587-020-0591-3) Nature biotechnology 38.12 (2020): 1408-1414.
+[^4]: [Estimating RNA Velocity using Seurat](https://github.com/satijalab/seurat-wrappers/blob/master/docs/velocity.md)
 
-[^1]: [Estimating RNA Velocity using Seurat](https://github.com/satijalab/seurat-wrappers/blob/master/docs/velocity.md)
 [^2]: [Running Velocyto CLI](http://velocyto.org/velocyto.py/tutorial/index.html)
 [^3]: [OSError: Unable to create file](https://github.com/qqwweee/keras-yolo3/issues/443)
