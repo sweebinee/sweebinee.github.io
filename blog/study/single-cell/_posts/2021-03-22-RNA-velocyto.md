@@ -8,25 +8,39 @@ category: "singleCell"
 tags: ['RNAvelocyto','RNA velocity','Seurat to RNAvelocity','scRNAseq','Python','R']
 disqus: true
 ---
+
+-[Installation](#installation)<br/>
+-[Tutorial](#tutorial)<br/>
+
+- [Introduction](#introduction)
+- [Generating Loom files](#generating-loom-files)
+  * [Kallisto Bustools](#kallisto-bustools)
+    + [Installation](#installation)
+    + [Usage](#usage)
+  * [Velocyto](#velocyto)
+    + [Installation](#installation-1)
+    + [Usage](#usage-1)
+- [Extracting Meta-data From a Seurat Object](#extracting-meta-data)
+- [Integrating Loom File and Meta-data](#integrating-loom-file-and-meta-data)
+  * [Multiple-Sample Integration](#multiple-sample-integration)
+- [Running RNA Velocity](#running-rna-velocity)
+- [FAQ](#faq)
+
+
+
 **RNAvelocyto**는 unspliced와 spliced mRNAs를 구분해서  RNA velocity를 계산해주는 tool이다.
 
 <div class="bs-callout bs-callout-info">
 <div markdown="1">
   <h4>Publication</h4>
 La Manno, Gioele, et al. "[RNA velocity of single cells.](https://doi.org/10.1038/s41586-018-0414-6)" Nature 560.7719 (2018): 494-498.<br/>
-website: http://velocyto.org/
+website: [velocyto.org](http://velocyto.org/)
 </div></div>
 
 `pyhon`과 `R`, 두 가지 언어로 실행할 수 있다.<br/>  
 
 SeuratWrapper를 통해서 seurat object로 비슷한 분석이 가능한데, 미리 계산한 RNA velocity 정보를 seurat으로 불러들여서 재분석 하고 visualization까지 하는 방법인듯..[^1]<br/>
 예시는 한 데이터만 갖고 하는 방법이고 여기서는 여러개의 dataset의 velocity 계산하고 seurat으로 다시 엮어보자.  
-
-*내가 원래 원했던 것은..*<br/>
-*이미 integrated seurat data갖고 있고 여기에 velocity data 추가할 수 없을까? 했는데.. 잘 모르겠음.* 
-
-[Installation](#installation)<br/>
-[Tutorial](#tutorial)<br/>
 
 
 ## Installation
