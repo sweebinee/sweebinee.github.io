@@ -162,7 +162,7 @@ velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-
 끝나면, `SAMPLEFOLDER/velocyto` folder아래 loom file이 만들어진다. 다음 단계로 넘어가기 전에 filtering과 후속분석에 필요한 meta data를 seurat object에서 뽑아 따로 저장한다.
 
 ## Extracting meta-data
-<div class="bs-callout bs-callout-warning">
+<div class="bs-callout bs-callout-default">
 <div markdown="1">
 **뽑아낼 meta-data**
 - Filtered cell ids
@@ -235,6 +235,7 @@ SW620 = SW620[np.isin(SW620.obs.index, cellID_obs_SW620)]
 
 
 Tutorial reference: [Seurat to RNA velocity](https://github.com/basilkhuder/Seurat-to-RNA-Velocity/blob/master/readme.MD)
+
 [^1]: La Manno, Gioele, et al. ["RNA velocity of single cells."](https://doi.org/10.1038/s41586-018-0414-6) Nature 560.7719 (2018): 494-498.
 [^2]: 논문 리뷰페이지()
 [^3]: Bergen, Volker, et al. ["Generalizing RNA velocity to transient cell states through dynamical modeling."](https://www.nature.com/articles/s41587-020-0591-3) Nature biotechnology 38.12 (2020): 1408-1414.
