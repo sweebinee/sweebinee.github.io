@@ -80,7 +80,7 @@ Velocyto는 두가지 구성요소로 이루어져 있음.
 - <u>expressed repeats annoation</u> (optional)<br/>
 </div></div>
 
-#### ** Running `velocyto` **
+#### Running `velocyto`
 `velocyto run` 으로 기본적인 pipeline을 돌릴 수 있는데, 사람들이 많이 사용하는 scRNA-seq chemistry는 redy-to-use subcommand를 만들어놨다고 한다. 가능한 옵션은 다음과 같다.
 <div class="bs-callout bs-callout-default">
 <div markdown="1">
@@ -157,10 +157,35 @@ velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-
 </div></div>
 
 `--samtools-threads`와 `--samtools-memory` 옵션으로 parallelization 조정가능. 
+<br/><br/>
 
-:honey_pot: Estimating RNA velocity
+끝나면, `SAMPLEFOLDER/velocyto` folder아래 loom file이 만들어진다. 다음 단계로 넘어가기 전에 filtering과 후속분석에 필요한 meta data를 seurat object에서 뽑아 따로 저장한다.
 
 ## Extracting meta-data
+<div class="bs-callout bs-callout-warning">
+<div markdown="1">
+**뽑아낼 meta-data**
+- Filtered cell ids
+- UMAP/tSNE coordinates
+- Clusters
+- Cluster colors(optional)
+</div></div>
+<br/>
+
+```R
+#in R
+library(Seurat)
+seurat.obj <- readRDS("preprocessed_seurat_obj.rds")
+
+#Filtered cell ids
+write.csv(Cells(seurat.obj), file = "cellID_obs.csv", row.names = FALSE)
+#UMAP coordinates
+write.csv(Embeddings(seurat.obj, reduction = "umap"), file = "cell_embeddings.csv")
+#Clusters
+write.csv(seurat.obj@meta.data$seurat_clusters, file = "clusters.csv")
+```
+
+
 ## Integrating loom file and meta-data
 ### Multi-samples integration
 ## Running RNA velocity
@@ -170,6 +195,7 @@ velocyto run10x /scRNAseq/02_Preprocessing/SW620/ /cellranger-5.0.1/refdata-gex-
 <br/><br/><br/><br/><br/><br/><br/><br/>
 
 
+Tutorial reference: [Seurat to RNA velocity](https://github.com/basilkhuder/Seurat-to-RNA-Velocity/blob/master/readme.MD)
 [^1]: La Manno, Gioele, et al. ["RNA velocity of single cells."](https://doi.org/10.1038/s41586-018-0414-6) Nature 560.7719 (2018): 494-498.
 [^2]: 논문 리뷰페이지()
 [^3]: Bergen, Volker, et al. ["Generalizing RNA velocity to transient cell states through dynamical modeling."](https://www.nature.com/articles/s41587-020-0591-3) Nature biotechnology 38.12 (2020): 1408-1414.
