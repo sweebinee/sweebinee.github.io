@@ -44,6 +44,7 @@ library(Seurat)
 library(velocyto.R)
 library(SeuratWrappers)
 ```
+<br/>
 ```R
 #Load loom files
 sample1_ldat <- ReadVelocity(file = "s1.loom")
