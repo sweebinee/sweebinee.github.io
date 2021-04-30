@@ -1,7 +1,7 @@
 ---
 layout: post
 author: "subin"
-title:  "RNAvelocyto ver2."
+title:  "RNAvelocyto ver.2"
 subtitle: "Seurat to Velocyto using only R"
 type: "Tool"
 category: "singleCell"
@@ -9,7 +9,7 @@ tags: ['RNAvelocyto','RNA velocity','Seurat to RNAvelocity','scRNAseq','R']
 disqus: true
 ---
 지난번에 python과 R을 동시에 사용해서 RNA velocity analysis하는 법을 포스팅했었는데,  이번에는 `SeuratWrapper` libarary 사용해서 <u>python 없이 R만으로</u> 동일한 분석 하는 법을 정리해보려고 한다.
-
+<br/>
 <div class="bs-callout bs-callout-success">
 <div markdown="1">
 **이전 포스팅** 
@@ -21,14 +21,15 @@ disqus: true
 - [Preprocessing velocity data](#preprocessing-velocity-data)
 - [Running RNA Velocity](#running-rna-velocity)
 - [Results](#results)
+<br/><br/><br/>
 
 
-
-**Files to prepare before starting analysis** 
+:file_folder:**Files to prepare before starting analysis** 
 - `Velocyto`돌려서 얻은 **loom file**
 - **preprocessed**(filtering, dimension reduction, clustering, visualization) **Seurat data** : umap정보 가져와서 그 위에 velocity결과 얹어서 보려고 함.
 <br/>
-**Prerequisites to install**
+
+:wrench:**Prerequisites to install**
 - [Seurat](https://satijalab.org/seurat/articles/install.html): install.packages('Seurat')
 - [velocyto.R](http://velocyto.org/): library(devtools); install_github("velocyto-team/velocyto.R")
 - [SeuratWrappers](https://github.com/satijalab/seurat-wrappers): remotes::install_github('satijalab/seurat-wrappers')
