@@ -100,6 +100,12 @@ numap <- as.matrix(Embeddings(seurat.obj, reduction = "umap"))
 rownames(numap) <- rownames(merged_seurat@reductions[["umap"]]@cell.embeddings[,1:2])
 merged_seurat@reductions[["numap"]] <- CreateDimReducObject(embeddings = numap, key = "UMAP_", assay = DefaultAssay(merged_seurat))
 
+#cell color
+ident.colors <- (scales::hue_pal())(n = length(x = levels(x = merged_seurat)))
+names(x = ident.colors) <- levels(x = merged_seurat)
+cell.colors <- ident.colors[Idents(object = merged_seurat)]
+names(x = cell.colors) <- colnames(x = merged_seurat)
+
 #visualization
 #pdf("velocity_analysis.pdf")
 show.velocity.on.embedding.cor(emb = Embeddings(object = merged_seurat, reduction = "numap"), vel = Tool(object = merged_seurat, 
