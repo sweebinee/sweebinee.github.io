@@ -24,15 +24,18 @@ disqus: true
 <br/><br/><br/>
 
 
-:file_folder:**Files to prepare before starting analysis** 
+:file_folder: **Files to prepare before starting analysis** 
 - `Velocyto`돌려서 얻은 **loom file**
 - **preprocessed**(filtering, dimension reduction, clustering, visualization) **Seurat data** : umap정보 가져와서 그 위에 velocity결과 얹어서 보려고 함.
+
 <br/>
 
-:wrench:**Prerequisites to install**
+:wrench: **Prerequisites to install**
 - [Seurat](https://satijalab.org/seurat/articles/install.html): install.packages('Seurat')
 - [velocyto.R](http://velocyto.org/): library(devtools); install_github("velocyto-team/velocyto.R")
 - [SeuratWrappers](https://github.com/satijalab/seurat-wrappers): remotes::install_github('satijalab/seurat-wrappers')
+
+<br/><br/>
 
 
 ## Preprocessing velocity data
