@@ -40,6 +40,15 @@ github:
 disqus:
   shortname: sweebinee-github-io # enter this from your disqus account
 
+tipue_search:
+    include:
+        pages: false
+        collections: []
+    exclude:
+        files: [search.html, index.html, tags.html]
+        categories: []
+        tags: []
+
 plugins:
   - jemoji
   - jekyll-seo-tag
