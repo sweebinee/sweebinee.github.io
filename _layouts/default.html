@@ -23,7 +23,6 @@
                 <li class="transition">
                     <a href="{{ '/about' | prepend: site.baseurl }}" {% if current[1] == "about" %} class="active"{% endif %} >About</a>
                 </li>
-            </ul>
 
             <form action="/search">
               <div class="tipue_search_left">
@@ -33,6 +32,9 @@
                 <input type="text" name="q" id="tipue_search_input" pattern=".{1,}" title="At least 1 characters" required></div>
               <div style="clear: both;"></div>
             </form>
+
+            </ul>
+
         </div>
       </nav>
     
