@@ -56,12 +56,12 @@ http://www.tipue.com/search
 }
 .tipue_search_left
 {
-     float: left;
+     float: right;
      padding: 1px 7px 1px 0;
 }
 .tipue_search_right
 {
-     float: left;
+     float: right;
 }
 
 
