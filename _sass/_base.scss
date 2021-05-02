@@ -59,7 +59,7 @@ blockquote {
 
 img {
   display: block;
-  margin: 0 0 1rem;
+  margin: 0;
   max-width: 100%;
 }
 
@@ -70,6 +70,7 @@ td {
 .transition {
     transition: all 0.3s ease-in-out;
 }
+
 
 ::selection {
     background: $purple;
