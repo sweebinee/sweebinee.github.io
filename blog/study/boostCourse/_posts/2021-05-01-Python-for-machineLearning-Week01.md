@@ -64,6 +64,79 @@ string list를 합쳐서 하나의 string으로 합침.
 
 ## List Comprehension
 ---
+파이썬에서 가장 많이 사용되는 기법 중 하나로, 기존의 list를 활용해 다른 list를 만드는 방법
+
+- for loop + .append()사용한 방법
+```python
+>>> result = []
+>>> for i in range(10):
+... result.append(i)
+...
+>>> result
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+```
+- **list comprehension** 사용한 방법
+```python
+>>> result = [i for i in range(10)]
+>>> result
+[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+>>> result = [i for i in range(10) if i % 2 == 0] # 조건물 넣을 수 있음
+>>> result
+[0, 2, 4, 6, 8]
+```
+<br/>
+- Nested for loop
+for loop 두번, for loop안에 for loop쓴 방법. **one dimension list로 나온다**
+```python
+>>> word_1 = "Hello"
+>>> word_2 = "World"
+>>> result = [i+j for i in word_1 for j in word_2] # Nested For loop
+>>> result
+['HW', 'Ho', 'Hr', 'Hl', 'Hd', 'eW', 'eo', 'er',
+'el', 'ed', 'lW', 'lo', 'lr', 'll', 'ld', 'lW',
+'lo', 'lr', 'll', 'ld', 'oW', 'oo', 'or', 'ol', 'od']
+```
+- Nested for loop + if statement
+```python
+>>> case_1 = ["A","B","C"]
+>>> case_2 = ["D","E","A"]
+>>> result = [i+j for i in case_1 for j in case_2]
+>>> result
+['AD', 'AE', 'AA', 'BD', 'BE', 'BA', 'CD', 'CE', 'CA']
+>>> result = [i+j for i in case_1 for j in case_2 if not(i==j)] #if문 추가
+# Filter: i랑 j과 같다면 List에 추가하지 않음 
+>>> result
+['AD', 'AE', 'BD', 'BE', 'BA', 'CD', 'CE', 'CA']
+>>> result.sort()
+>>> result
+['AD', 'AE', 'BA', 'BD', 'BE', 'CA', 'CD', 'CE']
+```
+- split() + list conprehension -> two dimensional list
+```python
+>>> words = 'The quick brown fox jumps over the lazy dog'.split()
+# 문장을 빈칸 기준으로 나눠 list로 변환
+>>> print (words)
+['The', 'quick', 'brown', 'fox',
+'jumps', 'over', 'the', 'lazy', 'dog']
+>>>
+>>> stuff = [[w.upper(), w.lower(), len(w)] for w in words]
+# list의 각 elemente들을 대문자, 소문자, 길이로 변환하여 two dimensional list로 변환
+>>>
+>>> for i in stuff:
+... print (i)
+...
+['THE', 'the', 3]
+['QUICK', 'quick', 5]
+['BROWN', 'brown', 5]
+['FOX', 'fox', 3]
+['JUMPS', 'jumps', 5]
+['OVER', 'over', 4]
+['THE', 'the', 3]
+['LAZY', 'lazy', 4]
+['DOG', 'dog', 3]
+```
+
+
 ## Enumerate & Zip
 ---
 ## Lambda & MapReduce
