@@ -202,9 +202,75 @@ a3 b3
 2 a3 b3
 ```
 
-
 ## Lambda & MapReduce
 ---
+### Lambda function
+익명함수, 함수의 이름이 따로 없지만 함수처럼 사용할 수 있는 함수. 
+- 간단한 함수를 만들어 쓸때 사용한다. 
+- `Map` or `Reduce` function과 함께 사용하면 더 잘 쓸 수 있음.
+- python3 부터, list comprehension의 등장으로 개발자들은 lambda의 사용을 권장하지 않음.
+
+```python
+# general function
+>>> def f(x, y):
+>>>    return x + y
+>>> print(f(1, 4))
+5
+# lambda function
+>>> f = lambda x, y: x + y
+>>> print(f(1, 4))
+5
+```
+
+### Map function
+sequence data의 각 element에 동일한 function을 적용함.
+<p align="center"><img src="https://user-images.githubusercontent.com/43258282/116981377-5efb4f00-ad02-11eb-8905-dcf50a647b4d.PNG" alt="How dose map function work" height="250px"> Map function의 작동방식
+</p>
+```python
+>>> ex = [1, 2, 3, 4, 5]
+>>> f = lambda x: x ** 2
+>>> print(list(map(f, ex))) 
+[1, 4, 9, 16, 25]
+#python2 에서는 map()만 사용해도 동일한 결과가 나오지만, python3 부터는 list(map())의 형태로 반드시 list()를 붙여줘야만 값을 얻을 수 있음.
+
+# Zip function쓰지않고 같은 기능 구현
+>>> ex = [1, 2, 3, 4, 5]
+>>> f = lambda x, y: x + y
+>>> print(list(map(f, ex, ex)))
+[2, 4, 6, 8, 10]
+
+>>> list(map(lambda x: x ** 2 if x % 2 == 0 else x, ex))
+>>> [value ** 2 for value in ex]
+# python3에서는 충분히 lambda와 map을 사용하지 않고, list comprehension만 가지고 구현가능
+
+#python 3에는 list를 꼭 붙여줘야함
+# 그렇지 않는다면 for문 사용해서 하나하나 출력할 수 있음.
+>>> ex = [1,2,3,4,5]
+>>> print(list(map(lambda x: x+x, ex)))
+>>> print((map(lambda x: x+x, ex)))
+>>> 
+>>> f = lambda x: x ** 2
+>>> print(map(f, ex))
+>>> for i in map(f, ex):
+>>>     print(i)
+```
+
+### Reduce function
+sequence data의 각 element에 동일한 function을 적용하는것은 `map` function과 동일. 하지만 그 결과값을 다음 연산에 input으로 사용해 나아감.
+```python 
+>>> from functools import reduce
+>>> print(reduce(lambda x, y: x+y, [1, 2, 3, 4, 5]))
+15
+
+>>> def factorial(n):
+>>>     return reduce(
+>>>             lambda x, y: x*y, range(1, n+1))
+>>> 
+>>> factorial(5)
+120
+```
+
+
 ## Asterisk
 ---
 
