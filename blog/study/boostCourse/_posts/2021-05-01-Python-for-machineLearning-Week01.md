@@ -136,6 +136,18 @@ for loop 두번, for loop안에 for loop쓴 방법. **one dimension list로 나�
 ['DOG', 'dog', 3]
 ```
 
+### One dimensional list vs. Two dimensional list
+```python
+>>> case_1 = ["A","B","C"]
+>>> case_2 = ["D","E","A"]
+>>> result = [i+j for i in case_1 for j in case_2]
+>>> result
+['AD', 'AE', 'AA', 'BD', 'BE', 'BA', 'CD', 'CE', 'CA']
+>>> result = [ [i+j for i in case_1] for j in case_2]
+>>> result
+[['AD', 'BD', 'CD'], ['AE','BE','CE'],['AA','BA','CA']]
+```
+
 
 ## Enumerate & Zip
 ---
