@@ -14,7 +14,8 @@ disqus: true
 <div markdown="1">
 **이전 포스팅** 
 - [RNAvelocyto: Estimations of RNA velocities of single cells by distinguishing unspliced and spliced mRNAs](https://sweebinee.github.io/blog/study/single-cell/singlecell/2021-03-22/RNA-velocyto)
-</div></div>
+</div></div><br/>
+
 **Velocyto** 사용해서 loom file 제작하는 것까지는 이전 포스팅의 방법과 동일하다. 이후에 Loom file을 R로 불러오고 seurat data의 umap데이터를 합쳐 projection하는 방법에 대해 작성해보고자한다. <br/>(*만약에 제 방법에 문제가 있거나 더 좋은 아이디어가 있다면 댓글로 알려주세요!!*)
 <br/><br/>
 
@@ -69,7 +70,7 @@ sample2_cells <- sapply(colnames(seurat.obj)[grepl("(^(\\w*)-2$)",colnames(seura
 |...|...|
 |AAACCCATCAGGGTAG**-2**|**sample2:**AAACCCATCAGGGTAG**x**|
 |AAACCCATCCGTAATG**-2**|**sampel2:**AAACCCATCCGTAATG**x**|
-
+<br/>
 ```R
 #convert loom to seurat and cell filtering
 sample1_seurat <- as.Seurat(sample1_ldat)[, sample1_cells]
@@ -89,7 +90,7 @@ merged_seurat <- RunUMAP(object = merged_seurat, dims = 1:20) #나중에 UMI cou
 
 ## Running RNA velocity
 ---
-`SeuratWrapper`로 RNA velocity계산하고 미리 UMI count로 계산했던 UMAP 결과를 velocity seurat object에 추가해 visualization해보자. (*이게 맞는 방법인진 확실하지 않음: integrated seurat object와 샘플별 velocity loom file을 단순히 merge해서 계산한 velocity 값을 이런식으로 얹어서 봐도 되는지..*)
+`SeuratWrapper`로 RNA velocity계산하고 미리 UMI count로 계산했던 UMAP 결과를 velocity seurat object에 추가해 visualization해보자. (*이게 맞는 방법인진 확실하지 않음: integrated seurat object와 샘플별 velocity loom file을 단순히 merge해서 계산한 velocity 값을 이런식으로 얹어서 봐도 되는지..*)[^1]
 ```R
 # Calculate RNA velocity
 ## 서버사용하면 ncores옵션 반드시 사용하기 안그러면 속터진다.
@@ -122,3 +123,6 @@ show.velocity.on.embedding.cor(emb = Embeddings(object = merged_seurat, reductio
 <br/><br/><br/><br/><br/><br/><br/><br/>
 ##### Reference list
 - [Estimating RNA Velocity using Seurat](http://htmlpreview.github.io/?https://github.com/satijalab/seurat-wrappers/blob/master/docs/velocity.html)
+- [RNA Velocity Analysis (In Situ) - Tutorial and Tips](https://jef.works/blog/2020/01/14/rna_velocity_analysis_tutorial_tips/)
+- [Integrated Seurat object + separate loom -> Velocyto](https://github.com/satijalab/seurat-wrappers/issues/9)
+[^1]: [Using Custom reductions with velocity in SeuratWrappers](https://github.com/satijalab/seurat-wrappers/issues/13)
