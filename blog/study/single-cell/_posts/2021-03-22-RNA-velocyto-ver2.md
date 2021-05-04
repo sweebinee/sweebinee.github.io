@@ -125,4 +125,6 @@ show.velocity.on.embedding.cor(emb = Embeddings(object = merged_seurat, reductio
 - [Estimating RNA Velocity using Seurat](http://htmlpreview.github.io/?https://github.com/satijalab/seurat-wrappers/blob/master/docs/velocity.html)
 - [RNA Velocity Analysis (In Situ) - Tutorial and Tips](https://jef.works/blog/2020/01/14/rna_velocity_analysis_tutorial_tips/)
 - [Integrated Seurat object + separate loom -> Velocyto](https://github.com/satijalab/seurat-wrappers/issues/9)
+
+
 [^1]: [Using Custom reductions with velocity in SeuratWrappers](https://github.com/satijalab/seurat-wrappers/issues/13)
