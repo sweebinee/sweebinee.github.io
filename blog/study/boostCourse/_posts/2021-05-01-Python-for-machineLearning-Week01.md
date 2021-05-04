@@ -7,10 +7,11 @@ type: "Python for MachineLearning"
 category: "boostCourse"
 tags: ['BoostCourse','Python','machineLearning']
 disqus: true
+book: true
 ridiselect: true
 link: "https://select.ridibooks.com/book/"
 post-header: true
-header-img: https://user-images.githubusercontent.com/43258282/116864409-c2be4300-ac42-11eb-9672-8a87d72e5d65.png
+header-img: https://user-images.githubusercontent.com/43258282/116971476-98c55900-acf4-11eb-85c1-b74b47160665.png
 ---
 
 <div class="bs-callout bs-callout-info">
