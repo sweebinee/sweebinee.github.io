@@ -148,9 +148,11 @@ for loop 두번, for loop안에 for loop쓴 방법. **one dimension list로 나�
 [['AD', 'BD', 'CD'], ['AE','BE','CE'],['AA','BA','CA']]
 ```
 
-
 ## Enumerate & Zip
 ---
+### Enumerate function
+리스트의 값을 추출할때 인덱스를 함께 추출할 수 있는 방법
+
 ## Lambda & MapReduce
 ---
 ## Asterisk
