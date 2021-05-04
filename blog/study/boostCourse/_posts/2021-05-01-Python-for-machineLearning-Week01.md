@@ -209,6 +209,7 @@ a3 b3
 - 간단한 함수를 만들어 쓸때 사용한다. 
 - `Map` or `Reduce` function과 함께 사용하면 더 잘 쓸 수 있음.
 - python3 부터, list comprehension의 등장으로 개발자들은 lambda의 사용을 권장하지 않음.
+- Legacy library나 다양한 machine learning code에서는 여전히 사용중.
 
 ```python
 # general function
