@@ -70,6 +70,7 @@ sample2_cells <- sapply(colnames(seurat.obj)[grepl("(^(\\w*)-2$)",colnames(seura
 |...|...|
 |AAACCCATCAGGGTAG**-2**|**sample2:**AAACCCATCAGGGTAG**x**|
 |AAACCCATCCGTAATG**-2**|**sampel2:**AAACCCATCCGTAATG**x**|
+
 <br/>
 ```R
 #convert loom to seurat and cell filtering
