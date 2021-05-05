@@ -63,8 +63,8 @@ layout: default
     {% if page.book == true %}
         {% if page.ridibooks == true %}
             {% for book-list in site.data[page.data-name] %}   
-                <a href="https://ridibooks.com/books/{{ book-list.bookid }}" target="_blank" class="book-link">
-                    <img class="book-cover transition" src="https://misc.ridibooks.com/cover/{{ book-list.bookid }}/xxlarge"/>
+                <a href="http://www.kyobobook.co.kr/product/{{ book-list.booklink}}" target="_blank" class="book-link">
+                    <img class="book-cover transition" src="http://image.kyobobook.co.kr/images/book/xlarge/{{ book-list.bookimage }}"/>
                 </a>   
             {% endfor %}
         {% endif %}
