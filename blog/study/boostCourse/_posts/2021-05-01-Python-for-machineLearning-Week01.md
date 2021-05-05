@@ -9,7 +9,7 @@ tags: ['BoostCourse','Python','machineLearning']
 disqus: true
 post-header: true
 header-img: https://user-images.githubusercontent.com/43258282/116971476-98c55900-acf4-11eb-85c1-b74b47160665.png
-kybobooks: true
+kyobobooks: true
 data-name: boostcourse-python-ml-w1
 ---
 

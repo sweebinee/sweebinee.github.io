@@ -61,7 +61,7 @@ layout: default
     {{ content }}
     
 <!--{% if page.book == true %}-->
-        {% if page.kybobooks == true %}
+        {% if page.kyobobooks == true %}
             {% for book-list in site.data[page.data-name] %}   
                 <a href="http://www.kyobobook.co.kr/product/{{ book-list.booklink}}" target="_blank" class="book-link">
                     <img class="book-cover transition" src="http://image.kyobobook.co.kr/images/book/xlarge/{{ book-list.bookimage }}"/>
