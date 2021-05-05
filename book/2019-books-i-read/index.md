@@ -10,7 +10,7 @@ post-header: true
 header-img: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2730&q=80"
 order: 3
 data-name: b-all-2019
-ridibooks: true
+books: true
 link: "https://ridibooks.com/books/"
 ---
 

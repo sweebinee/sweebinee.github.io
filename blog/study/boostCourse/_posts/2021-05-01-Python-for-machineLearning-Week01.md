@@ -10,10 +10,8 @@ disqus: true
 post-header: true
 header-img: https://user-images.githubusercontent.com/43258282/116971476-98c55900-acf4-11eb-85c1-b74b47160665.png
 book: true
-ridibooks: true
-
+kybobooks: true
 data-name: boostcourse-python-ml-w1
-link: "https://ridibooks.com/books/"
 ---
 
 <div class="bs-callout bs-callout-info">
