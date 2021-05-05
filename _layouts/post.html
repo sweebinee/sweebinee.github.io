@@ -60,7 +60,7 @@ layout: default
 <!--큐레이션 영역-->
     {{ content }}
     
-    {% if page.book == true %}
+<!--{% if page.book == true %}-->
         {% if page.kybobooks == true %}
             {% for book-list in site.data[page.data-name] %}   
                 <a href="http://www.kyobobook.co.kr/product/{{ book-list.booklink}}" target="_blank" class="book-link">
@@ -75,7 +75,7 @@ layout: default
                 </a>   
             {% endfor %}
         {% endif %}
-    {% endif %}
+<!--{% endif %}-->
     
 
     
