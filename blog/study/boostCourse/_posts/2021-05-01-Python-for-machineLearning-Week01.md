@@ -282,7 +282,7 @@ sequence data의 각 element에 동일한 function을 적용하는것은 `map` f
 >>> def asterisk_test(a, *args):
 >>>    print(a, args)
 >>>    print(type(args))
-
+>>>    
 >>> asterisk_test(1,2,3,4,5,6)
 1 (2, 3, 4, 5, 6)
 <class 'tuple'
@@ -293,7 +293,7 @@ sequence data의 각 element에 동일한 function을 적용하는것은 `map` f
 >>> def asterisk_test(a, **kargs): #**
 >>>     print(a, kargs)
 >>>     print(type(kargs))
-
+>>>     
 >>> asterisk_test(1, b=2, c=3, d=4, e=5, f=6)
 1 {'b':2, 'c':3, 'd':4, 'e':5, 'f':6}
 <class 'dict'>
@@ -303,11 +303,13 @@ sequence data의 각 element에 동일한 function을 적용하는것은 `map` f
 ```python
 #tuple, dict같은 자료형에 들어가 있는 값을 unpacking해서 넣고 싶다면
 # 함수 입력값 | zip등에 활용
-def asterisk_test(a, args):
-    print(a, *args)
-    print(type(args))
-
-asterisk_test(1, (2,3,4,5,6))
+>>> def asterisk_test(a, args): #(1, (2,3,4,5,6))
+>>>     print(a, *args) #unpacking
+>>>     print(type(args))
+>>>     
+>>> asterisk_test(1, (2,3,4,5,6))
+1 2 3 4 5 6
+<class 'tuple'>
 ```
 
 
