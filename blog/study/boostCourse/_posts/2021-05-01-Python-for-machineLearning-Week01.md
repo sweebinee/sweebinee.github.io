@@ -310,7 +310,7 @@ tuple, dict같은 자료형에 들어가 있는 값을 unpacking해서 넣고 �
 >>>     
 >>> asterisk_test(1, (2,3,4,5,6))
 1 2 3 4 5 6
-<class 'tuple'>
+class 'tuple'
 ```
 <br/>
 ```python
