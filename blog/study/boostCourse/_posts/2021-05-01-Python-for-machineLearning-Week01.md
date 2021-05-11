@@ -348,8 +348,7 @@ from collecions import namedtuple
 ```
 
 - Deque
-Stack & queue 지원. list에 비해 효율적인 저장방식 지원.
-
+Stack & queue 지원. list에 비해 효율적인 저장방식 지원.<br/>
 ```python
 from collections import deque
 
