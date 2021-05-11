@@ -276,7 +276,7 @@ sequence data의 각 element에 동일한 function을 적용하는것은 `map` f
 
 ## Asterisk
 ---
-오픈소스코드에서 많이 사용하는 function. 흔히 알고 있는 *를 의미함. 곱셈, 제곱연산, 가변인자 활용 등에 다양하게 사용됨. 한번에 여러개의 변수를 넘겨줄때 사용함.
+오픈소스코드에서 많이 사용하는 function. 흔히 알고 있는 *를 의미함. 곱셈, 제곱연산, 가변인자, unpacking container 활용 등에 다양하게 사용됨. 한번에 여러개의 변수를 넘겨줄때 사용함.
 - 가변인자
 ```python
 >>> def asterisk_test(a, *args):
@@ -310,6 +310,30 @@ sequence data의 각 element에 동일한 function을 적용하는것은 `map` f
 >>> asterisk_test(1, (2,3,4,5,6))
 1 2 3 4 5 6
 <class 'tuple'>
+```
+<br/>
+```python
+>>> a, b, c = ([1, 2], [3, 4], [5, 6])
+>>> print(a, b, c)
+>>>
+>>> data = ([1, 2], [3, 4], [5, 6])
+>>> print(*data)
+```
+<br/>
+```python
+>>> for data in zip(*([1, 2], [3, 4], [5, 6]))7:
+>>>     print(sum(data))
+9 # 1+3+5
+12 # 2+4+6
+```
+<br/>
+```python
+>>> def asterisk_test(a, b, c, d, e=0):
+>>>     print(a, b, c, d, e)
+>>>
+>>> data = {"d":1 , "c":2, "b":3, "e"=56}
+>>> asterisk_test(10, **data)
+10 3 2 1 56
 ```
 
 
