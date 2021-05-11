@@ -335,6 +335,45 @@ sequence data의 각 element에 동일한 function을 적용하는것은 `map` f
 >>> asterisk_test(10, **data)
 10 3 2 1 56
 ```
+## Collections
+- 자료구조 
+- List, Tuple, Dict에 대한 python built-in 확장 자료구조(모듈)
+- 편의성, 실행효율 증대
+```python
+from collecions import deque #stack & queue
+from collecions import Counter
+from collecions import OrderedDict
+from collecions import defaultdict
+from collecions import namedtuple
+```
+- Deque
+Stack & queue 지원. list에 비해 효율적인 저장방식 지원.
+```python
+from collections import deque
+
+deque_list = deque()
+for i in range(5):
+    deque_list.append(i)
+print(deque_list)
+
+deque_list.appendleft(10)
+print(deque_list)
+
+deque_list.rotate(2)
+print(deque_list)
+deque_list.rotate(2)
+print(deque_list)
+
+print(deque_list)
+print(deque(reversed(deque_list)))
+
+deque_list.extend([5, 6, 7])
+print(deque_list)
+
+deque_list.extendleft([5, 6, 7])
+print(deque_list)
+```
+- 
 
 
 # Linear Algebra
