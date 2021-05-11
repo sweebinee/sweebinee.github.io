@@ -283,10 +283,10 @@ sequence data의 각 element에 동일한 function을 적용하는것은 `map` f
 >>> def asterisk_test(a, *args):
 >>>    print(a, args)
 >>>    print(type(args))
->>>    
+>>>
 >>> asterisk_test(1,2,3,4,5,6)
-1 (2, 3, 4, 5, 6)
-<class 'tuple' >
+ 1 (2, 3, 4, 5, 6)
+ class 'tuple'
 # 1과 나머지(2,3,4,5,6)은 tuple형태로 args가변인자 에 들어감 
 ```
 
@@ -298,7 +298,7 @@ sequence data의 각 element에 동일한 function을 적용하는것은 `map` f
 >>>     
 >>> asterisk_test(1, b=2, c=3, d=4, e=5, f=6)
 1 {'b':2, 'c':3, 'd':4, 'e':5, 'f':6}
-<class 'dict'>
+ class 'dict' 
 #나머지가 dict 타입으로 키워드인자에 들어감
 ```
 - unpacking a container
