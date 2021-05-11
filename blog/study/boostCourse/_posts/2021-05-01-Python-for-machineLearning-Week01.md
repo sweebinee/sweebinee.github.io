@@ -276,6 +276,40 @@ sequence data의 각 element에 동일한 function을 적용하는것은 `map` f
 
 ## Asterisk
 ---
+오픈소스코드에서 많이 사용하는 function. 흔히 알고 있는 *를 의미함. 곱셈, 제곱연산, 가변인자 활용 등에 다양하게 사용됨. 한번에 여러개의 변수를 넘겨줄때 사용함.
+- 가변인자
+```python
+>>> def asterisk_test(a, *args):
+>>>    print(a, args)
+>>>    print(type(args))
+
+>>> asterisk_test(1,2,3,4,5,6)
+1 (2, 3, 4, 5, 6)
+<class 'tuple'
+# 1과 나머지(2,3,4,5,6)은 tuple형태로 args가변인자 에 들어감
+```
+- 키워드 인자
+```python
+>>> def asterisk_test(a, **kargs): #**
+>>>     print(a, kargs)
+>>>     print(type(kargs))
+
+>>> asterisk_test(1, b=2, c=3, d=4, e=5, f=6)
+1 {'b':2, 'c':3, 'd':4, 'e':5, 'f':6}
+<class 'dict'>
+#나머지가 dict 타입으로 키워드인자에 들어감
+```
+- unpacking a container
+```python
+#tuple, dict같은 자료형에 들어가 있는 값을 unpacking해서 넣고 싶다면
+# 함수 입력값 | zip등에 활용
+def asterisk_test(a, args):
+    print(a, *args)
+    print(type(args))
+
+asterisk_test(1, (2,3,4,5,6))
+```
+
 
 # Linear Algebra
 ## Linear algebra codes
