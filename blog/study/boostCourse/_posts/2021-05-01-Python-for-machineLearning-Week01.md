@@ -302,9 +302,8 @@ sequence data의 각 element에 동일한 function을 적용하는것은 `map` f
 #나머지가 dict 타입으로 키워드인자에 들어감
 ```
 - unpacking a container
+tuple, dict같은 자료형에 들어가 있는 값을 unpacking해서 넣고 싶다면 / 함수 입력값 | zip등에 활용
 ```python
-#tuple, dict같은 자료형에 들어가 있는 값을 unpacking해서 넣고 싶다면
-# 함수 입력값 | zip등에 활용
 >>> def asterisk_test(a, args): #(1, (2,3,4,5,6))
 >>>     print(a, *args) #unpacking
 >>>     print(type(args))
