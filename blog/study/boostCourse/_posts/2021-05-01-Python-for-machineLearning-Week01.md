@@ -285,8 +285,8 @@ sequence data의 각 element에 동일한 function을 적용하는것은 `map` f
 >>>    
 >>> asterisk_test(1,2,3,4,5,6)
 1 (2, 3, 4, 5, 6)
-<class 'tuple'
-# 1과 나머지(2,3,4,5,6)은 tuple형태로 args가변인자 에 들어감 <br/>
+<class 'tuple' >
+# 1과 나머지(2,3,4,5,6)은 tuple형태로 args가변인자 에 들어감 
 ```
 - 키워드 인자
 ```python
@@ -346,8 +346,10 @@ from collecions import OrderedDict
 from collecions import defaultdict
 from collecions import namedtuple
 ```
+
 - Deque
 Stack & queue 지원. list에 비해 효율적인 저장방식 지원.
+
 ```python
 from collections import deque
 
