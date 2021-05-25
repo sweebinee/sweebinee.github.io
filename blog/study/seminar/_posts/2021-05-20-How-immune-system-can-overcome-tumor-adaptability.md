@@ -4,7 +4,7 @@ author: "subin"
 title:  "How the immune system can overcome tumor adaptability"
 subtitle: "CellPress Webinar"
 type: "Oncology"
-category: "singleCell"
+category: "seminar"
 tags: ['']
 disqus: true
 post-header: true
