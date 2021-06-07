@@ -1,11 +1,11 @@
 ---
 layout: post
 author: "subin"
-title:  "Anaconda"
-subtitle: "인생이 편해지는 방법"
+title:  "SRA toolkit"
+subtitle: "Downlaod sequencing raw file from SRA"
 type: "toolkit"
 category: "Tools"
-tags: ['HowToInstall','Anaconda','on CentOS', R with conda]
+tags: ['']
 disqus: true
 post-header: true
 header-img: https://user-images.githubusercontent.com/43258282/111945431-122a3300-8b1d-11eb-88d6-85372826299c.jpg
