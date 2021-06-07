@@ -1,0 +1,105 @@
+---
+layout: post
+author: "subin"
+title:  "Anaconda"
+subtitle: "인생이 편해지는 방법"
+type: "toolkit"
+category: "Tools"
+tags: ['HowToInstall','Anaconda','on CentOS', R with conda]
+disqus: true
+post-header: true
+header-img: https://user-images.githubusercontent.com/43258282/111945431-122a3300-8b1d-11eb-88d6-85372826299c.jpg
+---
+centos에서 툴 설치 관련 문제가 발생했을 때, 대부분은 dependency 문제일 것이다. conda를 사용하면 이런 문제의 90%는 아예 볼일이 없다.
+
+모든 이의 정신건강을 위해서 `conda`를 추천한다.
+고집부리지말고 순응해라. 당신의 시간과 에너지를 절약해줄 것이다.
+
+- [What is Conda](#conda)
+- [Installation](#installation)
+- [Basic command](#basic-command)
+
+# Conda
+conda는 우리가 패키지를 직접 설치할때 발생할 수 있는 dependency 문제나, 버전 관리 등을 가상환경을 통해 손쉽게 관리할 수 있게 해주는 도구다. 일반적으로는 python 언어의 패키지 관리를 위해 사용하는데 R 언어도 사용가능하다. 많이 사용하는 소스로는 `Anaconda`가 있다. 
+
+## Installation[^1]
+---
+### 1. Download the Latest Anaconda Version
+Anaconda 홈페이지 [다운로드](https://www.anaconda.com/products/individual#linux) 페이지에서 원하는 버전의 설치 파일(.sh)을 다운 받는다. <br/>
+*python3과 python2중에 고를 수 있다.*
+```bash
+wget https://repo.anaconda.com/archive/Anaconda3-2020.11-Linux-x86_64.sh
+```
+<br/>
+### 2. Run Anaconda Installer Script on CentOS
+다운받은 설치 파일을 실행시킨다.
+```bash
+bash Anaconda3-2020.11-Linux-x86_64.sh
+```
+<br/>
+돌리기 시작하면 `Enter`
+<p align="left"><img src="https://user-images.githubusercontent.com/43258282/111944847-e5295080-8b1b-11eb-9125-5dd4011680e1.PNG"></p>
+license term에 동의해라. `yes`라고 타이핑
+<p align="left"><img src="https://user-images.githubusercontent.com/43258282/111944850-e65a7d80-8b1b-11eb-976c-e213bf5dd24b.PNG"></p>
+설치 경로를 확인하고 괜찮다면 `Enter`. 싫다면 원하는 설치경로를 새로 넣어주자.
+<p align="left"><img src="https://user-images.githubusercontent.com/43258282/111944851-e65a7d80-8b1b-11eb-9d59-877698ba7dce.PNG"></p>
+설치가 다됐다. 마지막 질문은 설치 경로를 자동 추가해줄까? `yes` 너가 알아서 할래? `no`
+<p align="left"><img src="https://user-images.githubusercontent.com/43258282/111944852-e6f31400-8b1b-11eb-8cad-4756b748d129.PNG"></p>
+---
+### Uninstallation
+설치했던 Anaconda를 지우고 싶다면,
+1. Anaconda 설치 경로 directory 째로 삭제 한다.
+```
+rm –rf ~/anaconda3
+```
+2. ~/.bashrc || ~/.bash_profile 에 넣어줬던 경로 수정해준다.
+3. 숨김 파일로 존재하는 Anaconda 하위 폴더와 파일들까지 삭제해준다.
+```
+rm -rf ~/.condarc ~/.conda ~/.continuum
+```
+
+## Basic Command
+---
+- **새로운 환경 생성**<br/>
+conda를 시작하면 기본 환경인 `base`가 열려 있다. conda는 프로젝트별로 또는 도구별로 별도의 환경을 구성해서 작업할 수 있게 한다. 
+```bash
+conda create --name [env_name]
+#--name 또는 -n
+```
+<br/>
+- **환경 활성화/비활성화**<br/>
+생성한 환경을 활성화 시켜야 그 환경에 설치한 프로그램이나 패키지들을 사용할 수 있다.
+```bash
+conda activate [env_name]
+conda deactivate [env_name]
+```
+<br/>
+- **환경 목록 보기**<br/>
+지금까지 만든 환경들의 이름목록을 볼 수 있다.
+```bash
+conda env list
+```
+<br/>
+- **환경 삭제**<br/>
+```bash
+conda env remove -n [env_name]
+```
+
+---
+
+여기까지가 기본 command.<br/> 이제 가상환경을 하나 생성하고 R과 필요한 package를 설치해보자.
+
+```bash
+conda create -n scRNAanalysis #생성
+conda activate scRNAanalysis #활성화
+
+conda install -c r r-essentials #R 설치
+#기본적으로 필요한 R package 설치
+conda install -c bioconda r-seurat
+conda install -c conda-forge r-ggplot2
+```
+<br/>
+더 필요한 R package가 있다면 구글에 "conda [package neme]"해서 검색해보자. 왠만하면 제일 처음에 anaconda.org에 올라온 설치 command 페이지가 나온다.
+
+
+[^1]: [Anaconda installin on linux](https://docs.anaconda.com/anaconda/install/linux/)
