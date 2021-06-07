@@ -66,9 +66,11 @@ conda env list
 ```bash
 conda env remove -n [env_name]
 ```
-<br/>
+
 ---
+
 여기까지가 기본 command.<br/> 이제 가상환경을 하나 생성하고 R과 필요한 package를 설치해보자.
+
 ```bash
 conda create -n scRNAanalysis #생성
 conda activate scRNAanalysis #활성화
@@ -77,6 +79,6 @@ conda install -c r r-essentials #R 설치
 #기본적으로 필요한 R package 설치
 conda install -c bioconda r-seurat
 conda install -c conda-forge r-ggplot2
-
 ```
+<br/>
 더 필요한 R package가 있다면 구글에 "conda [package neme]"해서 검색해보자. 왠만하면 제일 처음에 anaconda.org에 올라온 설치 command 페이지가 나온다.
