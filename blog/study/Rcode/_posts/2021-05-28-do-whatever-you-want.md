@@ -1,86 +1,30 @@
 ---
 layout: post
 author: "subin"
-title:  "How to draw perfect feature plot with ggplot2"
-subtitle: "making drawFeaturePlot function"
-type: "scRNAseq"
+title:  "R package (dependency) 설치에 지친 당신을 위한 꿀팁"
+subtitle: "너 하고 싶은거 다해, R 따위한테 질 수 없지"
+type: "Master key"
 category: "Rcode"
-tags: ['single cell sequencing analysis','feature plot','seurat','ggplot2','featurePlot']
+tags: ["R with conda"]
 disqus: true
 post-header: true
-header-img: https://user-images.githubusercontent.com/43258282/116018464-06321380-a67d-11eb-9975-f742c1f2b5fe.png
+header-img: https://user-images.githubusercontent.com/43258282/120966147-c80e3080-c7a0-11eb-8a24-c11ea43862d2.jpg
 ---
-논문[^1]에서 예쁜 그림을 봐서 따라해봄
-<p align="center"><img src="https://user-images.githubusercontent.com/43258282/116025994-b65b4880-a68c-11eb-94af-056ac7005906.jpg" alt="example of feature plot">Gene expression patterns</p>
 
+어쩌다 이 길로 들어오게 됐는지 기억도 나지 않는다. <br/>
+이 글을 읽고 있는 당신(또는 미래의 나) 또한 R package 설치 에러에 지칠대로 지쳐 여기까지 흘러왔겠지. 인정하고 받아들이면 편해진다고 이야기해주고 싶다.<br/><br/>
+<span style="color:#997ADB"> *정말 어렸을 때, 모든 것에 근자감이 넘치던 시절엔 '진정한 프로그래머라면 conda따위에 의존하지 말아야한다'고 생각했었는데.. 좋은게 있으면 써야지 나만 안쓰고 바보같이 일하면 머리나 빠지고 시간만 잡아먹는다. 쓰라고 만든거니 잘 사용해주자!* </span><br/>
 
-#### <center> **특징** </center>
-- gene ecpression이 없으면 회색, 있으면 노랑에서 빨강으로 gradient를 줬다.
-- 발현이 없는 cell보다 있는 cell의  크기가 큰 것 같음.
-- axis 없고 제목은 gene name.
+- [What is Conda](#conda)
+- [Installation](#installation)
+- [Basic command](#basic-command)
 
+## Conda
+---
 
-### 내 코드
-▶ `Seurat object` 이름과 원하는 `gene list`,  표현하고자 하는 `method` (tSNE 또는 UMAP)을 넣으면 그려준다!  
+## Installation
+---
 
-```R
-#원하는 cell type 과 그 known marker gene list를 담은 vector
-cell_type_1 <- c("gene1","gene2",...) 
-cell_type_2 <- c("gene1","gene2",...)
-..
-#원하는 cell type list vector를 담은 vector
-type_list = c("cell_type_1","cell_type_2",..)
+## Basic Command
+---
 
-drawFeaturePlot("Seurat.obj",type_list,"tsne")
-#이렇게 하면 알아서 쫘라라락 그려서 저장해준다.
-```
-<br/>
-```R
-drawFeaturePlot<-function(Data_name,type_list,method){
-  Seurat_obj = get(Data_name)
-  if(toupper(method)=="TSNE"){
-		cellEmbed = Seurat_obj@reductions$tsne@cell.embeddings
-  	}else if(toupper(method)=='UMAP'){
-		cellEmbed = Seurat_obj@reductions$umap@cell.embeddings
-  	}
-  for(j in type_list){
-    cellType=j
-    for(i in get(cellType)){
-      cols <- c("grey" ,brewer.pal(9,"YlOrRd"))
-      tryCatch(
-        assay_data <- GetAssayData(object = Seurat_obj)[i,],
-        error = function(e) print(paste0("no ",i)),
-        warning = function(w) print(paste0("no ",i)))
-        df = data.frame(
-            x=cellEmbed[, 1], 
-            y=cellEmbed[, 2], 
-            expression=assay_data)
-        df$alpha <- 1
-        df[df$expression!=0,"alpha"] <- 0.5
-        df$size <- 1
-        df[df$expression!=0,"size"] <- 2.5
-        data<-df[order(df$expression, decreasing=FALSE),]
-        plot <- ggplot(data,aes(x=x, y=y, colour=expression),mar=c(0,0,3,0)) + 
-          ggtitle(paste0(cellType,"_",i)) +
-            geom_point(size=data$size, alpha=data$alpha, shape=19) + 
-            scale_colour_gradientn(colours = cols) +
-            ylab(paste0(toupper(method),"_2")) + xlab(paste0(toupper(method),"_1")) + 
-          theme_classic() + theme(legend.position="none") +
-            theme(text = element_text(size=20),
-            panel.grid.major=element_blank(),
-            panel.grid.minor=element_blank(), 
-            axis.line=element_line(size=1),
-            axis.ticks=element_line(size=1),
-            legend.text=element_text(size=5), 
-            legend.title=element_blank(),
-            legend.key=element_blank(),
-            axis.text.x = element_text(size=5)) 
-        ggsave(file=paste0(Data_name,"_",cellType,"_",i,"_",toupper(method),".png"),plot)
-    }}}
-```
-
-<br/><br/><br/><br/><br/>
-
-
-
-[^1]: Rosenberg, Alexander B., et al. ["Single-cell profiling of the developing mouse brain and spinal cord with split-pool barcoding."](https://science.sciencemag.org/content/360/6385/176) Science 360.6385 (2018): 176-182. 
