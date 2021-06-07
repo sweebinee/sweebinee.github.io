@@ -49,7 +49,7 @@ conda create --name [env_name]
 #--name 또는 -n
 ```
 <br/>
-- **환경 활성화/비활성화**< br/>
+- **환경 활성화/비활성화**<br/>
 생성한 환경을 활성화 시켜야 그 환경에 설치한 프로그램이나 패키지들을 사용할 수 있다.
 ```bash
 conda activate [env_name]
