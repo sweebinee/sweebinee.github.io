@@ -1,11 +1,11 @@
 ---
 layout: post
 author: "subin"
-title:  "Converting Human gene symbol to Mouse gene"
-subtitle: ""
+title:  "Processing with multi cores in R"
+subtitle: "Rparallel library"
 type: "code"
 category: "Rcode"
-tags: ['R','bioMart','how to change human gene to mouse gene']
+tags: ['R','Rparallel','using R with multi cores environment','parallel processing']
 disqus: true
 post-header: true
 header-img: https://user-images.githubusercontent.com/43258282/116018464-06321380-a67d-11eb-9975-f742c1f2b5fe.png
